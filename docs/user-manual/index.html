@@ -803,9 +803,12 @@ table.CodeRay td.code>pre{padding:0}
 </li>
 <li><a href="#source-code-blocks">49. Syntax Highlighting Source Code</a>
 <ul class="sectlevel2">
-<li><a href="#pygments">49.1. Pygments</a></li>
-<li><a href="#coderay">49.2. CodeRay</a></li>
-<li><a href="#highlight-js">49.3. highlight.js</a></li>
+<li><a href="#enabling-source-highlighting">49.1. Enabling Source Highlighting</a></li>
+<li><a href="#available-source-highlighters">49.2. Available Source Highlighters</a></li>
+<li><a href="#applying-source-highlighting">49.3. Applying Source Highlighting</a></li>
+<li><a href="#pygments">49.4. Pygments</a></li>
+<li><a href="#coderay">49.5. CodeRay</a></li>
+<li><a href="#highlight-js">49.6. highlight.js</a></li>
 </ul>
 </li>
 <li><a href="#callouts">50. Callouts</a>
@@ -15860,19 +15863,19 @@ icon:heart[fw] heart</pre>
 <h2 id="source-code-blocks"><a class="anchor" href="#source-code-blocks"></a>49. Syntax Highlighting Source Code</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Developers are accustomed to seeing source code which uses color and other styling to emphasize the code&#8217;s structure (e.g., keywords, types, matching delimiters).
-This technique is known as <em class="term">syntax highlighting</em> (or source highlighting).</p>
-</div>
-<div class="paragraph">
-<p>Since this technique is so prevelant&#8212;&#8203;you could even say expected, Asciidoctor integrates a wealth of libraries to choose from to syntax highlight source code blocks in your document.
+<p>Developers are accustomed to seeing source code that uses color and other styling to emphasize the code&#8217;s structure (i.e., keywords, types, delimiters, etc.).
+This technique is known as <em class="term">syntax highlighting</em> source code (or <em class="term">source highlighting</em>, for short).
+Since this technique is so prevelant&#8212;&#8203;one could say expected, Asciidoctor integrates a wealth of libraries to syntax highlight source code blocks in your document.
 This list includes CodeRay, Pygments, highlight.js, and prettify.</p>
 </div>
+<div class="sect2">
+<h3 id="enabling-source-highlighting"><a class="anchor" href="#enabling-source-highlighting"></a>49.1. Enabling Source Highlighting</h3>
 <div class="paragraph">
-<p>Syntax highlighting gets applied to listing or literal blocks that have the <code>source</code> block style and a language.
+<p>When enabled, syntax highlighting gets applied to listing or literal blocks that have the <code>source</code> block style and a source language.
 However, syntax highlighting is <em>not</em> enabled by default.</p>
 </div>
 <div class="paragraph">
-<p>To enable syntax highlighting in a document, you must set the <code>source-highlighter</code> attribute.
+<p>To enable syntax highlighting in a document, you must set the <code>source-highlighter</code> document attribute.
 You can set this attribute in the document or from the CLI or API.</p>
 </div>
 <div class="paragraph">
@@ -15893,6 +15896,9 @@ You can set this attribute in the document or from the CLI or API.</p>
 :source-highlighter: coderay</pre>
 </div>
 </div>
+</div>
+<div class="sect2">
+<h3 id="available-source-highlighters"><a class="anchor" href="#available-source-highlighters"></a>49.2. Available Source Highlighters</h3>
 <div class="paragraph">
 <p>The following table lists the recognized values for the <code>source-highlighter</code> attribute.</p>
 </div>
@@ -15914,7 +15920,7 @@ You can set this attribute in the document or from the CLI or API.</p>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://coderay.rubychan.de">CodeRay</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>coderay</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Asciidoctor, AsciidoctorJ</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Asciidoctor, AsciidoctorJ, Asciidoctor PDF</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://highlightjs.org">highlight.js</a></p></td>
@@ -15929,7 +15935,12 @@ You can set this attribute in the document or from the CLI or API.</p>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://pygments.org">Pygments</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>pygments</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Asciidoctor</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Asciidoctor, Asciidoctor PDF</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://rouge.jneen.net">Rouge</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>rouge</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Asciidoctor PDF</p></td>
 </tr>
 </tbody>
 </table>
@@ -15941,17 +15952,21 @@ You can set this attribute in the document or from the CLI or API.</p>
 </td>
 <td class="content">
 <div class="paragraph">
-<p>In order to use CodeRay or Pygments, you must have the appropriate library installed on your system.
-See the <a href="#coderay">CodeRay</a> or <a href="#pygments">Pygments</a> section to find installation instructions.</p>
+<p>To use CodeRay, Pygments, or Rouge, you must have the appropriate library installed on your system.
+See the <a href="#coderay">CodeRay</a> or <a href="#pygments">Pygments</a> section to find installation instructions.
+(We don&#8217;t yet have a section about Rouge).</p>
 </div>
 <div class="paragraph">
 <p>On the other hand, if you&#8217;re using a client-side syntax highlighting library like highlight.js or prettify, there&#8217;s no need to install additional libraries.
-The generated HTML will load the required source files from a CDN.</p>
+The generated HTML will load the required source files from a CDN (or custom URL or file path).</p>
 </div>
 </td>
 </tr>
 </table>
 </div>
+</div>
+<div class="sect2">
+<h3 id="applying-source-highlighting"><a class="anchor" href="#applying-source-highlighting"></a>49.3. Applying Source Highlighting</h3>
 <div class="paragraph">
 <p>To apply highlighting to source code, you must add the <code>source</code> block style to a listing block, literal block, or paragrah and also specify a source language.</p>
 </div>
@@ -16092,8 +16107,9 @@ However, if you do plan to modify the substitutions, we recommend using <a href=
 </tr>
 </table>
 </div>
+</div>
 <div class="sect2">
-<h3 id="pygments"><a class="anchor" href="#pygments"></a>49.1. Pygments</h3>
+<h3 id="pygments"><a class="anchor" href="#pygments"></a>49.4. Pygments</h3>
 <div class="paragraph">
 <p><a href="http://pygments.org">Pygments</a> is a popular syntax highlighter that supports a broad range of <a href="http://pygments.org/languages/">programming, template and markup languages</a>.</p>
 </div>
@@ -16224,7 +16240,7 @@ ORDERED_LIST_KEYWORDS = {
 </div>
 </div>
 <div class="sect3">
-<h4 id="listing-pygments-style-names"><a class="anchor" href="#listing-pygments-style-names"></a>49.1.1. Available Pygments style names</h4>
+<h4 id="listing-pygments-style-names"><a class="anchor" href="#listing-pygments-style-names"></a>49.4.1. Available Pygments style names</h4>
 <div class="paragraph">
 <p>To list the available Pygments styles, run the following command in a terminal:</p>
 </div>
@@ -16239,7 +16255,7 @@ This command ensures that you are invoking the <code>pygmentize</code> command f
 </div>
 </div>
 <div class="sect3">
-<h4 id="using-a-custom-pygments-installation"><a class="anchor" href="#using-a-custom-pygments-installation"></a>49.1.2. Using a custom Pygments installation</h4>
+<h4 id="using-a-custom-pygments-installation"><a class="anchor" href="#using-a-custom-pygments-installation"></a>49.4.2. Using a custom Pygments installation</h4>
 <div class="paragraph">
 <p>If you already have Pygments installed on your system, you want to use your own fork, or you want to customize how Pygments is configured, you can get Asciidoctor to use a custom version of Pygments instead of the one bundled with the pygments.rb gem.</p>
 </div>
@@ -16313,7 +16329,7 @@ require_relative <span class="string"><span class="delimiter">'</span><span clas
 </div>
 </div>
 <div class="sect2">
-<h3 id="coderay"><a class="anchor" href="#coderay"></a>49.2. CodeRay</h3>
+<h3 id="coderay"><a class="anchor" href="#coderay"></a>49.5. CodeRay</h3>
 <div class="paragraph">
 <p><a href="http://coderay.rubychan.de/">CodeRay</a> is an encoding-aware, syntax highlighter that supports the languages listed below.</p>
 </div>
@@ -16458,7 +16474,7 @@ ORDERED_LIST_KEYWORDS = {
 </div>
 </div>
 <div class="sect2">
-<h3 id="highlight-js"><a class="anchor" href="#highlight-js"></a>49.3. highlight.js</h3>
+<h3 id="highlight-js"><a class="anchor" href="#highlight-js"></a>49.6. highlight.js</h3>
 <div class="paragraph">
 <p><a href="https://highlightjs.org/">highlight.js</a> is a popular client-side syntax highlighter that supports a broad range of <a href="https://highlightjs.org/download/">languages</a>.</p>
 </div>
@@ -24954,7 +24970,7 @@ In source listings, is the callout the last thing on the line?</p></td>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2017-02-18 05:56:11 UTC
+Last updated 2017-02-18 06:20:09 UTC
 </div>
 </div>
 <script type="text/x-mathjax-config">
