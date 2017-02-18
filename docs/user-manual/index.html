@@ -9666,9 +9666,9 @@ The caption attribute only sets the caption&#8217;s label, not the whole caption
 <div class="sect2">
 <h3 id="data-formats"><a class="anchor" href="#data-formats"></a>26.9. CSV and DSV Data Formats</h3>
 <div class="paragraph">
-<p>Tables can be created from Comma Separated Values (CSV) and Delimiter Separated Values (DSV).
-To use these type of datasets, set the <code>format</code> attribute and assign it the <code>csv</code> or <code>dsv</code> value.
-Tables using these alternate data formats are structured and formatted exactly like <code>psv</code> tables, the data separators are just different.</p>
+<p>Tables can be created from data stored as Comma Separated Values (CSV) and Delimiter Separated Values (DSV).
+To use one of these dataset types, set the value of the <code>format</code> attribute on the table to <code>csv</code> or <code>dsv</code>, respectively.
+The main difference between tables with one of these formats and <code>psv</code> tables is how the data inside the table delimiters is arranged.</p>
 </div>
 <div class="paragraph">
 <p>When the format attribute is set to <code>csv</code>, the data separator is a comma (<code>,</code>), as seen in the table below.</p>
@@ -9752,10 +9752,10 @@ The Piano Guys:Code Name Vivaldi:Classical
 </table>
 <div class="paragraph">
 <p>Asciidoctor also provides shorthand notation for setting CSV and DSV table formats.
-The first position of the table block delimiter (i.e., <code>|===</code>) can be replaced by the data delimiter to set the table format.</p>
+The first position of the table block delimiter (i.e., <code>|===</code>) can be replaced by the data delimiter to set the table format (e.g., <code>,===</code>).</p>
 </div>
 <div class="paragraph">
-<p>Instead of specifying the CSV format using a block attribute, you can simply replace the leading pipe (<code>|</code>) with a comma (<code>,</code>):</p>
+<p>To set the format of the table to CSV using shorthand notation, simply replace the leading pipe (<code>|</code>) in the table delimiter with a command (<code>,</code>), as shown here:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -9823,8 +9823,8 @@ Robyn:Indestructable:Dance
 </tbody>
 </table>
 <div class="paragraph">
-<p>DSV and CSV datasets don&#8217;t support individual cell formatting.
-However, you can apply formatting, including the AsciiDoc style, to a column of cells using the column spec:</p>
+<p>DSV and CSV datasets don&#8217;t support formatting of individual cells.
+However, you can apply formatting, such as the AsciiDoc style, to a column of cells using a table-wide column spec:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -9836,10 +9836,11 @@ Forest,image::forest.jpg[]
 </div>
 </div>
 <div class="paragraph">
-<p>Keep in mind that CSV and DSV cell data does not preserve endlines, so it does limit what you can do with the AsciiDoc style.</p>
+<p>Keep in mind that endlines are not preserved in CSV and DSV data.
+That does somewhat limit the type of content you can put in these cells, particularly when using the AsciiDoc cell style.</p>
 </div>
 <div class="paragraph">
-<p>DSV and CSV datasets can be inserted into a table using the <a href="#include-directive">include directive</a>.</p>
+<p>DSV and CSV datasets can be, and often are, inserted into a table using the <a href="#include-directive">include directive</a>.</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -24948,7 +24949,7 @@ In source listings, is the callout the last thing on the line?</p></td>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2017-02-08 07:39:19 UTC
+Last updated 2017-02-18 05:13:37 UTC
 </div>
 </div>
 <script type="text/x-mathjax-config">
