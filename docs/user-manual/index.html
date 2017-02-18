@@ -16107,6 +16107,58 @@ However, if you do plan to modify the substitutions, we recommend using <a href=
 </tr>
 </table>
 </div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">Highlighting PHP source code</div>
+<div class="paragraph">
+<p>The PHP language has two modes.
+It can either be used as a standalone language (pure mode) or it can be mixed with HTML (mixed mode) by putting it inside PHP tags (a form that resembless an XML processing instruction).
+This presents some challenges for the syntax highlighter.</p>
+</div>
+<div class="paragraph">
+<p>If the code in the source block is pure PHP, you should use the language tag <code>php</code>.
+For example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="nowrap">[source,php]
+----
+echo "Hello, World!";
+----</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>If the PHP source is mixed with HTML, you should either use the language tag <code>html+php</code>, as shown here:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="nowrap">[source,html+php]
+----
+&lt;p&gt;
+&lt;?php echo "Hello, World!"; ?&gt;
+&lt;/p&gt;
+----</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>or you should use the language tag <code>php</code> and set the <code>mixed</code> option on the source block, as shown here:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="nowrap">[source%mixed,php]
+----
+&lt;p&gt;
+&lt;?php echo "Hello, World!"; ?&gt;
+&lt;/p&gt;
+----</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Under the covers, the syntax highlighter is configured to assume an implicit start PHP tag is present when the language tag is <code>php</code>.
+Both the <code>mixed</code> option and the language tag <code>html+php</code> disable this setting.</p>
+</div>
+</div>
+</div>
 </div>
 <div class="sect2">
 <h3 id="pygments"><a class="anchor" href="#pygments"></a>49.4. Pygments</h3>
@@ -24970,7 +25022,7 @@ In source listings, is the callout the last thing on the line?</p></td>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2017-02-18 06:20:38 UTC
+Last updated 2017-02-18 06:34:13 UTC
 </div>
 </div>
 <script type="text/x-mathjax-config">
