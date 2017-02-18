@@ -22687,45 +22687,53 @@ Use <a href="https://github.com/asciidoctor/asciidoctor.org/issues/465">Issue 46
 </div>
 <div class="dlist glossary">
 <dl>
-<dt>admonition paragraph</dt>
+<dt>admonition</dt>
 <dd>
-<p>a callout paragraph that has a label or icon indicating its priority</p>
-</dd>
-<dt>admonition block</dt>
-<dd>
-<p>a callout block containing complex content that has a label or icon indicating its priority</p>
+<p>a callout paragraph or block that has a label or icon indicating its priority.</p>
 </dd>
 <dt>backend</dt>
 <dd>
-<p>a moniker for the expected output format; used as a key to select which converter to use; often used interchangeably with the name of a converter (i.e., the "html5" backend")</p>
+<p>a moniker for the expected output format; used as a key to select which converter to use; often used interchangeably with the name of a converter (i.e., the "html5" backend").</p>
+</dd>
+<dt>block attribute</dt>
+<dd>
+<p>an attribute associated with a delimited block or paragraph; these attributes can affect processing of the block, and are available to block processors, but cannot be referenced using an attribute reference.</p>
 </dd>
 <dt>built-in attribute</dt>
 <dd>
-<p>an attribute recognized by Asciidoctor that controls processing, integrations, styling, and localization</p>
+<p>a document attribute that controls processing, integrations, styling, and localization.</p>
 </dd>
 <dt>cross reference</dt>
 <dd>
-<p>a link from one location in the document to another location marked by an anchor</p>
+<p>a link from one location in the document to another location marked by an anchor.</p>
+</dd>
+<dt>document attribute</dt>
+<dd>
+<p>an attribute associated with the document (node); in other words, an attribute in the global document attributes dictionary; the value of these attributes can be referenced using an attribute reference; if defined in the header, the document attribute is known as a header attribute.</p>
 </dd>
 <dt>environment attribute</dt>
 <dd>
-<p>a dynamic attribute that pertains to, or gives information about, the runtime environment</p>
+<p>a dynamic document attribute that pertains to, or gives information about, the runtime environment.</p>
 </dd>
 <dt>list continuation</dt>
 <dd>
-<p>a plus sign (<code>+</code>) on a line by itself that connects adjacent lines of text to a list item</p>
+<p>a plus sign (<code>+</code>) on a line by itself that connects adjacent lines of text to a list item.</p>
+</dd>
+<dt>macro attribute</dt>
+<dd>
+<p>an attribute associated with a block or inline macro; these attributes can affect processing of the macro, and are available to macro processors, but cannot be referenced using an attribute reference.</p>
 </dd>
 <dt>predefined attribute</dt>
 <dd>
-<p>a convenience attribute for content replacements</p>
+<p>a document attribute defined for convenience; often used for inserting special content characters.</p>
 </dd>
 <dt>quoted text</dt>
 <dd>
-<p>text which is enclosed in special punctuation to give it emphasis or special meaning</p>
+<p>text which is enclosed in special punctuation to give it emphasis or special meaning.</p>
 </dd>
 <dt>user-defined attribute</dt>
 <dd>
-<p>an attribute defined by the content author. Used for storing reusable content, and controlling conditional inclusion</p>
+<p>a document attribute defined by the content author; used for storing reusable content, and controlling conditional inclusion.</p>
 </dd>
 </dl>
 </div>
@@ -24942,7 +24950,7 @@ In source listings, is the callout the last thing on the line?</p></td>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2017-02-18 05:31:56 UTC
+Last updated 2017-02-18 05:53:30 UTC
 </div>
 </div>
 <script type="text/x-mathjax-config">
