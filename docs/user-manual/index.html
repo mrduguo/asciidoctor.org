@@ -15864,16 +15864,19 @@ icon:heart[fw] heart</pre>
 This technique is known as <em class="term">syntax highlighting</em> (or source highlighting).</p>
 </div>
 <div class="paragraph">
-<p>Since this technique is so prevelant (you could even say expected), Asciidoctor integrates a wealth of libraries you can choose from to syntax highlight the source code blocks in your document.
-This list includes CodeRay, Pygments, highlight.js and prettify.</p>
+<p>Since this technique is so prevelant&#8212;&#8203;you could even say expected, Asciidoctor integrates a wealth of libraries to choose from to syntax highlight source code blocks in your document.
+This list includes CodeRay, Pygments, highlight.js, and prettify.</p>
 </div>
 <div class="paragraph">
-<p>Syntax highlighting applies to listing or literal blocks marked with the <code>source</code> block style.
-However, keep in mind that syntax highlighting is <em>not</em> enabled by default.</p>
+<p>Syntax highlighting gets applied to listing or literal blocks that have the <code>source</code> block style and a language.
+However, syntax highlighting is <em>not</em> enabled by default.</p>
 </div>
 <div class="paragraph">
-<p>To enable syntax highlighting in a document, you need to set the <code>source-highlighter</code> attribute.
-If you set the attribute in the document, it <em>must</em> be defined in the <a href="#doc-header">document header</a>.</p>
+<p>To enable syntax highlighting in a document, you must set the <code>source-highlighter</code> attribute.
+You can set this attribute in the document or from the CLI or API.</p>
+</div>
+<div class="paragraph">
+<p>If you set the attribute in the document, it <em>must</em> be defined in the <a href="#doc-header">document header</a>.</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -15889,9 +15892,6 @@ If you set the attribute in the document, it <em>must</em> be defined in the <a 
 <pre class="nowrap">= Document Title
 :source-highlighter: coderay</pre>
 </div>
-</div>
-<div class="paragraph">
-<p>You can also set the <code>source-highlighter</code> attribute from the command line or API.</p>
 </div>
 <div class="paragraph">
 <p>The following table lists the recognized values for the <code>source-highlighter</code> attribute.</p>
@@ -15953,7 +15953,7 @@ The generated HTML will load the required source files from a CDN.</p>
 </table>
 </div>
 <div class="paragraph">
-<p>To apply highlighting to source code, you must assign the <code>source</code> block style to a listing block, literal block or paragrah and also specify a source language.</p>
+<p>To apply highlighting to source code, you must add the <code>source</code> block style to a listing block, literal block, or paragrah and also specify a source language.</p>
 </div>
 <div class="listingblock">
 <div class="title">Code block with title and syntax highlighting</div>
@@ -16086,7 +16086,8 @@ include::app.rb[]
 <i class="fa icon-tip" title="Tip"></i>
 </td>
 <td class="content">
-Syntax highlighting is not disabled if an explicit <code>subs</code> attribute is used on a source listing as long as <code>specialcharacters</code> is in the subs list.
+If you specify custom substitutions on the source block using the <code>subs</code> attribute, make sure to include the <code>specialcharacters</code> substitution if you want to preserve syntax highlighting.
+However, if you do plan to modify the substitutions, we recommend using <a href="#incremental-substitutions">incremental substitutions</a> instead.
 </td>
 </tr>
 </table>
@@ -24949,7 +24950,7 @@ In source listings, is the callout the last thing on the line?</p></td>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2017-02-18 05:17:46 UTC
+Last updated 2017-02-18 05:29:12 UTC
 </div>
 </div>
 <script type="text/x-mathjax-config">
