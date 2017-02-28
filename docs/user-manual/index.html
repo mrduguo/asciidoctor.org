@@ -18591,13 +18591,38 @@ From Journeyman to Master. Addison-Wesley. 1999.</p>
 <h2 id="user-index"><a class="anchor" href="#user-index"></a>64. Index</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>You specify index terms using one of the following syntaxes</p>
+<p>You can define index terms in AsciiDoc content.
+Index terms form a controlled vocabulary that can be used to navigate the document by keyword.</p>
+</div>
+<div class="paragraph">
+<p>There are two types of index terms in AsciiDoc:</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">flow index term</dt>
+<dd>
+<p><code>indexterm2:[&lt;primary&gt;]</code> or <code>((&lt;primary&gt;))</code></p>
+<div class="paragraph">
+<p>An index term that appears in both the text flow and the index.
+This type of index term can only be used to define a primary entry.</p>
+</div>
+</dd>
+<dt class="hdlist1">concealed index term</dt>
+<dd>
+<p><code>indexterm:[&lt;primary&gt;, &lt;secondary&gt;, &lt;tertiary&gt;]</code> or <code>(((&lt;primary&gt;, &lt;secondary&gt;, &lt;tertiary&gt;)))</code></p>
+<div class="paragraph">
+<p>A group of index terms that appear only in the index.
+This type of index term can be used to define a primary entry as well as optional secondary and tertiary entries.</p>
+</div>
+</dd>
+</dl>
+</div>
+<div class="paragraph">
+<p>Here&#8217;s an example that shows the two forms in use.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="nowrap">=== Sir Lancelot
-
-The Lady of the Lake, her arm clad in the purest shimmering samite,
+<pre class="nowrap">The Lady of the Lake, her arm clad in the purest shimmering samite,
 held aloft Excalibur from the bosom of the water,
 signifying by divine providence that I, ((Arthur)), <i class="conum" data-value="1"></i><b>(1)</b>
 was to carry Excalibur (((Sword, Broadsword, Excalibur))). <i class="conum" data-value="2"></i><b>(2)</b>
@@ -18606,7 +18631,7 @@ Burn her anyway! I'm not a witch.
 Look, my liege! We found them.
 
 indexterm2:[Lancelot] was one of the Knights of the Round Table. <i class="conum" data-value="3"></i><b>(3)</b>
-indexterm:[knight,Knight of the Round Table,Lancelot] <i class="conum" data-value="4"></i><b>(4)</b></pre>
+indexterm:[knight, Knight of the Round Table, Lancelot] <i class="conum" data-value="4"></i><b>(4)</b></pre>
 </div>
 </div>
 <div class="colist arabic">
@@ -18617,7 +18642,7 @@ indexterm:[knight,Knight of the Round Table,Lancelot] <i class="conum" data-valu
 </tr>
 <tr>
 <td><i class="conum" data-value="2"></i><b>2</b></td>
-<td>The triple parenthesis form allows for an optional second and third index term and <em>does not</em> include the terms in the generated output.</td>
+<td>The triple parenthesis form allows for an optional second and third index term and <em>does not</em> include the terms in the generated output (i.e., concealed index term).</td>
 </tr>
 <tr>
 <td><i class="conum" data-value="3"></i><b>3</b></td>
@@ -18629,6 +18654,25 @@ indexterm:[knight,Knight of the Round Table,Lancelot] <i class="conum" data-valu
 </tr>
 </table>
 </div>
+<div class="paragraph">
+<p>If you&#8217;re defining a concealed index term (i.e., the <code>indexterm</code> macro), and one of the terms contains a comma, you must surround that segment in double quotes so the comma is treated as content.
+For example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="nowrap">I, King Arthur.
+indexterm:[knight, "Arthur, King"]</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>or</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="nowrap">I, King Arthur.
+(((knight, "Arthur, King")))</pre>
+</div>
+</div>
 <div class="admonitionblock warning">
 <table>
 <tr>
@@ -18636,10 +18680,9 @@ indexterm:[knight,Knight of the Round Table,Lancelot] <i class="conum" data-valu
 <i class="fa icon-warning" title="Warning"></i>
 </td>
 <td class="content">
-Asciidoctor does not currently generate the index when using the built-in HTML5 or Asciidoctor PDF converter (a limitation that is shared with AsciiDoc Python).
-To generate an index in the interim, you have to produce HTML5 or PDF by way of DocBook using the DocBook toolchain (<code>a2x</code> or <code>fopub</code>).
-We&#8217;re tracking support for native index generation when using the built-in HTML5 converter in <a href="https://github.com/asciidoctor/asciidoctor/issues/450">issue #450</a>
-and for the Asciidoctor PDF converter in <a href="https://github.com/asciidoctor/asciidoctor-pdf/issues/386">issue #386</a>.
+Asciidoctor does not currently generate the index when using the built-in HTML5 converter (a limitation that was inherited by the design of AsciiDoc Python).
+To generate an index in the interim, you have to either write a custom extension or produce HTML5 by way of DocBook using the DocBook toolchain (<code>a2x</code> or <code>fopub</code>).
+We&#8217;re tracking support for native index generation when using the built-in HTML5 converter in <a href="https://github.com/asciidoctor/asciidoctor/issues/450">issue #450</a>.
 </td>
 </tr>
 </table>
@@ -25022,7 +25065,7 @@ In source listings, is the callout the last thing on the line?</p></td>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2017-02-28 07:02:03 UTC
+Last updated 2017-02-28 07:02:49 UTC
 </div>
 </div>
 <script type="text/x-mathjax-config">
