@@ -922,7 +922,7 @@ table.CodeRay td.code>pre{padding:0}
 </li>
 <li><a href="#language-support">80. Using Asciidoctor with Other Languages</a>
 <ul class="sectlevel2">
-<li><a href="#customizing-labels">80.1. Customizing built-in labels</a></li>
+<li><a href="#customizing-labels">80.1. Translating built-in labels</a></li>
 <li><a href="#translation">80.2. Translation</a></li>
 </ul>
 </li>
@@ -20848,10 +20848,10 @@ Then, just pass both the directory holding the original templates and the direct
 <h2 id="language-support"><a class="anchor" href="#language-support"></a>80. Using Asciidoctor with Other Languages</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Asciidoctor defaults to English for built-in labels, messages and syntax keywords.
-However, Asciidoctor is certainly not limited to working with English-only content.
+<p>The built-in labels, messages, and syntax keywords in Asciidoctor are English by default.
+However, Asciidoctor is not restricted to working with English-only content.
 Asciidoctor can process the full range of the UTF-8 character set.
-That means you can write your document in any language and expect Asciidoctor to convert the text properly.
+That means you can write your document in any language, save the file with UTF-8 encoding, and expect Asciidoctor to convert the text properly.
 Furthermore, you can customize the built-in labels (e.g., &#8220;Appendix&#8221;) to match the language in which you are writing.</p>
 </div>
 <div class="paragraph">
@@ -20872,14 +20872,15 @@ In the interim, you can leverage the DocBook toolchain to get right-to-left supp
 <p>Message (aka logging) strings are always in English.</p>
 </li>
 <li>
-<p>Asciidoctor does not support the language conf files used by AsciiDoc Python.</p>
+<p>Asciidoctor does not support the language conf files used by AsciiDoc Python.
+However, Asciidoctor does provide <a href="https://github.com/asciidoctor/asciidoctor/blob/master/data/locale/attributes.adoc">a translation file</a> that can be used for a similar purpose.</p>
 </li>
 </ul>
 </div>
 <div class="sect2">
-<h3 id="customizing-labels"><a class="anchor" href="#customizing-labels"></a>80.1. Customizing built-in labels</h3>
+<h3 id="customizing-labels"><a class="anchor" href="#customizing-labels"></a>80.1. Translating built-in labels</h3>
 <div class="paragraph">
-<p>If you&#8217;re creating DocBook output, you can rely on the DocBook toolchain to translate (most) built-in labels.
+<p>When converting to DocBook, you can rely on the DocBook toolchain to translate (most) built-in labels.
 To activate this feature, simply set the <code>lang</code> attribute to a valid country code (which defaults to <code>en</code> for English).
 For example:</p>
 </div>
@@ -20892,9 +20893,13 @@ For example:</p>
 <p>The list of supported languages, as well as additional language considerations for DocBook, are described in <a href="http://www.sagehill.net/docbookxsl/Localizations.html">DocBook XSL: The Complete Guide</a>.</p>
 </div>
 <div class="paragraph">
-<p>When creating HTML or PDF (via Asciidoctor PDF), you must translate each built-in label yourself by setting the following attributes in the document header or via the API or CLI:</p>
+<p>The <code>lang</code> attribute <em>does not</em> enable automatic translation of built-in labels when converting directly to HTML or PDF.
+It&#8217;s merely a hint to configure the DocBook toolchain.
+If you&#8217;re not using the DocBook toolchain for publishing, you must translate each built-in label yourself.
+One way is to set the following attributes in the document header or by passing the attributes via the API or CLI:</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 80%;">
+<caption class="title">Attributes that control built-in labels</caption>
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 50%;">
@@ -21010,8 +21015,46 @@ endif::[]</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>You can find a file in the Asciidoctor repository that provides translations of these attributes for many of the major languages.
-See <a href="https://github.com/asciidoctor/asciidoctor/blob/master/data/locale/attributes.adoc" class="bare">https://github.com/asciidoctor/asciidoctor/blob/master/data/locale/attributes.adoc</a>.</p>
+<p>Of course, you&#8217;re probably hoping this has already been done for you.
+Indeed, it has!</p>
+</div>
+<div class="paragraph">
+<p>You can find an <a href="https://github.com/asciidoctor/asciidoctor/blob/master/data/locale/attributes.adoc">AsciiDoc file</a> in the Asciidoctor repository that provides translations of these attributes for most major languages.
+The translations are defined using AsciiDoc attribute entries inside conditional preprocessor blocks, just as suggested above.</p>
+</div>
+<div class="paragraph">
+<p>To use this file to translate the built-in labels according the the value of the <code>lang</code> attribute (just like the DocBook toolchain does), follow these steps:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Download the AsciiDoc file <a href="https://raw.githubusercontent.com/asciidoctor/asciidoctor/master/data/locale/attributes.adoc">attributes.adoc</a> from the Asciidoctor repository.</p>
+</li>
+<li>
+<p>Put the file in the folder <em class="path">locale</em> relative to your document.</p>
+</li>
+<li>
+<p>Add the following line to the header of your AsciiDoc document:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight nowrap"><code data-lang="asciidoc">include::locale/attributes.adoc[]</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Set the language using the <code>lang</code> attribute.
+This attribute must be set before the include directive gets processed.
+For example:</p>
+<div class="literalblock">
+<div class="content">
+<pre class="nowrap">-a lang=es</pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>The built-in labels will now be translated automatically based on the value of the <code>lang</code> attribute.</p>
 </div>
 <div class="paragraph">
 <p>There&#8217;s an ongoing discussion about how to make language support even simpler (<a href="https://github.com/asciidoctor/asciidoctor/issues/1129">issue #1129</a>).
@@ -21021,8 +21064,8 @@ Input is welome.</p>
 <div class="sect2">
 <h3 id="translation"><a class="anchor" href="#translation"></a>80.2. Translation</h3>
 <div class="paragraph">
-<p>Asciidoctor (or DocBook) currently does not support translation out of the box.
-There&#8217;s a proposal to integrate gettext (<a href="http://discuss.asciidoctor.org/Professional-providers-translating-Asciidoc-tt2692.html#none">discussion</a>), but all suggestions are welcome.</p>
+<p>Asciidoctor (or DocBook) currently does not support translation of content out of the box.
+There&#8217;s a proposal to integrate gettext (<a href="http://discuss.asciidoctor.org/Professional-providers-translating-Asciidoc-tt2692.html#none">discussion</a>), but suggestions are welcome.</p>
 </div>
 </div>
 </div>
@@ -23252,7 +23295,7 @@ Useful if you want to store the output in a source code control system as it pre
 <td class="tableblock halign-left valign-top"><p class="tableblock">Appendix</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><em>any</em></p></td>
 <td class="tableblock halign-center valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#user-appendix">Appendix</a>, <a href="#customizing-labels">Customizing built-in labels</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#user-appendix">Appendix</a>, <a href="#customizing-labels">Translating built-in labels</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">caution-caption</p></td>
@@ -23260,7 +23303,7 @@ Useful if you want to store the output in a source code control system as it pre
 <td class="tableblock halign-left valign-top"><p class="tableblock">Caution</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><em>any</em></p></td>
 <td class="tableblock halign-center valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#admonition">Admonition</a>, <a href="#customizing-labels">Customizing built-in labels</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#admonition">Admonition</a>, <a href="#customizing-labels">Translating built-in labels</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">chapter-label</p></td>
@@ -23269,7 +23312,7 @@ Useful if you want to store the output in a source code control system as it pre
 <td class="tableblock halign-left valign-top"><p class="tableblock">Chapter</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><em>any</em></p></td>
 <td class="tableblock halign-center valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#book-parts">[book-parts]</a>, <a href="#sections">Sections</a>, <a href="#customizing-labels">Customizing built-in labels</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#book-parts">[book-parts]</a>, <a href="#sections">Sections</a>, <a href="#customizing-labels">Translating built-in labels</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">example-caption</p></td>
@@ -23277,7 +23320,7 @@ Useful if you want to store the output in a source code control system as it pre
 <td class="tableblock halign-left valign-top"><p class="tableblock">Example</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><em>any</em></p></td>
 <td class="tableblock halign-center valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#customizing-labels">Customizing built-in labels</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#customizing-labels">Translating built-in labels</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">figure-caption</p></td>
@@ -23285,7 +23328,7 @@ Useful if you want to store the output in a source code control system as it pre
 <td class="tableblock halign-left valign-top"><p class="tableblock">Figure</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><em>any</em></p></td>
 <td class="tableblock halign-center valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#images">Images</a>, <a href="#customizing-labels">Customizing built-in labels</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#images">Images</a>, <a href="#customizing-labels">Translating built-in labels</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">important-caption</p></td>
@@ -23293,7 +23336,7 @@ Useful if you want to store the output in a source code control system as it pre
 <td class="tableblock halign-left valign-top"><p class="tableblock">Important</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><em>any</em></p></td>
 <td class="tableblock halign-center valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#admonition">Admonition</a>, <a href="#customizing-labels">Customizing built-in labels</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#admonition">Admonition</a>, <a href="#customizing-labels">Translating built-in labels</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">lang</p></td>
@@ -23301,7 +23344,7 @@ Useful if you want to store the output in a source code control system as it pre
 <td class="tableblock halign-left valign-top"><p class="tableblock">en</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Valid XML country code</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock"><span class="icon green"><i class="fa fa-check"></i></span></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#customizing-labels">Customizing built-in labels</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#customizing-labels">Translating built-in labels</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">last-update-label</p></td>
@@ -23310,7 +23353,7 @@ Unsetting it will remove the label and time from the footer.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Last updated</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><em>any</em></p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock"><span class="icon green"><i class="fa fa-check"></i></span></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#footer-docinfo-files">Footer docinfo files</a>, <a href="#customizing-labels">Customizing built-in labels</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#footer-docinfo-files">Footer docinfo files</a>, <a href="#customizing-labels">Translating built-in labels</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">listing-caption</p></td>
@@ -23318,7 +23361,7 @@ Unsetting it will remove the label and time from the footer.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><em>not set</em></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><em>any</em></p></td>
 <td class="tableblock halign-center valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#customizing-labels">Customizing built-in labels</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#customizing-labels">Translating built-in labels</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">manname-title</p></td>
@@ -23326,7 +23369,7 @@ Unsetting it will remove the label and time from the footer.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">NAME</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><em>any</em></p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock"><span class="icon green"><i class="fa fa-check"></i></span></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#customizing-labels">Customizing built-in labels</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#customizing-labels">Translating built-in labels</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">nolang</p></td>
@@ -23342,7 +23385,7 @@ Unsetting it will remove the label and time from the footer.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Note</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><em>any</em></p></td>
 <td class="tableblock halign-center valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#admonition">Admonition</a>, <a href="#customizing-labels">Customizing built-in labels</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#admonition">Admonition</a>, <a href="#customizing-labels">Translating built-in labels</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">preface-title</p></td>
@@ -23359,7 +23402,7 @@ To turn off table caption labels and numbers, add the <code>table-caption</code>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Table</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><em>any</em></p></td>
 <td class="tableblock halign-center valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#customizing-labels">Customizing built-in labels</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#customizing-labels">Translating built-in labels</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">tip-caption</p></td>
@@ -23367,7 +23410,7 @@ To turn off table caption labels and numbers, add the <code>table-caption</code>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Tip</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><em>any</em></p></td>
 <td class="tableblock halign-center valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#admonition">Admonition</a>, <a href="#customizing-labels">Customizing built-in labels</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#admonition">Admonition</a>, <a href="#customizing-labels">Translating built-in labels</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">toc-title</p></td>
@@ -23375,7 +23418,7 @@ To turn off table caption labels and numbers, add the <code>table-caption</code>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Table of Contents</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><em>any</em></p></td>
 <td class="tableblock halign-center valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#user-toc">Table of Contents</a>, <a href="#customizing-labels">Customizing built-in labels</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#user-toc">Table of Contents</a>, <a href="#customizing-labels">Translating built-in labels</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">untitled-label</p></td>
@@ -23383,7 +23426,7 @@ To turn off table caption labels and numbers, add the <code>table-caption</code>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Untitled</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><em>any</em></p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock"><span class="icon green"><i class="fa fa-check"></i></span></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#customizing-labels">Customizing built-in labels</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#customizing-labels">Translating built-in labels</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">version-label</p></td>
@@ -23391,7 +23434,7 @@ To turn off table caption labels and numbers, add the <code>table-caption</code>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Version</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><em>any</em></p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock"><span class="icon green"><i class="fa fa-check"></i></span></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#revision-number-date-and-remark">Revision Number, Date and Remark</a>, <a href="#customizing-labels">Customizing built-in labels</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#revision-number-date-and-remark">Revision Number, Date and Remark</a>, <a href="#customizing-labels">Translating built-in labels</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">warning-caption</p></td>
@@ -23399,7 +23442,7 @@ To turn off table caption labels and numbers, add the <code>table-caption</code>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Warning</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><em>any</em></p></td>
 <td class="tableblock halign-center valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#customizing-labels">Customizing built-in labels</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#customizing-labels">Translating built-in labels</a></p></td>
 </tr>
 <tr>
 <th class="tableblock halign-left valign-top" colspan="6"><p class="tableblock">Header and metadata</p></th>
@@ -25114,7 +25157,7 @@ In source listings, is the callout the last thing on the line?</p></td>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2017-03-02 21:23:44 UTC
+Last updated 2017-03-04 02:38:42 UTC
 </div>
 </div>
 <script type="text/x-mathjax-config">
