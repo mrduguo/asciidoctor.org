@@ -576,6 +576,7 @@ table.CodeRay td.code>pre{padding:0}
 <li><a href="#unconstrained-quotes">12.2. Unconstrained quotes</a></li>
 <li><a href="#when-should-i-use-unconstrained-quotes">12.3. When should I use unconstrained quotes?</a></li>
 <li><a href="#unconstrained-formatting-edge-cases">12.4. Unconstrained formatting edge cases</a></li>
+<li><a href="#escaping-unconstrained-quotes">12.5. Escaping unconstrained quotes</a></li>
 </ul>
 </li>
 <li><a href="#attributes">13. Attributes</a>
@@ -2512,6 +2513,92 @@ For details, follow <a href="https://github.com/asciidoctor/asciidoctor/issues/6
 </td>
 </tr>
 </table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="escaping-unconstrained-quotes"><a class="anchor" href="#escaping-unconstrained-quotes"></a>12.5. Escaping unconstrained quotes</h3>
+<div class="paragraph">
+<p>Since unconstrained quotes are meant to match anywhere, context-free, they sometimes get caught up in formatting where it isn&#8217;t expected.
+Indeed, these symbols are a bit tricky to type literally when the content calls for it.
+But being able to do it is just a matter of knowing the tricks, which this section will cover.</p>
+</div>
+<div class="paragraph">
+<p>Let&#8217;s assume you are trying to type the following:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="nowrap">#`CB###2`#</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>You might expect this to be converted to <code>CB###2</code> formatted in monospace and highlighted (aka marked text).
+However, what you get is a scrambled mess.</p>
+</div>
+<div class="paragraph">
+<p>There are two (stable) solutions for escaping an unconstrained formatting mark:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Use an attribute reference to insert the unconstrained formatting marks</p>
+</li>
+<li>
+<p>Wrap the text in an inline passthrough</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The attribute reference is preferred because it&#8217;s the easiest to read:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="nowrap">:3H: ###
+
+#`CB{3H}2`#</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This works because text formatting is performed before attribute expansion under normal substitution order.
+By default, monospaced text allows attribute references to be substituted.</p>
+</div>
+<div class="paragraph">
+<p>Here&#8217;s how you&#8217;d write it using the inline passthrough instead:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="nowrap">#`+CB###2+`#</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Notice the addition of the plus symbols.
+The enclosure <code>`+TEXT+`</code> (text surrounded by pluses surrounded by backticks) is a special formatting combination in Asciidoctor.
+It means to format TEXT as monospace, but don&#8217;t interpolate formatting marks or attribute references in TEXT.
+It&#8217;s roughly equivalent to Markdown&#8217;s backticks.
+Since AsciiDoc offers more advanced formatting, the double enclosure is necessary.</p>
+</div>
+<div class="paragraph">
+<p>The more brute-force solution to the inline passthrough approach is to use the <code>pass:[]</code> macro.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="nowrap">#`pass:[CB###2]`#</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>As you can see, however, it&#8217;s not quite as elegant.
+You also have to be careful with the <code>pass:[]</code> macro as it doesn&#8217;t apply the special characters substitution by default, which is necessary when converting to HTML.</p>
+</div>
+<div class="paragraph">
+<p>Thus, to be safe, you need to add that substitution explicitly using <code>pass:c[]</code>:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="nowrap">#`pass:c[CB###2]`#</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Backslashes for escaping aren&#8217;t very reliable in AsciiDoc.
+While they can be used, they have to be placed so strategically that they are rather finicky.</p>
 </div>
 </div>
 </div>
@@ -25157,7 +25244,7 @@ In source listings, is the callout the last thing on the line?</p></td>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2017-03-04 02:38:42 UTC
+Last updated 2017-03-04 07:06:57 UTC
 </div>
 </div>
 <script type="text/x-mathjax-config">
