@@ -2518,32 +2518,38 @@ For details, follow <a href="https://github.com/asciidoctor/asciidoctor/issues/6
 <div class="sect2">
 <h3 id="escaping-unconstrained-quotes"><a class="anchor" href="#escaping-unconstrained-quotes"></a>12.5. Escaping unconstrained quotes</h3>
 <div class="paragraph">
-<p>Since unconstrained quotes are meant to match anywhere, context-free, they sometimes get caught up in formatting where it isn&#8217;t expected.
-Indeed, these symbols are a bit tricky to type literally when the content calls for it.
-But being able to do it is just a matter of knowing the tricks, which this section will cover.</p>
+<p>Unconstrained quotes are meant to match anywhere in the text, context free.
+However, that means you catch them formatting when you don&#8217;t intend them to.
+Admittedly, these symbols are a bit tricky to type literally when the content calls for it.
+But being able to do so is just a matter of knowing the tricks, which this section will cover.</p>
 </div>
 <div class="paragraph">
-<p>Let&#8217;s assume you are trying to type the following:</p>
+<p>Let&#8217;s assume you are typing the following two lines:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="nowrap">#`CB###2`#</pre>
+<pre class="nowrap">The __kernel qualifier can be used with the __attribute__ keyword...
+
+#`CB###2`# and #`CB###3`#</pre>
 </div>
 </div>
 <div class="paragraph">
-<p>You might expect this to be converted to <code>CB###2</code> formatted in monospace and highlighted (aka marked text).
-However, what you get is a scrambled mess.</p>
+<p>In the first sentence, you aren&#8217;t looking for any text formatting, but you&#8217;re certainly going to get it.
+Double underscore is an unconstrained formatting mark.
+In the second sentence, you might expect <code>CB###2</code> and <code>CB###3</code> to be formatted in monospace and highlighted.
+However, what you get is a scrambled mess.
+The mix of constrained and unconstrained formatting marks in the line is ambiguous.</p>
 </div>
 <div class="paragraph">
-<p>There are two (stable) solutions for escaping an unconstrained formatting mark:</p>
+<p>There are two (reliable) solutions for escaping unconstrained formatting marks:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Use an attribute reference to insert the unconstrained formatting marks</p>
+<p>Use an attribute reference to insert the unconstrained formatting mark verbatim</p>
 </li>
 <li>
-<p>Wrap the text in an inline passthrough</p>
+<p>Wrap the text you don&#8217;t want formatted in an inline passthrough</p>
 </li>
 </ul>
 </div>
@@ -2552,49 +2558,54 @@ However, what you get is a scrambled mess.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="nowrap">:3H: ###
+<pre class="nowrap">:__: __
+:3H: ###
 
-#`CB{3H}2`#</pre>
+The {__}kernel qualifier can be used with the {__}attribute{__} keyword...
+
+#`CB{3H}2`# and #`CB{3H}3`#</pre>
 </div>
 </div>
 <div class="paragraph">
-<p>This works because text formatting is performed before attribute expansion under normal substitution order.
-By default, monospaced text allows attribute references to be substituted.</p>
+<p>This works because attribute expansion is performed <em>after</em> text formatting (i.e., quotes substitution) under normal substitution order.
+(Recall that backticks around text format the text in monospace but permit the use of attribute references).</p>
 </div>
 <div class="paragraph">
-<p>Here&#8217;s how you&#8217;d write it using the inline passthrough instead:</p>
+<p>Here&#8217;s how you&#8217;d write these lines using the inline passthrough to escape the unconstrained formatting marks instead:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="nowrap">#`+CB###2+`#</pre>
+<pre class="nowrap">The +__kernel+ qualifier can be used with the +__attribute__+ keyword...
+
+#`+CB###2+`# and #`+CB###3+`#</pre>
 </div>
 </div>
 <div class="paragraph">
 <p>Notice the addition of the plus symbols.
-The enclosure <code>`+TEXT+`</code> (text surrounded by pluses surrounded by backticks) is a special formatting combination in Asciidoctor.
+That&#8217;s the closest thing to a text formatting escape.
+Everything between the plus symbols is escaped from interpolation (attribute references, text formatting, etc).
+However, the text still receives proper output escaping for HTML (e.g., <code>&lt;</code> becomes <code>&amp;lt;</code>).</p>
+</div>
+<div class="paragraph">
+<p>The enclosure <code>`+TEXT+`</code> (text enclosed in pluses surrounded by backticks) is a special formatting combination in Asciidoctor.
 It means to format TEXT as monospace, but don&#8217;t interpolate formatting marks or attribute references in TEXT.
 It&#8217;s roughly equivalent to Markdown&#8217;s backticks.
 Since AsciiDoc offers more advanced formatting, the double enclosure is necessary.</p>
 </div>
 <div class="paragraph">
-<p>The more brute-force solution to the inline passthrough approach is to use the <code>pass:[]</code> macro.</p>
+<p>The more brute-force solution to the inline passthrough approach is to use the <code>pass:c[]</code> macro, which is a more verbose (and flexible) version of the plus formatting marks.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="nowrap">#`pass:[CB###2]`#</pre>
+<pre class="nowrap">The pass:c[__kernel] qualifier can be used with the pass:c[__attribute__] keyword...
+
+#`pass:c[CB###2]`# and #`pass:c[CB###3]`#</pre>
 </div>
 </div>
 <div class="paragraph">
-<p>As you can see, however, it&#8217;s not quite as elegant.
-You also have to be careful with the <code>pass:[]</code> macro as it doesn&#8217;t apply the special characters substitution by default, which is necessary when converting to HTML.</p>
-</div>
-<div class="paragraph">
-<p>Thus, to be safe, you need to add that substitution explicitly using <code>pass:c[]</code>:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="nowrap">#`pass:c[CB###2]`#</pre>
-</div>
+<p>As you can see, however, the macro is not quite as elegant or concise.
+In case you&#8217;re wondering, the c in the target slot of the <code>pass:[]</code> macro applies output escaping for HTML.
+Though not always required, it&#8217;s best to include this flag so you don&#8217;t forget to when it is needed.</p>
 </div>
 <div class="paragraph">
 <p>Backslashes for escaping aren&#8217;t very reliable in AsciiDoc.
@@ -25244,7 +25255,7 @@ In source listings, is the callout the last thing on the line?</p></td>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2017-03-04 07:06:57 UTC
+Last updated 2017-03-04 07:57:20 UTC
 </div>
 </div>
 <script type="text/x-mathjax-config">
