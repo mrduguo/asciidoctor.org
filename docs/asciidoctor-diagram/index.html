@@ -587,6 +587,48 @@ Occurrences of <code>\\</code> surrounded by whitespace are interpreted as line 
 </li>
 </ol>
 </div>
+<div class="literalblock">
+<div class="content">
+<pre class="nowrap">cloud "Internet" &lt;&lt;public&gt;&gt; as PUBLIC{
+    rectangle "Public Client" &lt;&lt;public&gt;&gt; as CLIENT
+    node "White Listed IPs" as WHITELIST {
+        rectangle "Home" &lt;&lt;secure&gt;&gt; as HOME
+        rectangle "Office" &lt;&lt;secure&gt;&gt; as OFFICE
+    }
+}
+interface "HTTPS" as HTTPS
+interface "SSH/HTTPS" as SECURE
+cloud "Production" &lt;&lt;private&gt;&gt; as PROD{
+ rectangle "Load Balancer" &lt;&lt;public&gt;&gt; as LB
+ component "jump.aylien.com" &lt;&lt;secure&gt;&gt; as JUMP
+}
+cloud "Development" &lt;&lt;private&gt;&gt; as DEV{
+ rectangle "Load Balancer" &lt;&lt;public&gt;&gt; as STAGINGLB
+ component "staging-jump.aylien.net" &lt;&lt;secure&gt;&gt; as STAGINGJUMP
+}
+
+OFFICE --&gt; SECURE
+HOME --&gt; SECURE
+
+SECURE --&gt; JUMP
+SECURE --&gt; STAGINGJUMP
+CLIENT --&gt; HTTPS
+HTTPS --&gt; LB
+HTTPS --&gt; STAGINGLB
+
+
+skinparam frame {
+  BackgroundColor&lt;&lt;internal&gt;&gt; Gray
+}
+
+skinparam component {
+  BackgroundColor&lt;&lt;secure&gt;&gt; Orange
+}
+skinparam rectangle {
+  BackgroundColor&lt;&lt;secure&gt;&gt; Orange
+}</pre>
+</div>
+</div>
 </div>
 </div>
 </div></div></div></div></div><footer><div class="row full-width"><div class="large-6 columns"><div class="row" style="margin-bottom: 1em"><div class="large-5 columns"><p><i class="fa fa-fw fa-download"></i> Download: <a class="rubygem" href="https://rubygems.org/gems/asciidoctor"><img src="https://img.shields.io/gem/v/asciidoctor.svg" alt="Asciidoctor gem version" style="margin-top: -2px"></a><br><i class="fa fa-fw fa-github"></i> Development: <a href="https://github.com/asciidoctor">GitHub</a><br><i class="fa fa-fw fa-group"></i> Discussions: <a href="http://discuss.asciidoctor.org">Nabble</a></p></div><div class="large-7 columns"><p><i class="fa fa-fw fa-comments"></i> Chat: <a href="https://gitter.im/asciidoctor/asciidoctor">Gitter</a><br><i class="fa fa-fw fa-twitter"></i> Twitter: <a class="twitter" href="https://twitter.com/asciidoctor">@asciidoctor</a><br><i class="fa fa-fw fa-google-plus-sign"></i> Google+: <a href="https://plus.google.com/116431294697916948181" rel="publisher">Asciidoctor</a></p></div></div></div><div class="large-6 large-text-right columns"><p style="margin-bottom: 1em">Thanks to our <a href="/supporters/">supporters</a> and <a href="/contributors/">contributors</a>!</p><p>Composed in AsciiDoc. Styled by Foundation. Baked with Awestruct.<br>&copy; Asciidoctor Project 2019. Content licensed under CC BY 3.0.</p></div></div></footer><script>document.write('<script src=' + ('__proto__' in {} ? '/asciidoctor.org/javascripts/vendor/zepto' : '/asciidoctor.org/javascripts/vendor/jquery') + '.js><\/script>')</script><script>$('.toggle-navigation').click(function() { $('.navigation').toggle(); $('.content').toggleClass('large-8'); $('.content').toggleClass('large-12'); $('.toolbar').toggleClass('off'); });</script><script src="/asciidoctor.org/javascripts/foundation/foundation.js"></script><script src="/javascripts/foundation/foundation.topbar.js"></script><script>$(document).foundation();</script><script>!function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m);}(window,document,'script','//www.google-analytics.com/analytics.js','ga'),ga('create','UA-38215684-1','auto'),ga('send','pageview');</script></body></html>
