@@ -4,8 +4,8 @@ doctype 5
 head
   meta charset='utf-8'
   meta name='viewport' content='width=device-width, initial-scale=1.0'
-  link rel='stylesheet' href='/stylesheets/styles.css'
-  script src='/javascripts/vendor/custom.modernizr.js'
+  link rel='stylesheet' href='/asciidoctor.org/stylesheets/styles.css'
+  script src='/asciidoctor.org/javascripts/vendor/custom.modernizr.js'
   title=((page.title && page.title != site.title ? [page.title, site.title] : [site.title, site.description]) * ' | ').gsub(/<(\/?[^>]+)>/) { $~[1].start_with?('/') ? ')' : '(' }
   - if page.url.start_with? '/news/'
     link href='/feed.atom' rel="alternate" title='AsciiDoctor.org News Feed' type='application/atom+xml'
@@ -31,9 +31,9 @@ body.antialiased
       li.toggle-topbar.menu-icon: a href='#': span
     section.top-bar-section
       ul.right
-        li: a href='/' About
+        li: a href='/asciidoctor.org/' About
         li.divider
-        li: a href='/news/' News
+        li: a href='/asciidoctor.org/news/' News
         li.divider
         li: a href='http://gist.asciidoctor.org' Gist
         li.divider
@@ -41,9 +41,9 @@ body.antialiased
         li.divider
         li: a href='http://discuss.asciidoctor.org' Discuss
         li.divider
-        li: a href='/docs/' Docs
+        li: a href='/asciidoctor.org/docs/' Docs
         li.divider
-        li.has-form: a.button href='/docs/asciidoc-writers-guide/' Get Writing!
+        li.has-form: a.button href='/asciidoctor.org/docs/asciidoc-writers-guide/' Get Writing!
   .container
     =content
   footer
@@ -87,10 +87,10 @@ body.antialiased
           |&copy; #{site.author} #{Date.today.year}. Content licensed under CC BY 3.0.
 
   script
-    |document.write('<script src=' + ('__proto__' in {} ? '/javascripts/vendor/zepto' : '/javascripts/vendor/jquery') + '.js><\/script>')
+    |document.write('<script src=' + ('__proto__' in {} ? '/asciidoctor.org/javascripts/vendor/zepto' : '/asciidoctor.org/javascripts/vendor/jquery') + '.js><\/script>')
   script
     |$('.toggle-navigation').click(function() { $('.navigation').toggle(); $('.content').toggleClass('large-8'); $('.content').toggleClass('large-12'); $('.toolbar').toggleClass('off'); });
-  script src='/javascripts/foundation/foundation.js'
+  script src='/asciidoctor.org/javascripts/foundation/foundation.js'
   - [:topbar].each do |component|
     script src="/javascripts/foundation/foundation.#{component}.js"
   script
@@ -126,7 +126,7 @@ body.antialiased
     script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.6.0/MathJax.js?config=TeX-MML-AM_HTMLorMML"
   / custom built highlight.js from https://github.com/isagalaev/highlight.js using:
   / python3 tools/build.py xml javascript java ruby asciidoc
-  /script src='/javascripts/vendor/highlight.min.js'
+  /script src='/asciidoctor.org/javascripts/vendor/highlight.min.js'
   /script
   /  |$(hljs.initHighlighting);
   - if site.google_analytics
