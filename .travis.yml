@@ -8,7 +8,7 @@ env:
   global:
     # created using `travis encrypt -r asciidoctor/asciidoctor.org`
     # GIT_N=<git name> GIT_E=<git email> GH_U=<github username> GH_T=<github oauth token>
-    - secure: NQpd6Bebz/A4a3WytjT4+LMjbSwxozsTYsIl9B+1sM8csHJCJSCl84wx8/ro03fumQfPtxFNqJXJ+d3x3m/qKwNT2/O/ym3ZmF2eouUA6JLt+15HZVwtzRu58+x2zCDv+eIjdNdyaP+oATJMrJfqpY+ngawfsnD+NLZnGv0qM/Q=
+    - secure: EAGvLrp9KSNs5opzAxWDowc2xcw4fiJr97E+hg/rU7jiJNjdS7TBVjq0SQ3lRkIm2fvd3FNkPlhkZp/X06crUxpVWboxLFWuAa+7TCsNjAvqU+KuhsqA5AlmBSZIjCTQWahAD0eNT5npeL4ltetD9RSI3FAEMAgnVY0E0nlNOU3beXM0NxK4jp0Xrt1taTRPdasooiONXeCiQnWLD5n3wqo/xkZD6Ua1NAjt39RvpMRk3sM0VpqG5SR/wmdo4BD1YETRyCbmko9FbgH+WtIQGi+cLS1l9EodI6R4ZEllfUrNQ0/vG3sCTDwKArsajlf7zp3mcBOUluYGGFkWNsobnue9EFXCzuE86Ea4C2O8KcTPOKvIzHF7kdKNOPNzBt9IiumwpvUrzF8SErHmtclTla/Ylwi2z80zJ4FqeVLCuv98H7vAdSz6QyztuXYWfS8ZBDKeyIkeyroWRK4SiScbskHJVDIQo6YHdKu5jCUMVKbAJqEdMxQccnqmgRHFjSGS6ocgTuqBP9snQ1FxYwpn2WKQftYXq4VGMTNlQ0s/AOMwfH7Mi9tdcDM2fsUCM3K9k3iu2z13JDv8TM4VgiIENq9HmazmRHhUHIUKurP4WG5nQrAB9b8c4vrkxtEcpv6x9U45GBHkpxZ4VnAsjMOe/l2rL2QZJ2B8lhEIPmuw2hM=
     # speeds up Nokogiri installation
     - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
 git:
