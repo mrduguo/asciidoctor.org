@@ -6,3 +6,57 @@
 :page-layout: docs
 :keywords: Asciidoctor Diagram, AsciiDoc, Asciidoctor, diagrams, PlantUML, Graphviz, ditaa, UML, sequence diagram, use case diagram, class diagram, activity diagram, component diagram, state diagram, object diagram, ASCII art, SVG
 include::https://cdn.rawgit.com/asciidoctor/asciidoctor-diagram/{gitref}/README.adoc[]
+
+
+
+
+
+
+
+
+
+
+[plantuml, env-topology, png]
+....
+
+cloud "Internet" <<public>> as PUBLIC{
+    rectangle "Public Client" <<public>> as CLIENT
+    node "White Listed IPs" as WHITELIST {
+        rectangle "Home" <<secure>> as HOME
+        rectangle "Office" <<secure>> as OFFICE
+    }
+}
+interface "HTTPS" as HTTPS
+interface "SSH/HTTPS" as SECURE
+cloud "Production" <<private>> as PROD{
+ rectangle "Load Balancer" <<public>> as LB
+ component "jump.aylien.com" <<secure>> as JUMP
+}
+cloud "Development" <<private>> as DEV{
+ rectangle "Load Balancer" <<public>> as STAGINGLB
+ component "staging-jump.aylien.net" <<secure>> as STAGINGJUMP
+}
+
+OFFICE --> SECURE
+HOME --> SECURE
+
+SECURE --> JUMP
+SECURE --> STAGINGJUMP
+CLIENT --> HTTPS
+HTTPS --> LB
+HTTPS --> STAGINGLB
+
+
+skinparam frame {
+  BackgroundColor<<internal>> Gray
+}
+
+skinparam component {
+  BackgroundColor<<secure>> Orange
+}
+skinparam rectangle {
+  BackgroundColor<<secure>> Orange
+}
+
+....
+
