@@ -2,6 +2,8 @@
 # docker build -t asciidoctor/asciidoctor-site .
 # To run image:
 # docker run -it --rm --net=host -p 4242:4242 asciidoctor/asciidoctor-site
+# docker exec -it ecstatic_khorana bash
+# curl -v localhost:4242/docs/asciidoctor-diagram/
 FROM fedora:24
 MAINTAINER Asciidoctor
 
@@ -25,11 +27,11 @@ RUN dnf clean all
 RUN echo -e "To launch site, use the following command:\n\n $ bundle exec rake preview" > /etc/motd
 RUN echo "[ -v PS1 -a -r /etc/motd ] && cat /etc/motd" > /etc/profile.d/motd.sh
 
-RUN groupadd -r writer && useradd  -g writer -u 1000 writer
+#RUN groupadd -r writer && useradd  -g writer -u 1000 writer
 RUN mkdir -p /home/writer
-RUN chown writer:writer /home/writer
+#RUN chown writer:writer /home/writer
 
-USER writer
+#USER writer
 
 ENV HOME /home/writer
 ENV PROJECT_GIT_REPO https://github.com/mrduguo/asciidoctor.org
