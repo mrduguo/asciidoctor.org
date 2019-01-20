@@ -2,8 +2,8 @@ sudo: false
 language: ruby
 rvm:
 - 2.3.1
-cache:
-  bundler: true
+#cache:
+#  bundler: true
 env:
   global:
     # created using `travis encrypt -r asciidoctor/asciidoctor.org`
