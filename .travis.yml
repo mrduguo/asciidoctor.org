@@ -17,5 +17,5 @@ branches:
   only:
     - master
 install:
-  - sudo apt-get install -qq graphviz
+  - sudo apt-get install -qq graphviz openjdk-8-jdk
 script: bundle exec rake travis

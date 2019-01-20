@@ -15,6 +15,7 @@ RUN dnf -y install \
   libffi-devel \
   libxml2-devel \
   libxslt-devel \
+  java-1.8.0-openjdk \
   patch redhat-rpm-config \
   ruby-devel \
   rubygem-bundler
@@ -31,7 +32,7 @@ RUN chown writer:writer /home/writer
 USER writer
 
 ENV HOME /home/writer
-ENV PROJECT_GIT_REPO https://github.com/asciidoctor/asciidoctor.org
+ENV PROJECT_GIT_REPO https://github.com/mrduguo/asciidoctor.org
 ENV PROJECT_DIR $HOME/asciidoctor.org
 
 ENV LANG en_US.UTF-8
