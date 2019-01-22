@@ -46,6 +46,7 @@ profiles:
       :attributes:
         imagesoutdir: '/home/travis/build/mrduguo/asciidoctor.org/_site/images'
         outdir: '/home/travis/build/mrduguo/asciidoctor.org/_tmp'
+        imagesdir: '/asciidoctor.org/images'
     disqus_developer: false
     # long-hand form for Asciidoctor
     google_analytics_account: UA-38215684-1
