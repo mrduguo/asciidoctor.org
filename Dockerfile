@@ -1,9 +1,9 @@
 # To build image:
-# docker build -t asciidoctor/asciidoctor-site .
+# docker build -t asciidoctor-builder:latest -f Dockerfile .
 # To run image:
-# docker run -it --rm --net=host -p 4242:4242 asciidoctor/asciidoctor-site
-# docker exec -it ecstatic_khorana bash
+# docker run -it --name asciidoctor-builder --rm -v $(pwd):/workspace -p 4242:4242 asciidoctor-builder:latest
 # curl -v localhost:4242/docs/asciidoctor-diagram/
+
 FROM fedora:24
 MAINTAINER Asciidoctor
 
@@ -17,6 +17,8 @@ RUN dnf -y install \
   libffi-devel \
   libxml2-devel \
   libxslt-devel \
+  net-tools \
+  graphviz \
   java-1.8.0-openjdk \
   patch redhat-rpm-config \
   ruby-devel \
@@ -24,28 +26,21 @@ RUN dnf -y install \
 RUN dnf -y groupinstall "C Development Tools and Libraries"
 RUN dnf clean all
 
-RUN echo -e "To launch site, use the following command:\n\n $ bundle exec rake preview" > /etc/motd
-RUN echo "[ -v PS1 -a -r /etc/motd ] && cat /etc/motd" > /etc/profile.d/motd.sh
+RUN echo -e "To launch site, use the following command:\n\n $ bundle exec rake preview\n $ bundle exec rake gen" > /etc/motd && \
+  echo "[ -v PS1 -a -r /etc/motd ] && cat /etc/motd" > /etc/profile.d/motd.sh
 
-#RUN groupadd -r writer && useradd  -g writer -u 1000 writer
-RUN mkdir -p /home/writer
-#RUN chown writer:writer /home/writer
 
-#USER writer
 
-ENV HOME /home/writer
-ENV PROJECT_GIT_REPO https://github.com/mrduguo/asciidoctor.org
-ENV PROJECT_DIR $HOME/asciidoctor.org
 
 ENV LANG en_US.UTF-8
 
-WORKDIR $HOME
+WORKDIR
 
-RUN git clone --single-branch --depth 1 $PROJECT_GIT_REPO $PROJECT_DIR
-WORKDIR $PROJECT_DIR
+RUN git clone --single-branch --depth 1 https://github.com/mrduguo/asciidoctor.org /workspace
+WORKDIR /workspace
+
 RUN bundle config --local build.nokogiri --use-system-libraries
-RUN bundle --path=.bundle/gems
-RUN rm -rf .bundle/gems/ruby/*/cache
+RUN bundle
 
 EXPOSE 4242
 

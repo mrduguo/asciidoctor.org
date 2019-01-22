@@ -1,5 +1,5 @@
 require 'asciidoctor'
-# require 'asciidoctor-diagram'
+require 'asciidoctor-diagram'
 require 'asciidoctor/extensions'
 require 'awestruct/handlers/template/asciidoc'
 

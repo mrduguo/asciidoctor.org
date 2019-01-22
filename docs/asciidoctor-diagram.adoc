@@ -1,5 +1,5 @@
 // NOTE include file is not resolved when reading the header only, hence the extra attributes
-:doctitle: Asciidoctor Diagram
+:doctitle: Asciidoctor Diagramx
 :uri-project-repo: https://github.com/asciidoctor/asciidoctor-diagram
 :revnumber: 1.5.0
 :gitref: v{revnumber}
@@ -16,47 +16,19 @@ include::https://cdn.rawgit.com/asciidoctor/asciidoctor-diagram/{gitref}/README.
 
 
 
-[plantuml, env-topology, png]
+[plantuml, plantuml-diagram, png]
 ....
 
-cloud "Internet" <<public>> as PUBLIC{
-    rectangle "Public Client" <<public>> as CLIENT
-    node "White Listed IPs" as WHITELIST {
-        rectangle "Home" <<secure>> as HOME
-        rectangle "Office" <<secure>> as OFFICE
-    }
-}
-interface "HTTPS" as HTTPS
-interface "SSH/HTTPS" as SECURE
-cloud "Production" <<private>> as PROD{
- rectangle "Load Balancer" <<public>> as LB
- component "jump.aylien.com" <<secure>> as JUMP
-}
-cloud "Development" <<private>> as DEV{
- rectangle "Load Balancer" <<public>> as STAGINGLB
- component "staging-jump.aylien.net" <<secure>> as STAGINGJUMP
-}
+node node1
+node node2
+node node3
+node node4
+node node5
+node1 -- node2 : label1
+node1 .. node3 : label2
+node1 ~~ node4 : label3
+node1 == node5
 
-OFFICE --> SECURE
-HOME --> SECURE
-
-SECURE --> JUMP
-SECURE --> STAGINGJUMP
-CLIENT --> HTTPS
-HTTPS --> LB
-HTTPS --> STAGINGLB
-
-
-skinparam frame {
-  BackgroundColor<<internal>> Gray
-}
-
-skinparam component {
-  BackgroundColor<<secure>> Orange
-}
-skinparam rectangle {
-  BackgroundColor<<secure>> Orange
-}
 
 ....
 

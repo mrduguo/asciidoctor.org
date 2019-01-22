@@ -21,6 +21,7 @@ asciidoctor:
     idseparator: '-'
     icons: 'font'
     sectanchors: ''
+    imagesoutdir: '/workspace/_site/images'
     linkattrs: ''
     #source-highlighter: 'highlight.js'
     source-highlighter: 'coderay'

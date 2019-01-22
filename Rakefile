@@ -95,7 +95,7 @@ desc 'Generate and preview the site locally using the specified profile (default
 task :preview, [:profile] => :check do |task, args|
   profile = args[:profile] || 'development'
   profile = 'production' if profile == 'prod'
-  run_awestruct %(-P #{profile} -a --generate-on-access --livereload -s)
+  run_awestruct %(-P #{profile} -a --generate-on-access -b 0.0.0.0 --livereload -s)
 end
 
 # provide a serve task for those used to Jekyll commands
@@ -104,7 +104,7 @@ task :serve => :preview
 
 desc 'Generate the site using the specified profile (default: development)'
 task :gen, [:profile] => :check do |task, args|
-  profile = args[:profile] || 'development'
+  profile = args[:profile] || 'production'
   profile = 'production' if profile == 'prod'
   run_awestruct %(-P #{profile} -g --force)
 end
