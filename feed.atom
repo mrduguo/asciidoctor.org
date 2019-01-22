@@ -117,7 +117,7 @@ Cet outil ne nécessite aucune installation spécifique, ni de création de comp
 &lt;/div&gt;
 &lt;div class=&quot;imageblock&quot; style=&quot;text-align: center&quot;&gt;
 &lt;div class=&quot;content&quot;&gt;
-&lt;a class=&quot;image&quot; href=&quot;http://gist.asciidoctor.org&quot;&gt;&lt;img src=&quot;https://mrduguo.github.io/asciidoctor.org/images/asciidoctor-gist-demo.png&quot; alt=&quot;DocGist&quot; width=&quot;900&quot; /&gt;&lt;/a&gt;
+&lt;a class=&quot;image&quot; href=&quot;http://gist.asciidoctor.org&quot;&gt;&lt;img src=&quot;https://mrduguo.github.io/asciidoctor.org/asciidoctor.org/images/asciidoctor-gist-demo.png&quot; alt=&quot;DocGist&quot; width=&quot;900&quot; /&gt;&lt;/a&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -145,7 +145,7 @@ Cet outil ne nécessite aucune installation spécifique, ni de création de comp
 &lt;/div&gt;
 &lt;div class=&quot;imageblock&quot; style=&quot;text-align: center&quot;&gt;
 &lt;div class=&quot;content&quot;&gt;
-&lt;a class=&quot;image&quot; href=&quot;https://github.com/asciidoctor/asciidoctor-chrome-extension&quot;&gt;&lt;img src=&quot;https://mrduguo.github.io/asciidoctor.org/images/asciidoctor-chrome-extension-demo.png&quot; alt=&quot;Chrome Asciidoctor.js Live Preview&quot; width=&quot;900&quot; /&gt;&lt;/a&gt;
+&lt;a class=&quot;image&quot; href=&quot;https://github.com/asciidoctor/asciidoctor-chrome-extension&quot;&gt;&lt;img src=&quot;https://mrduguo.github.io/asciidoctor.org/asciidoctor.org/images/asciidoctor-chrome-extension-demo.png&quot; alt=&quot;Chrome Asciidoctor.js Live Preview&quot; width=&quot;900&quot; /&gt;&lt;/a&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -181,7 +181,7 @@ Pour utiliser la version la plus à jour de l’addon, il est préférable de l�
 &lt;/div&gt;
 &lt;div class=&quot;imageblock&quot; style=&quot;text-align: center&quot;&gt;
 &lt;div class=&quot;content&quot;&gt;
-&lt;a class=&quot;image&quot; href=&quot;https://github.com/asciidoctor/asciidoctor-firefox-addon/&quot;&gt;&lt;img src=&quot;https://mrduguo.github.io/asciidoctor.org/images/asciidoctor-firefox-addon-demo.png&quot; alt=&quot;Firefox Asciidoctor.js Live Preview&quot; width=&quot;900&quot; /&gt;&lt;/a&gt;
+&lt;a class=&quot;image&quot; href=&quot;https://github.com/asciidoctor/asciidoctor-firefox-addon/&quot;&gt;&lt;img src=&quot;https://mrduguo.github.io/asciidoctor.org/asciidoctor.org/images/asciidoctor-firefox-addon-demo.png&quot; alt=&quot;Firefox Asciidoctor.js Live Preview&quot; width=&quot;900&quot; /&gt;&lt;/a&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -203,7 +203,7 @@ Pour utiliser la version la plus à jour de l’addon, il est préférable de l�
 &lt;/div&gt;
 &lt;div class=&quot;imageblock&quot; style=&quot;text-align: center&quot;&gt;
 &lt;div class=&quot;content&quot;&gt;
-&lt;a class=&quot;image&quot; href=&quot;https://github.com/asciidoctor/asciidoctor-chrome-extension&quot;&gt;&lt;img src=&quot;https://mrduguo.github.io/asciidoctor.org/images/asciidoctor-opera-addon-demo.png&quot; alt=&quot;Opera Asciidoctor.js Live Preview&quot; width=&quot;900&quot; /&gt;&lt;/a&gt;
+&lt;a class=&quot;image&quot; href=&quot;https://github.com/asciidoctor/asciidoctor-chrome-extension&quot;&gt;&lt;img src=&quot;https://mrduguo.github.io/asciidoctor.org/asciidoctor.org/images/asciidoctor-opera-addon-demo.png&quot; alt=&quot;Opera Asciidoctor.js Live Preview&quot; width=&quot;900&quot; /&gt;&lt;/a&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -225,7 +225,7 @@ Pour utiliser la version la plus à jour de l’addon, il est préférable de l�
 &lt;/div&gt;
 &lt;div class=&quot;imageblock&quot; style=&quot;text-align: center&quot;&gt;
 &lt;div class=&quot;content&quot;&gt;
-&lt;a class=&quot;image&quot; href=&quot;http://asciidocfx.com/&quot;&gt;&lt;img src=&quot;https://mrduguo.github.io/asciidoctor.org/images/asciidoctor-asciidocfx-demo.png&quot; alt=&quot;AsciidocFX Editeur&quot; width=&quot;900&quot; /&gt;&lt;/a&gt;
+&lt;a class=&quot;image&quot; href=&quot;http://asciidocfx.com/&quot;&gt;&lt;img src=&quot;https://mrduguo.github.io/asciidoctor.org/asciidoctor.org/images/asciidoctor-asciidocfx-demo.png&quot; alt=&quot;AsciidocFX Editeur&quot; width=&quot;900&quot; /&gt;&lt;/a&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -249,7 +249,7 @@ Il propose également de l’auto-complétion pour les variables d’Asciidoctor
 &lt;/div&gt;
 &lt;div class=&quot;imageblock&quot; style=&quot;text-align: center&quot;&gt;
 &lt;div class=&quot;content&quot;&gt;
-&lt;a class=&quot;image&quot; href=&quot;https://atom.io/packages/asciidoc-preview&quot;&gt;&lt;img src=&quot;https://mrduguo.github.io/asciidoctor.org/images/asciidoctor-atom-package-demo.png&quot; alt=&quot;Atom Editeur&quot; width=&quot;900&quot; /&gt;&lt;/a&gt;
+&lt;a class=&quot;image&quot; href=&quot;https://atom.io/packages/asciidoc-preview&quot;&gt;&lt;img src=&quot;https://mrduguo.github.io/asciidoctor.org/asciidoctor.org/images/asciidoctor-atom-package-demo.png&quot; alt=&quot;Atom Editeur&quot; width=&quot;900&quot; /&gt;&lt;/a&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -274,7 +274,7 @@ Cette extension supporte les expressions mathématiques ainsi que les diagrammes
 &lt;/div&gt;
 &lt;div class=&quot;imageblock&quot;&gt;
 &lt;div class=&quot;content&quot;&gt;
-&lt;img src=&quot;https://mrduguo.github.io/asciidoctor.org/images/asciidoctor-bracket-extension-demo.png&quot; alt=&quot;asciidoctor bracket extension demo&quot; /&gt;
+&lt;img src=&quot;https://mrduguo.github.io/asciidoctor.org/asciidoctor.org/images/asciidoctor-bracket-extension-demo.png&quot; alt=&quot;asciidoctor bracket extension demo&quot; /&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -288,7 +288,7 @@ Cette extension supporte les expressions mathématiques ainsi que les diagrammes
 &lt;/div&gt;
 &lt;div class=&quot;imageblock&quot;&gt;
 &lt;div class=&quot;content&quot;&gt;
-&lt;img src=&quot;https://mrduguo.github.io/asciidoctor.org/images/asciidoctor-intellij-plugin-demo.png&quot; alt=&quot;asciidoctor intellij plugin demo&quot; /&gt;
+&lt;img src=&quot;https://mrduguo.github.io/asciidoctor.org/asciidoctor.org/images/asciidoctor-intellij-plugin-demo.png&quot; alt=&quot;asciidoctor intellij plugin demo&quot; /&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -475,7 +475,7 @@ To turn our vision into reality, the Asciidoctor project needs funding.&lt;/p&gt
 &lt;/div&gt;
 &lt;div class=&quot;imageblock right&quot;&gt;
 &lt;div class=&quot;content&quot;&gt;
-&lt;a class=&quot;image&quot; href=&quot;https://salt.bountysource.com/teams/asciidoctor&quot;&gt;&lt;img src=&quot;https://mrduguo.github.io/asciidoctor.org/images/bountysource-logo.png&quot; alt=&quot;Bountysource&quot; width=&quot;425&quot; /&gt;&lt;/a&gt;
+&lt;a class=&quot;image&quot; href=&quot;https://salt.bountysource.com/teams/asciidoctor&quot;&gt;&lt;img src=&quot;https://mrduguo.github.io/asciidoctor.org/asciidoctor.org/images/bountysource-logo.png&quot; alt=&quot;Bountysource&quot; width=&quot;425&quot; /&gt;&lt;/a&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
@@ -490,7 +490,7 @@ The initial goal is to allow us (Dan and Sarah) to work on Asciidoctor full time
 &lt;/div&gt;
 &lt;div class=&quot;imageblock&quot; style=&quot;text-align: center&quot;&gt;
 &lt;div class=&quot;content&quot;&gt;
-&lt;a class=&quot;image&quot; href=&quot;http://bestgems.org/gems/asciidoctor&quot;&gt;&lt;img src=&quot;https://mrduguo.github.io/asciidoctor.org/images/asciidoctor-growth-2013-to-2015.png&quot; alt=&quot;Asciidoctor growth&quot; width=&quot;425&quot; /&gt;&lt;/a&gt;
+&lt;a class=&quot;image&quot; href=&quot;http://bestgems.org/gems/asciidoctor&quot;&gt;&lt;img src=&quot;https://mrduguo.github.io/asciidoctor.org/asciidoctor.org/images/asciidoctor-growth-2013-to-2015.png&quot; alt=&quot;Asciidoctor growth&quot; width=&quot;425&quot; /&gt;&lt;/a&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
@@ -860,7 +860,7 @@ This means that AsciiDoc content in the Javadoc is rendered with a similar look 
 &lt;/div&gt;
 &lt;div class=&quot;imageblock&quot;&gt;
 &lt;div class=&quot;content&quot;&gt;
-&lt;img src=&quot;https://mrduguo.github.io/asciidoctor.org/images/asciidoclet-screenshot.png&quot; alt=&quot;Javadoc output&quot; width=&quot;800&quot; height=&quot;500&quot; /&gt;
+&lt;img src=&quot;https://mrduguo.github.io/asciidoctor.org/asciidoctor.org/images/asciidoclet-screenshot.png&quot; alt=&quot;Javadoc output&quot; width=&quot;800&quot; height=&quot;500&quot; /&gt;
 &lt;/div&gt;
 &lt;div class=&quot;title&quot;&gt;Figure 1. Example Javadoc using the Java 8-derived stylesheet&lt;/div&gt;
 &lt;/div&gt;
@@ -1029,7 +1029,7 @@ This can be extremely valuable in Javadoc for describing the architecture or beh
 &lt;/div&gt;
 &lt;div class=&quot;imageblock&quot;&gt;
 &lt;div class=&quot;content&quot;&gt;
-&lt;img src=&quot;https://mrduguo.github.io/asciidoctor.org/images/asciidoclet-diagram-example.png&quot; alt=&quot;Example output using Asciidoctor Diagram&quot; width=&quot;800&quot; height=&quot;600&quot; /&gt;
+&lt;img src=&quot;https://mrduguo.github.io/asciidoctor.org/asciidoctor.org/images/asciidoclet-diagram-example.png&quot; alt=&quot;Example output using Asciidoctor Diagram&quot; width=&quot;800&quot; height=&quot;600&quot; /&gt;
 &lt;/div&gt;
 &lt;div class=&quot;title&quot;&gt;Figure 2. Example output using Asciidoctor Diagram&lt;/div&gt;
 &lt;/div&gt;
@@ -1158,7 +1158,7 @@ This release is an important step toward making Asciidoctor.js widely available 
 &lt;/div&gt;
 &lt;div class=&quot;imageblock right&quot;&gt;
 &lt;div class=&quot;content&quot;&gt;
-&lt;img src=&quot;https://mrduguo.github.io/asciidoctor.org/images/bower-npm-logos.png&quot; alt=&quot;Bower and npm&quot; width=&quot;225&quot; height=&quot;100&quot; /&gt;
+&lt;img src=&quot;https://mrduguo.github.io/asciidoctor.org/asciidoctor.org/images/bower-npm-logos.png&quot; alt=&quot;Bower and npm&quot; width=&quot;225&quot; height=&quot;100&quot; /&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&quot;verseblock&quot;&gt;
@@ -1575,7 +1575,7 @@ Installing or upgrading to 1.5.0......
 &lt;div class=&quot;sectionbody&quot;&gt;
 &lt;div class=&quot;imageblock thumb&quot; style=&quot;float: right&quot;&gt;
 &lt;div class=&quot;content&quot;&gt;
-&lt;img src=&quot;https://mrduguo.github.io/asciidoctor.org/images/storm-in-desert.jpg&quot; alt=&quot;Storm in Desert&quot; /&gt;
+&lt;img src=&quot;https://mrduguo.github.io/asciidoctor.org/asciidoctor.org/images/storm-in-desert.jpg&quot; alt=&quot;Storm in Desert&quot; /&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph lead&quot;&gt;
@@ -2298,7 +2298,7 @@ Pepijn Van Eeckhoudt (&lt;a href=&quot;https://github.com/pepijnve&quot;&gt;@pep
 &lt;/div&gt;
 &lt;div class=&quot;imageblock&quot;&gt;
 &lt;div class=&quot;content&quot;&gt;
-&lt;img src=&quot;https://mrduguo.github.io/asciidoctor.org/images/asciidoctor-diagram-process.png&quot; alt=&quot;Asciidoctor Diagram process diagram&quot; width=&quot;650&quot; height=&quot;319&quot; /&gt;
+&lt;img src=&quot;https://mrduguo.github.io/asciidoctor.org/asciidoctor.org/images/asciidoctor-diagram-process.png&quot; alt=&quot;Asciidoctor Diagram process diagram&quot; width=&quot;650&quot; height=&quot;319&quot; /&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
@@ -2651,7 +2651,7 @@ In addition to these styles, we also added the missing table border styles for a
 &lt;/div&gt;
 &lt;div class=&quot;imageblock thumb&quot;&gt;
 &lt;div class=&quot;content&quot;&gt;
-&lt;img src=&quot;https://mrduguo.github.io/asciidoctor.org/images/screenshot-print-preview.png&quot; alt=&quot;Print preview of HTML generated by Asciidoctor&quot; width=&quot;650&quot; /&gt;
+&lt;img src=&quot;https://mrduguo.github.io/asciidoctor.org/asciidoctor.org/images/screenshot-print-preview.png&quot; alt=&quot;Print preview of HTML generated by Asciidoctor&quot; width=&quot;650&quot; /&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -2689,7 +2689,7 @@ Here’s a preview of the new default theme:&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;imageblock&quot;&gt;
 &lt;div class=&quot;content&quot;&gt;
-&lt;img src=&quot;https://mrduguo.github.io/asciidoctor.org/images/screenshot-default-theme.png&quot; alt=&quot;Screenshot of default Asciidoctor theme&quot; width=&quot;650&quot; /&gt;
+&lt;img src=&quot;https://mrduguo.github.io/asciidoctor.org/asciidoctor.org/images/screenshot-default-theme.png&quot; alt=&quot;Screenshot of default Asciidoctor theme&quot; width=&quot;650&quot; /&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -3011,7 +3011,7 @@ Another way of saying it:&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;imageblock&quot;&gt;
 &lt;div class=&quot;content&quot;&gt;
-&lt;img src=&quot;https://mrduguo.github.io/asciidoctor.org/images/language-analogy-diagram.png&quot; alt=&quot;language analogy diagram&quot; /&gt;
+&lt;img src=&quot;https://mrduguo.github.io/asciidoctor.org/asciidoctor.org/images/language-analogy-diagram.png&quot; alt=&quot;language analogy diagram&quot; /&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -3052,7 +3052,7 @@ Here’s how it appears in the rendered document:&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;imageblock&quot;&gt;
 &lt;div class=&quot;content&quot;&gt;
-&lt;img src=&quot;https://mrduguo.github.io/asciidoctor.org/images/sample-ditaa-diagram.png&quot; alt=&quot;sample ditaa diagram&quot; /&gt;
+&lt;img src=&quot;https://mrduguo.github.io/asciidoctor.org/asciidoctor.org/images/sample-ditaa-diagram.png&quot; alt=&quot;sample ditaa diagram&quot; /&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
@@ -3092,7 +3092,7 @@ digraph g {
 &lt;/div&gt;
 &lt;div class=&quot;imageblock&quot;&gt;
 &lt;div class=&quot;content&quot;&gt;
-&lt;img src=&quot;https://mrduguo.github.io/asciidoctor.org/images/sample-graphviz-diagram.png&quot; alt=&quot;sample graphviz diagram&quot; /&gt;
+&lt;img src=&quot;https://mrduguo.github.io/asciidoctor.org/asciidoctor.org/images/sample-graphviz-diagram.png&quot; alt=&quot;sample graphviz diagram&quot; /&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&quot;admonitionblock note&quot;&gt;
@@ -3130,7 +3130,7 @@ BlockProcessor &amp;lt;|-- PlantUmlBlock
 &lt;/div&gt;
 &lt;div id=&quot;main-classes&quot; class=&quot;imageblock&quot;&gt;
 &lt;div class=&quot;content&quot;&gt;
-&lt;img src=&quot;https://mrduguo.github.io/asciidoctor.org/images/sample-plantuml-diagram.png&quot; alt=&quot;Class diagram&quot; width=&quot;135&quot; height=&quot;118&quot; /&gt;
+&lt;img src=&quot;https://mrduguo.github.io/asciidoctor.org/asciidoctor.org/images/sample-plantuml-diagram.png&quot; alt=&quot;Class diagram&quot; width=&quot;135&quot; height=&quot;118&quot; /&gt;
 &lt;/div&gt;
 &lt;div class=&quot;title&quot;&gt;The PlantUML block extension class&lt;/div&gt;
 &lt;/div&gt;
@@ -3271,7 +3271,7 @@ If you need to see it to believe it, I present you proof.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;imageblock&quot;&gt;
 &lt;div class=&quot;content&quot;&gt;
-&lt;img src=&quot;https://mrduguo.github.io/asciidoctor.org/images/syntax-highlight-sample-github.png&quot; alt=&quot;syntax highlight sample github&quot; /&gt;
+&lt;img src=&quot;https://mrduguo.github.io/asciidoctor.org/asciidoctor.org/images/syntax-highlight-sample-github.png&quot; alt=&quot;syntax highlight sample github&quot; /&gt;
 &lt;/div&gt;
 &lt;div class=&quot;title&quot;&gt;Figure 1. Syntax highlighting in an AsciiDoc source block on GitHub&lt;/div&gt;
 &lt;/div&gt;
@@ -3624,7 +3624,7 @@ If you unset the attribute instead, you will need to place the table of contents
 &lt;/div&gt;
 &lt;div class=&quot;imageblock&quot;&gt;
 &lt;div class=&quot;content&quot;&gt;
-&lt;img src=&quot;https://mrduguo.github.io/asciidoctor.org/images/toc-sample-github.png&quot; alt=&quot;toc sample github&quot; /&gt;
+&lt;img src=&quot;https://mrduguo.github.io/asciidoctor.org/asciidoctor.org/images/toc-sample-github.png&quot; alt=&quot;toc sample github&quot; /&gt;
 &lt;/div&gt;
 &lt;div class=&quot;title&quot;&gt;Figure 2. Table of contents rendered on GitHub&lt;/div&gt;
 &lt;/div&gt;
@@ -3799,7 +3799,7 @@ Both provide a toggle button to switch between HTML output and AsciiDoc source.&
 &lt;/div&gt;
 &lt;div class=&quot;imageblock&quot;&gt;
 &lt;div class=&quot;content&quot;&gt;
-&lt;img src=&quot;https://mrduguo.github.io/asciidoctor.org/images/chrome-extension-enabled.png&quot; alt=&quot;chrome extension enabled&quot; /&gt;
+&lt;img src=&quot;https://mrduguo.github.io/asciidoctor.org/asciidoctor.org/images/chrome-extension-enabled.png&quot; alt=&quot;chrome extension enabled&quot; /&gt;
 &lt;/div&gt;
 &lt;div class=&quot;title&quot;&gt;Chrome extension in action&lt;/div&gt;
 &lt;/div&gt;
@@ -7019,7 +7019,7 @@ It can also be translated into HTML for presentation, hello web publishing!&lt;/
 &lt;/div&gt;
 &lt;div class=&quot;imageblock thumb right&quot;&gt;
 &lt;div class=&quot;content&quot;&gt;
-&lt;a class=&quot;image&quot; href=&quot;http://foundation.zurb.com&quot;&gt;&lt;img src=&quot;https://mrduguo.github.io/asciidoctor.org/images/zurb-foundation-yeti.png&quot; alt=&quot;Zurb Foundation Yeti&quot; width=&quot;260&quot; height=&quot;160&quot; /&gt;&lt;/a&gt;
+&lt;a class=&quot;image&quot; href=&quot;http://foundation.zurb.com&quot;&gt;&lt;img src=&quot;https://mrduguo.github.io/asciidoctor.org/asciidoctor.org/images/zurb-foundation-yeti.png&quot; alt=&quot;Zurb Foundation Yeti&quot; width=&quot;260&quot; height=&quot;160&quot; /&gt;&lt;/a&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -7041,7 +7041,7 @@ From GitHub, we can &lt;a href=&quot;https://github.com/blog/1557-github-flow-in
 &lt;/div&gt;
 &lt;div class=&quot;imageblock center&quot;&gt;
 &lt;div class=&quot;content&quot;&gt;
-&lt;a class=&quot;image&quot; href=&quot;https://github.com/asciidoctor/asciidoctor.org/commits/master/docs/asciidoc-syntax-quick-reference.adoc&quot;&gt;&lt;img src=&quot;https://mrduguo.github.io/asciidoctor.org/images/github-history.png&quot; alt=&quot;Revision history in GitHub&quot; width=&quot;360&quot; height=&quot;270&quot; /&gt;&lt;/a&gt;
+&lt;a class=&quot;image&quot; href=&quot;https://github.com/asciidoctor/asciidoctor.org/commits/master/docs/asciidoc-syntax-quick-reference.adoc&quot;&gt;&lt;img src=&quot;https://mrduguo.github.io/asciidoctor.org/asciidoctor.org/images/github-history.png&quot; alt=&quot;Revision history in GitHub&quot; width=&quot;360&quot; height=&quot;270&quot; /&gt;&lt;/a&gt;
 &lt;/div&gt;
 &lt;div class=&quot;title&quot;&gt;The revision history is safely tucked away in the git repository.&lt;/div&gt;
 &lt;/div&gt;
@@ -7059,7 +7059,7 @@ We need to get our content on &lt;em&gt;all&lt;/em&gt; of them.&lt;/p&gt;
 It enables and encourages us to write reusable, structured content.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;&lt;span class=&quot;image right&quot;&gt;&lt;img src=&quot;https://mrduguo.github.io/asciidoctor.org/images/chunking.jpg&quot; alt=&quot;Chunking&quot; width=&quot;400&quot; height=&quot;192&quot; /&gt;&lt;/span&gt; Reusable content can be mixed and matched with other content to create a composition that suits a device, context or situation.
+&lt;p&gt;&lt;span class=&quot;image right&quot;&gt;&lt;img src=&quot;https://mrduguo.github.io/asciidoctor.org/asciidoctor.org/images/chunking.jpg&quot; alt=&quot;Chunking&quot; width=&quot;400&quot; height=&quot;192&quot; /&gt;&lt;/span&gt; Reusable content can be mixed and matched with other content to create a composition that suits a device, context or situation.
 It’s also a way to keep our content DRY (Don’t Repeat Yourself) so we don’t have to update the same content in a dozen places, or even two.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
@@ -9602,7 +9602,7 @@ When I first......
 &lt;div class=&quot;sectionbody&quot;&gt;
 &lt;div class=&quot;imageblock feature right&quot;&gt;
 &lt;div class=&quot;content&quot;&gt;
-&lt;img src=&quot;https://mrduguo.github.io/asciidoctor.org/images/opal-logo.png&quot; alt=&quot;Opal&quot; width=&quot;200&quot; height=&quot;200&quot; /&gt;
+&lt;img src=&quot;https://mrduguo.github.io/asciidoctor.org/asciidoctor.org/images/opal-logo.png&quot; alt=&quot;Opal&quot; width=&quot;200&quot; height=&quot;200&quot; /&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
@@ -10903,7 +10903,7 @@ In addition to serving as the project page for the &lt;a href=&quot;http://githu
 &lt;/div&gt;
 &lt;div class=&quot;imageblock feature right&quot;&gt;
 &lt;div class=&quot;content&quot;&gt;
-&lt;img src=&quot;https://mrduguo.github.io/asciidoctor.org/images/dawn.jpg&quot; alt=&quot;dawn&quot; /&gt;
+&lt;img src=&quot;https://mrduguo.github.io/asciidoctor.org/asciidoctor.org/images/dawn.jpg&quot; alt=&quot;dawn&quot; /&gt;
 &lt;/div&gt;
 &lt;div class=&quot;title&quot;&gt;The dawn of a new era &lt;span class=&quot;credit&quot;&gt;Photo credit: &lt;a href=&quot;http://www.flickr.com/photos/bartvandorp/8593385822&quot;&gt;bartvandorp&lt;/a&gt;&lt;/span&gt;&lt;/div&gt;
 &lt;/div&gt;
@@ -11012,7 +11012,7 @@ Asciidoctor is now deployed to render AsciiDoc markup in any of the......
 &lt;table&gt;
 &lt;tr&gt;
 &lt;td class=&quot;icon&quot;&gt;
-&lt;img src=&quot;https://mrduguo.github.io/asciidoctor.org/images/octocat.jpg&quot; alt=&quot;Note&quot; /&gt;
+&lt;img src=&quot;https://mrduguo.github.io/asciidoctor.org/asciidoctor.org/images/octocat.jpg&quot; alt=&quot;Note&quot; /&gt;
 &lt;/td&gt;
 &lt;td class=&quot;content&quot;&gt;
 &lt;strong&gt;Asciidoctor is now deployed&lt;/strong&gt; to render AsciiDoc markup in any of the &lt;strong&gt;5 million+ repositories&lt;/strong&gt; on GitHub.
