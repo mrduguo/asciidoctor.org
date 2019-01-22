@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <feed xml:lang="en-US" xmlns="http://www.w3.org/2005/Atom">
-<id>http://asciidoctor.org/</id>
+<id>https://mrduguo.github.io/asciidoctor.org/</id>
 <title>Asciidoctor</title>
 <updated>2016-04-05T00:49:10-06:00</updated>
-<link href="http://asciidoctor.org/feed.atom" rel="self" type="application/atom+xml" />
-<link href="http://asciidoctor.org/" rel="alternate" type="text/html" />
+<link href="https://mrduguo.github.io/asciidoctor.org/feed.atom" rel="self" type="application/atom+xml" />
+<link href="https://mrduguo.github.io/asciidoctor.org/" rel="alternate" type="text/html" />
 <entry>
-<id>http://asciidoctor.org/news/2016/04/05/debuter-avec-asciidoctor/</id>
+<id>https://mrduguo.github.io/asciidoctor.org/news/2016/04/05/debuter-avec-asciidoctor/</id>
 <title>Les outils pour débuter avec Asciidoctor</title>
 <updated>2016-04-05T00:49:10-06:00</updated>
 <published>2016-04-05T00:49:10-06:00</published>
-<link href="http://asciidoctor.org/news/2016/04/05/debuter-avec-asciidoctor/" rel="alternate" type="text/html" />
+<link href="https://mrduguo.github.io/asciidoctor.org/news/2016/04/05/debuter-avec-asciidoctor/" rel="alternate" type="text/html" />
 <author>
 <name>Guillaume Scheibel</name>
 <uri>https://github.com/gscheibel</uri>
 </author>
-<category scheme="http://asciidoctor.org/news/tags" term="tools" />
+<category scheme="https://mrduguo.github.io/asciidoctor.org/news/tags" term="tools" />
 <summary>
 Vous venez de découvrir Asciidoctor et vous vous demandez par où commencer pour être rapidement efficace avec vos documents AsciiDoc ?
 Voici ci-dessous la liste des possibilités pour genérer et visualiser le code HTML associé au contenu AsciiDoc.
@@ -117,7 +117,7 @@ Cet outil ne nécessite aucune installation spécifique, ni de création de comp
 &lt;/div&gt;
 &lt;div class=&quot;imageblock&quot; style=&quot;text-align: center&quot;&gt;
 &lt;div class=&quot;content&quot;&gt;
-&lt;a class=&quot;image&quot; href=&quot;http://gist.asciidoctor.org&quot;&gt;&lt;img src=&quot;http://asciidoctor.org/images/asciidoctor-gist-demo.png&quot; alt=&quot;DocGist&quot; width=&quot;900&quot; /&gt;&lt;/a&gt;
+&lt;a class=&quot;image&quot; href=&quot;http://gist.asciidoctor.org&quot;&gt;&lt;img src=&quot;https://mrduguo.github.io/asciidoctor.org/images/asciidoctor-gist-demo.png&quot; alt=&quot;DocGist&quot; width=&quot;900&quot; /&gt;&lt;/a&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -145,7 +145,7 @@ Cet outil ne nécessite aucune installation spécifique, ni de création de comp
 &lt;/div&gt;
 &lt;div class=&quot;imageblock&quot; style=&quot;text-align: center&quot;&gt;
 &lt;div class=&quot;content&quot;&gt;
-&lt;a class=&quot;image&quot; href=&quot;https://github.com/asciidoctor/asciidoctor-chrome-extension&quot;&gt;&lt;img src=&quot;http://asciidoctor.org/images/asciidoctor-chrome-extension-demo.png&quot; alt=&quot;Chrome Asciidoctor.js Live Preview&quot; width=&quot;900&quot; /&gt;&lt;/a&gt;
+&lt;a class=&quot;image&quot; href=&quot;https://github.com/asciidoctor/asciidoctor-chrome-extension&quot;&gt;&lt;img src=&quot;https://mrduguo.github.io/asciidoctor.org/images/asciidoctor-chrome-extension-demo.png&quot; alt=&quot;Chrome Asciidoctor.js Live Preview&quot; width=&quot;900&quot; /&gt;&lt;/a&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -181,7 +181,7 @@ Pour utiliser la version la plus à jour de l’addon, il est préférable de l�
 &lt;/div&gt;
 &lt;div class=&quot;imageblock&quot; style=&quot;text-align: center&quot;&gt;
 &lt;div class=&quot;content&quot;&gt;
-&lt;a class=&quot;image&quot; href=&quot;https://github.com/asciidoctor/asciidoctor-firefox-addon/&quot;&gt;&lt;img src=&quot;http://asciidoctor.org/images/asciidoctor-firefox-addon-demo.png&quot; alt=&quot;Firefox Asciidoctor.js Live Preview&quot; width=&quot;900&quot; /&gt;&lt;/a&gt;
+&lt;a class=&quot;image&quot; href=&quot;https://github.com/asciidoctor/asciidoctor-firefox-addon/&quot;&gt;&lt;img src=&quot;https://mrduguo.github.io/asciidoctor.org/images/asciidoctor-firefox-addon-demo.png&quot; alt=&quot;Firefox Asciidoctor.js Live Preview&quot; width=&quot;900&quot; /&gt;&lt;/a&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -203,7 +203,7 @@ Pour utiliser la version la plus à jour de l’addon, il est préférable de l�
 &lt;/div&gt;
 &lt;div class=&quot;imageblock&quot; style=&quot;text-align: center&quot;&gt;
 &lt;div class=&quot;content&quot;&gt;
-&lt;a class=&quot;image&quot; href=&quot;https://github.com/asciidoctor/asciidoctor-chrome-extension&quot;&gt;&lt;img src=&quot;http://asciidoctor.org/images/asciidoctor-opera-addon-demo.png&quot; alt=&quot;Opera Asciidoctor.js Live Preview&quot; width=&quot;900&quot; /&gt;&lt;/a&gt;
+&lt;a class=&quot;image&quot; href=&quot;https://github.com/asciidoctor/asciidoctor-chrome-extension&quot;&gt;&lt;img src=&quot;https://mrduguo.github.io/asciidoctor.org/images/asciidoctor-opera-addon-demo.png&quot; alt=&quot;Opera Asciidoctor.js Live Preview&quot; width=&quot;900&quot; /&gt;&lt;/a&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -225,7 +225,7 @@ Pour utiliser la version la plus à jour de l’addon, il est préférable de l�
 &lt;/div&gt;
 &lt;div class=&quot;imageblock&quot; style=&quot;text-align: center&quot;&gt;
 &lt;div class=&quot;content&quot;&gt;
-&lt;a class=&quot;image&quot; href=&quot;http://asciidocfx.com/&quot;&gt;&lt;img src=&quot;http://asciidoctor.org/images/asciidoctor-asciidocfx-demo.png&quot; alt=&quot;AsciidocFX Editeur&quot; width=&quot;900&quot; /&gt;&lt;/a&gt;
+&lt;a class=&quot;image&quot; href=&quot;http://asciidocfx.com/&quot;&gt;&lt;img src=&quot;https://mrduguo.github.io/asciidoctor.org/images/asciidoctor-asciidocfx-demo.png&quot; alt=&quot;AsciidocFX Editeur&quot; width=&quot;900&quot; /&gt;&lt;/a&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -249,7 +249,7 @@ Il propose également de l’auto-complétion pour les variables d’Asciidoctor
 &lt;/div&gt;
 &lt;div class=&quot;imageblock&quot; style=&quot;text-align: center&quot;&gt;
 &lt;div class=&quot;content&quot;&gt;
-&lt;a class=&quot;image&quot; href=&quot;https://atom.io/packages/asciidoc-preview&quot;&gt;&lt;img src=&quot;http://asciidoctor.org/images/asciidoctor-atom-package-demo.png&quot; alt=&quot;Atom Editeur&quot; width=&quot;900&quot; /&gt;&lt;/a&gt;
+&lt;a class=&quot;image&quot; href=&quot;https://atom.io/packages/asciidoc-preview&quot;&gt;&lt;img src=&quot;https://mrduguo.github.io/asciidoctor.org/images/asciidoctor-atom-package-demo.png&quot; alt=&quot;Atom Editeur&quot; width=&quot;900&quot; /&gt;&lt;/a&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -274,7 +274,7 @@ Cette extension supporte les expressions mathématiques ainsi que les diagrammes
 &lt;/div&gt;
 &lt;div class=&quot;imageblock&quot;&gt;
 &lt;div class=&quot;content&quot;&gt;
-&lt;img src=&quot;http://asciidoctor.org/images/asciidoctor-bracket-extension-demo.png&quot; alt=&quot;asciidoctor bracket extension demo&quot; /&gt;
+&lt;img src=&quot;https://mrduguo.github.io/asciidoctor.org/images/asciidoctor-bracket-extension-demo.png&quot; alt=&quot;asciidoctor bracket extension demo&quot; /&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -288,7 +288,7 @@ Cette extension supporte les expressions mathématiques ainsi que les diagrammes
 &lt;/div&gt;
 &lt;div class=&quot;imageblock&quot;&gt;
 &lt;div class=&quot;content&quot;&gt;
-&lt;img src=&quot;http://asciidoctor.org/images/asciidoctor-intellij-plugin-demo.png&quot; alt=&quot;asciidoctor intellij plugin demo&quot; /&gt;
+&lt;img src=&quot;https://mrduguo.github.io/asciidoctor.org/images/asciidoctor-intellij-plugin-demo.png&quot; alt=&quot;asciidoctor intellij plugin demo&quot; /&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -434,16 +434,16 @@ apply &lt;span class=&quot;key&quot;&gt;plugin&lt;/span&gt;: &lt;span class=&quo
 </content>
 </entry>
 <entry>
-<id>http://asciidoctor.org/news/2015/06/11/asciidoctor-funding-campaign/</id>
+<id>https://mrduguo.github.io/asciidoctor.org/news/2015/06/11/asciidoctor-funding-campaign/</id>
 <title>Funding for Asciidoctor</title>
 <updated>2015-06-11T18:49:19-06:00</updated>
 <published>2015-06-11T18:49:19-06:00</published>
-<link href="http://asciidoctor.org/news/2015/06/11/asciidoctor-funding-campaign/" rel="alternate" type="text/html" />
+<link href="https://mrduguo.github.io/asciidoctor.org/news/2015/06/11/asciidoctor-funding-campaign/" rel="alternate" type="text/html" />
 <author>
 <name>Dan Allen</name>
 <uri>https://github.com/mojavelinux</uri>
 </author>
-<category scheme="http://asciidoctor.org/news/tags" term="announcement" />
+<category scheme="https://mrduguo.github.io/asciidoctor.org/news/tags" term="announcement" />
 <summary>
 With Asciidoctor, we&#8217;re working to shape the future of writing and publishing, particularly in the field of technical documentation.
 We want people to use open source not only because it&#8217;s the best software, but because it&#8217;s the best documented software.
@@ -475,7 +475,7 @@ To turn our vision into reality, the Asciidoctor project needs funding.&lt;/p&gt
 &lt;/div&gt;
 &lt;div class=&quot;imageblock right&quot;&gt;
 &lt;div class=&quot;content&quot;&gt;
-&lt;a class=&quot;image&quot; href=&quot;https://salt.bountysource.com/teams/asciidoctor&quot;&gt;&lt;img src=&quot;http://asciidoctor.org/images/bountysource-logo.png&quot; alt=&quot;Bountysource&quot; width=&quot;425&quot; /&gt;&lt;/a&gt;
+&lt;a class=&quot;image&quot; href=&quot;https://salt.bountysource.com/teams/asciidoctor&quot;&gt;&lt;img src=&quot;https://mrduguo.github.io/asciidoctor.org/images/bountysource-logo.png&quot; alt=&quot;Bountysource&quot; width=&quot;425&quot; /&gt;&lt;/a&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
@@ -490,7 +490,7 @@ The initial goal is to allow us (Dan and Sarah) to work on Asciidoctor full time
 &lt;/div&gt;
 &lt;div class=&quot;imageblock&quot; style=&quot;text-align: center&quot;&gt;
 &lt;div class=&quot;content&quot;&gt;
-&lt;a class=&quot;image&quot; href=&quot;http://bestgems.org/gems/asciidoctor&quot;&gt;&lt;img src=&quot;http://asciidoctor.org/images/asciidoctor-growth-2013-to-2015.png&quot; alt=&quot;Asciidoctor growth&quot; width=&quot;425&quot; /&gt;&lt;/a&gt;
+&lt;a class=&quot;image&quot; href=&quot;http://bestgems.org/gems/asciidoctor&quot;&gt;&lt;img src=&quot;https://mrduguo.github.io/asciidoctor.org/images/asciidoctor-growth-2013-to-2015.png&quot; alt=&quot;Asciidoctor growth&quot; width=&quot;425&quot; /&gt;&lt;/a&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
@@ -514,17 +514,17 @@ We want to continue serving the community and doing what we love to make a toolc
 </content>
 </entry>
 <entry>
-<id>http://asciidoctor.org/news/2015/03/04/docker-asciidoctorj-announcement/</id>
+<id>https://mrduguo.github.io/asciidoctor.org/news/2015/03/04/docker-asciidoctorj-announcement/</id>
 <title>Use Arquillian and Docker to verify that AsciidoctorJ works in WildFly</title>
 <updated>2015-03-04T13:54:21-07:00</updated>
 <published>2015-03-04T13:54:21-07:00</published>
-<link href="http://asciidoctor.org/news/2015/03/04/docker-asciidoctorj-announcement/" rel="alternate" type="text/html" />
+<link href="https://mrduguo.github.io/asciidoctor.org/news/2015/03/04/docker-asciidoctorj-announcement/" rel="alternate" type="text/html" />
 <author>
 <name>Maxime Gréau</name>
 </author>
-<category scheme="http://asciidoctor.org/news/tags" term="announcement" />
-<category scheme="http://asciidoctor.org/news/tags" term="asciidoctorj" />
-<category scheme="http://asciidoctor.org/news/tags" term="docker" />
+<category scheme="https://mrduguo.github.io/asciidoctor.org/news/tags" term="announcement" />
+<category scheme="https://mrduguo.github.io/asciidoctor.org/news/tags" term="asciidoctorj" />
+<category scheme="https://mrduguo.github.io/asciidoctor.org/news/tags" term="docker" />
 <summary>
 We&#8217;re excited to announce the newest member of the Asciidoctor family, Docker AsciidoctorJ.
 The Docker AsciidoctorJ project ensures that AsciidoctorJ can be used by any application deployed to a Java EE application server*.
@@ -636,18 +636,18 @@ We’ll talk about:&lt;/p&gt;
 </content>
 </entry>
 <entry>
-<id>http://asciidoctor.org/news/2014/09/09/asciidoclet-1.5.0-released/</id>
+<id>https://mrduguo.github.io/asciidoctor.org/news/2014/09/09/asciidoclet-1.5.0-released/</id>
 <title>Asciidoclet 1.5.0 released!</title>
 <updated>2014-09-09T01:11:13-06:00</updated>
 <published>2014-09-09T01:11:13-06:00</published>
-<link href="http://asciidoctor.org/news/2014/09/09/asciidoclet-1.5.0-released/" rel="alternate" type="text/html" />
+<link href="https://mrduguo.github.io/asciidoctor.org/news/2014/09/09/asciidoclet-1.5.0-released/" rel="alternate" type="text/html" />
 <author>
 <name>John Ericksen</name>
 <uri>https://github.com/johncarl81</uri>
 </author>
-<category scheme="http://asciidoctor.org/news/tags" term="release" />
-<category scheme="http://asciidoctor.org/news/tags" term="plugin" />
-<category scheme="http://asciidoctor.org/news/tags" term="asciidoclet" />
+<category scheme="https://mrduguo.github.io/asciidoctor.org/news/tags" term="release" />
+<category scheme="https://mrduguo.github.io/asciidoctor.org/news/tags" term="plugin" />
+<category scheme="https://mrduguo.github.io/asciidoctor.org/news/tags" term="asciidoclet" />
 <summary>
 Following on from the releases of Asciidoctor 1.5.0 and AsciidoctorJ 1.5.0, version 1.5.0 of Asciidoclet has been released with several significant new features, including a new look &amp; feel!
 
@@ -695,7 +695,7 @@ public class Thing implements Something { ... }
 &lt;h2 id=&quot;what-is-asciidoclet&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#what-is-asciidoclet&quot;&gt;&lt;/a&gt;What is Asciidoclet?&lt;/h2&gt;
 &lt;div class=&quot;sectionbody&quot;&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;&lt;a href=&quot;http://asciidoctor.org/docs/asciidoclet/&quot;&gt;Asciidoclet&lt;/a&gt; allows Java developers to write Javadoc comments in the portable and rich &lt;a href=&quot;http://asciidoctor.org/docs/what-is-asciidoc/&quot;&gt;AsciiDoc&lt;/a&gt; syntax instead of HTML.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://mrduguo.github.io/asciidoctor.org/docs/asciidoclet/&quot;&gt;Asciidoclet&lt;/a&gt; allows Java developers to write Javadoc comments in the portable and rich &lt;a href=&quot;http://asciidoctor.org/docs/what-is-asciidoc/&quot;&gt;AsciiDoc&lt;/a&gt; syntax instead of HTML.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;In short, why write messy Javadoc like this?&lt;/p&gt;
@@ -826,7 +826,7 @@ Tables, lists, code examples with syntax highlighting, links, includes and all o
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;See the &lt;a href=&quot;http://asciidoctor.org/docs/asciidoclet/&quot;&gt;Asciidoclet guide&lt;/a&gt; for examples that apply to other build systems and all the available doclet options.&lt;/p&gt;
+&lt;p&gt;See the &lt;a href=&quot;https://mrduguo.github.io/asciidoctor.org/docs/asciidoclet/&quot;&gt;Asciidoclet guide&lt;/a&gt; for examples that apply to other build systems and all the available doclet options.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -860,7 +860,7 @@ This means that AsciiDoc content in the Javadoc is rendered with a similar look 
 &lt;/div&gt;
 &lt;div class=&quot;imageblock&quot;&gt;
 &lt;div class=&quot;content&quot;&gt;
-&lt;img src=&quot;http://asciidoctor.org/images/asciidoclet-screenshot.png&quot; alt=&quot;Javadoc output&quot; width=&quot;800&quot; height=&quot;500&quot; /&gt;
+&lt;img src=&quot;https://mrduguo.github.io/asciidoctor.org/images/asciidoclet-screenshot.png&quot; alt=&quot;Javadoc output&quot; width=&quot;800&quot; height=&quot;500&quot; /&gt;
 &lt;/div&gt;
 &lt;div class=&quot;title&quot;&gt;Figure 1. Example Javadoc using the Java 8-derived stylesheet&lt;/div&gt;
 &lt;/div&gt;
@@ -1029,7 +1029,7 @@ This can be extremely valuable in Javadoc for describing the architecture or beh
 &lt;/div&gt;
 &lt;div class=&quot;imageblock&quot;&gt;
 &lt;div class=&quot;content&quot;&gt;
-&lt;img src=&quot;http://asciidoctor.org/images/asciidoclet-diagram-example.png&quot; alt=&quot;Example output using Asciidoctor Diagram&quot; width=&quot;800&quot; height=&quot;600&quot; /&gt;
+&lt;img src=&quot;https://mrduguo.github.io/asciidoctor.org/images/asciidoclet-diagram-example.png&quot; alt=&quot;Example output using Asciidoctor Diagram&quot; width=&quot;800&quot; height=&quot;600&quot; /&gt;
 &lt;/div&gt;
 &lt;div class=&quot;title&quot;&gt;Figure 2. Example output using Asciidoctor Diagram&lt;/div&gt;
 &lt;/div&gt;
@@ -1104,17 +1104,17 @@ If you have ideas about how to improve on it, ideas and pull requests are always
 </content>
 </entry>
 <entry>
-<id>http://asciidoctor.org/news/2014/08/23/asciidoctor-js-1-5-0-released/</id>
+<id>https://mrduguo.github.io/asciidoctor.org/news/2014/08/23/asciidoctor-js-1-5-0-released/</id>
 <title>Asciidoctor.js 1.5.0 released to Bower and npm!</title>
 <updated>2014-08-23T13:20:39-06:00</updated>
 <published>2014-08-23T13:20:39-06:00</published>
-<link href="http://asciidoctor.org/news/2014/08/23/asciidoctor-js-1-5-0-released/" rel="alternate" type="text/html" />
+<link href="https://mrduguo.github.io/asciidoctor.org/news/2014/08/23/asciidoctor-js-1-5-0-released/" rel="alternate" type="text/html" />
 <author>
 <name>Guillaume Grossetie</name>
 <uri>https://github.com/Mogztter</uri>
 </author>
-<category scheme="http://asciidoctor.org/news/tags" term="release" />
-<category scheme="http://asciidoctor.org/news/tags" term="asciidoctor.js" />
+<category scheme="https://mrduguo.github.io/asciidoctor.org/news/tags" term="release" />
+<category scheme="https://mrduguo.github.io/asciidoctor.org/news/tags" term="asciidoctor.js" />
 <summary>
 The release train is on the move! Version 1.5.0 of Asciidoctor.js has been released and is now available in Bower and npm.
 This release is an important step toward making Asciidoctor.js widely available to the JavaScript ecosystem.
@@ -1158,7 +1158,7 @@ This release is an important step toward making Asciidoctor.js widely available 
 &lt;/div&gt;
 &lt;div class=&quot;imageblock right&quot;&gt;
 &lt;div class=&quot;content&quot;&gt;
-&lt;img src=&quot;http://asciidoctor.org/images/bower-npm-logos.png&quot; alt=&quot;Bower and npm&quot; width=&quot;225&quot; height=&quot;100&quot; /&gt;
+&lt;img src=&quot;https://mrduguo.github.io/asciidoctor.org/images/bower-npm-logos.png&quot; alt=&quot;Bower and npm&quot; width=&quot;225&quot; height=&quot;100&quot; /&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&quot;verseblock&quot;&gt;
@@ -1488,18 +1488,18 @@ Talk to you there!&lt;/p&gt;
 </content>
 </entry>
 <entry>
-<id>http://asciidoctor.org/news/2014/08/23/asciidoctor-maven-plugin-1-5-0-released/</id>
+<id>https://mrduguo.github.io/asciidoctor.org/news/2014/08/23/asciidoctor-maven-plugin-1-5-0-released/</id>
 <title>Asciidoctor Maven plugin 1.5.0 released!</title>
 <updated>2014-08-23T03:24:20-06:00</updated>
 <published>2014-08-23T03:24:20-06:00</published>
-<link href="http://asciidoctor.org/news/2014/08/23/asciidoctor-maven-plugin-1-5-0-released/" rel="alternate" type="text/html" />
+<link href="https://mrduguo.github.io/asciidoctor.org/news/2014/08/23/asciidoctor-maven-plugin-1-5-0-released/" rel="alternate" type="text/html" />
 <author>
 <name>Dan Allen</name>
 <uri>https://github.com/mojavelinux</uri>
 </author>
-<category scheme="http://asciidoctor.org/news/tags" term="release" />
-<category scheme="http://asciidoctor.org/news/tags" term="plugin" />
-<category scheme="http://asciidoctor.org/news/tags" term="maven" />
+<category scheme="https://mrduguo.github.io/asciidoctor.org/news/tags" term="release" />
+<category scheme="https://mrduguo.github.io/asciidoctor.org/news/tags" term="plugin" />
+<category scheme="https://mrduguo.github.io/asciidoctor.org/news/tags" term="maven" />
 <summary>
 The West may still be suffering from a dry spell, but we&#8217;re excited to shower Maven users with the release of version 1.5.0 of the Asciidoctor Maven plugin to Maven Central and jCenter!
 
@@ -1575,7 +1575,7 @@ Installing or upgrading to 1.5.0......
 &lt;div class=&quot;sectionbody&quot;&gt;
 &lt;div class=&quot;imageblock thumb&quot; style=&quot;float: right&quot;&gt;
 &lt;div class=&quot;content&quot;&gt;
-&lt;img src=&quot;http://asciidoctor.org/images/storm-in-desert.jpg&quot; alt=&quot;Storm in Desert&quot; /&gt;
+&lt;img src=&quot;https://mrduguo.github.io/asciidoctor.org/images/storm-in-desert.jpg&quot; alt=&quot;Storm in Desert&quot; /&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph lead&quot;&gt;
@@ -1836,17 +1836,17 @@ We particularly want to that the developers of the Asciidoctor Gradle plugin for
 </content>
 </entry>
 <entry>
-<id>http://asciidoctor.org/news/2014/08/21/asciidoctor-gradle-plugin-1-5-0-released/</id>
+<id>https://mrduguo.github.io/asciidoctor.org/news/2014/08/21/asciidoctor-gradle-plugin-1-5-0-released/</id>
 <title>Asciidoctor Gradle plugin 1.5.0 released!</title>
 <updated>2014-08-21T03:24:37-06:00</updated>
 <published>2014-08-21T03:24:37-06:00</published>
-<link href="http://asciidoctor.org/news/2014/08/21/asciidoctor-gradle-plugin-1-5-0-released/" rel="alternate" type="text/html" />
+<link href="https://mrduguo.github.io/asciidoctor.org/news/2014/08/21/asciidoctor-gradle-plugin-1-5-0-released/" rel="alternate" type="text/html" />
 <author>
 <name>Andres Almiray</name>
 </author>
-<category scheme="http://asciidoctor.org/news/tags" term="release" />
-<category scheme="http://asciidoctor.org/news/tags" term="plugin" />
-<category scheme="http://asciidoctor.org/news/tags" term="gradle" />
+<category scheme="https://mrduguo.github.io/asciidoctor.org/news/tags" term="release" />
+<category scheme="https://mrduguo.github.io/asciidoctor.org/news/tags" term="plugin" />
+<category scheme="https://mrduguo.github.io/asciidoctor.org/news/tags" term="gradle" />
 <summary>
 It took us longer than what we hoped but Asciidoctor Gradle plugin version 1.5.0 is finally here!
 The Asciidoctor Gradle plugin is based on AsciidoctorJ and, for the first time, aligns with its version numbering scheme.
@@ -1935,17 +1935,17 @@ When upgrading to Asciidoctor 1.5.0, please refer to the &lt;a href=&quot;http:/
 </content>
 </entry>
 <entry>
-<id>http://asciidoctor.org/news/2014/08/21/asciidoctorj-1-5-0-released/</id>
+<id>https://mrduguo.github.io/asciidoctor.org/news/2014/08/21/asciidoctorj-1-5-0-released/</id>
 <title>AsciidoctorJ 1.5.0 released!</title>
 <updated>2014-08-21T02:58:16-06:00</updated>
 <published>2014-08-21T02:58:16-06:00</published>
-<link href="http://asciidoctor.org/news/2014/08/21/asciidoctorj-1-5-0-released/" rel="alternate" type="text/html" />
+<link href="https://mrduguo.github.io/asciidoctor.org/news/2014/08/21/asciidoctorj-1-5-0-released/" rel="alternate" type="text/html" />
 <author>
 <name>Alex Soto</name>
 <uri>https://github.com/lordofthejars</uri>
 </author>
-<category scheme="http://asciidoctor.org/news/tags" term="release" />
-<category scheme="http://asciidoctor.org/news/tags" term="asciidoctorj" />
+<category scheme="https://mrduguo.github.io/asciidoctor.org/news/tags" term="release" />
+<category scheme="https://mrduguo.github.io/asciidoctor.org/news/tags" term="asciidoctorj" />
 <summary>
 We&#8217;re thrilled to bring the latest Asciidoctor milestone, Asciidoctor 1.5.0, to the JVM as AsciidoctorJ 1.5.0!
 
@@ -2125,17 +2125,17 @@ Look for those announcements to follow!&lt;/p&gt;
 </content>
 </entry>
 <entry>
-<id>http://asciidoctor.org/news/2014/08/12/asciidoctor-1-5-0-released/</id>
+<id>https://mrduguo.github.io/asciidoctor.org/news/2014/08/12/asciidoctor-1-5-0-released/</id>
 <title>Asciidoctor 1.5.0 “Bleeding Heart” released!</title>
 <updated>2014-08-12T02:42:21-06:00</updated>
 <published>2014-08-12T02:42:21-06:00</published>
-<link href="http://asciidoctor.org/news/2014/08/12/asciidoctor-1-5-0-released/" rel="alternate" type="text/html" />
+<link href="https://mrduguo.github.io/asciidoctor.org/news/2014/08/12/asciidoctor-1-5-0-released/" rel="alternate" type="text/html" />
 <author>
 <name>Dan Allen</name>
 <uri>https://github.com/mojavelinux</uri>
 </author>
-<category scheme="http://asciidoctor.org/news/tags" term="release" />
-<category scheme="http://asciidoctor.org/news/tags" term="core" />
+<category scheme="https://mrduguo.github.io/asciidoctor.org/news/tags" term="release" />
+<category scheme="https://mrduguo.github.io/asciidoctor.org/news/tags" term="core" />
 <summary>
 The long-awaited release of Asciidoctor 1.5.0 “Bleeding Heart” has arrived at last!
 This release includes a stockpile of 150 fixes, improvements and enhancements as well as several refinements to the AsciiDoc syntax.
@@ -2298,7 +2298,7 @@ Pepijn Van Eeckhoudt (&lt;a href=&quot;https://github.com/pepijnve&quot;&gt;@pep
 &lt;/div&gt;
 &lt;div class=&quot;imageblock&quot;&gt;
 &lt;div class=&quot;content&quot;&gt;
-&lt;img src=&quot;http://asciidoctor.org/images/asciidoctor-diagram-process.png&quot; alt=&quot;Asciidoctor Diagram process diagram&quot; width=&quot;650&quot; height=&quot;319&quot; /&gt;
+&lt;img src=&quot;https://mrduguo.github.io/asciidoctor.org/images/asciidoctor-diagram-process.png&quot; alt=&quot;Asciidoctor Diagram process diagram&quot; width=&quot;650&quot; height=&quot;319&quot; /&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
@@ -2651,7 +2651,7 @@ In addition to these styles, we also added the missing table border styles for a
 &lt;/div&gt;
 &lt;div class=&quot;imageblock thumb&quot;&gt;
 &lt;div class=&quot;content&quot;&gt;
-&lt;img src=&quot;http://asciidoctor.org/images/screenshot-print-preview.png&quot; alt=&quot;Print preview of HTML generated by Asciidoctor&quot; width=&quot;650&quot; /&gt;
+&lt;img src=&quot;https://mrduguo.github.io/asciidoctor.org/images/screenshot-print-preview.png&quot; alt=&quot;Print preview of HTML generated by Asciidoctor&quot; width=&quot;650&quot; /&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -2689,7 +2689,7 @@ Here’s a preview of the new default theme:&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;imageblock&quot;&gt;
 &lt;div class=&quot;content&quot;&gt;
-&lt;img src=&quot;http://asciidoctor.org/images/screenshot-default-theme.png&quot; alt=&quot;Screenshot of default Asciidoctor theme&quot; width=&quot;650&quot; /&gt;
+&lt;img src=&quot;https://mrduguo.github.io/asciidoctor.org/images/screenshot-default-theme.png&quot; alt=&quot;Screenshot of default Asciidoctor theme&quot; width=&quot;650&quot; /&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -2931,17 +2931,17 @@ From now on, we plan to iterate much faster and only do announcements for major 
 </content>
 </entry>
 <entry>
-<id>http://asciidoctor.org/news/2014/02/18/plain-text-diagrams-in-asciidoctor/</id>
+<id>https://mrduguo.github.io/asciidoctor.org/news/2014/02/18/plain-text-diagrams-in-asciidoctor/</id>
 <title>Plain-text diagrams take shape in Asciidoctor!</title>
 <updated>2014-02-18T16:41:04-07:00</updated>
 <published>2014-02-18T16:41:04-07:00</published>
-<link href="http://asciidoctor.org/news/2014/02/18/plain-text-diagrams-in-asciidoctor/" rel="alternate" type="text/html" />
+<link href="https://mrduguo.github.io/asciidoctor.org/news/2014/02/18/plain-text-diagrams-in-asciidoctor/" rel="alternate" type="text/html" />
 <author>
 <name>Pepijn Van Eeckhoudt</name>
 <uri>https://github.com/pepijnve</uri>
 </author>
-<category scheme="http://asciidoctor.org/news/tags" term="extension" />
-<category scheme="http://asciidoctor.org/news/tags" term="announcement" />
+<category scheme="https://mrduguo.github.io/asciidoctor.org/news/tags" term="extension" />
+<category scheme="https://mrduguo.github.io/asciidoctor.org/news/tags" term="announcement" />
 <summary>
 You write in plain text.
 You code in plain text.
@@ -3011,7 +3011,7 @@ Another way of saying it:&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;imageblock&quot;&gt;
 &lt;div class=&quot;content&quot;&gt;
-&lt;img src=&quot;http://asciidoctor.org/images/language-analogy-diagram.png&quot; alt=&quot;language analogy diagram&quot; /&gt;
+&lt;img src=&quot;https://mrduguo.github.io/asciidoctor.org/images/language-analogy-diagram.png&quot; alt=&quot;language analogy diagram&quot; /&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -3052,7 +3052,7 @@ Here’s how it appears in the rendered document:&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;imageblock&quot;&gt;
 &lt;div class=&quot;content&quot;&gt;
-&lt;img src=&quot;http://asciidoctor.org/images/sample-ditaa-diagram.png&quot; alt=&quot;sample ditaa diagram&quot; /&gt;
+&lt;img src=&quot;https://mrduguo.github.io/asciidoctor.org/images/sample-ditaa-diagram.png&quot; alt=&quot;sample ditaa diagram&quot; /&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
@@ -3092,7 +3092,7 @@ digraph g {
 &lt;/div&gt;
 &lt;div class=&quot;imageblock&quot;&gt;
 &lt;div class=&quot;content&quot;&gt;
-&lt;img src=&quot;http://asciidoctor.org/images/sample-graphviz-diagram.png&quot; alt=&quot;sample graphviz diagram&quot; /&gt;
+&lt;img src=&quot;https://mrduguo.github.io/asciidoctor.org/images/sample-graphviz-diagram.png&quot; alt=&quot;sample graphviz diagram&quot; /&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&quot;admonitionblock note&quot;&gt;
@@ -3130,7 +3130,7 @@ BlockProcessor &amp;lt;|-- PlantUmlBlock
 &lt;/div&gt;
 &lt;div id=&quot;main-classes&quot; class=&quot;imageblock&quot;&gt;
 &lt;div class=&quot;content&quot;&gt;
-&lt;img src=&quot;http://asciidoctor.org/images/sample-plantuml-diagram.png&quot; alt=&quot;Class diagram&quot; width=&quot;135&quot; height=&quot;118&quot; /&gt;
+&lt;img src=&quot;https://mrduguo.github.io/asciidoctor.org/images/sample-plantuml-diagram.png&quot; alt=&quot;Class diagram&quot; width=&quot;135&quot; height=&quot;118&quot; /&gt;
 &lt;/div&gt;
 &lt;div class=&quot;title&quot;&gt;The PlantUML block extension class&lt;/div&gt;
 &lt;/div&gt;
@@ -3222,16 +3222,16 @@ We look forward to hearing from you on the Asciidoctor &lt;a href=&quot;http://d
 </content>
 </entry>
 <entry>
-<id>http://asciidoctor.org/news/2014/02/04/github-asciidoctor-0.1.4-upgrade-5-things-to-know/</id>
+<id>https://mrduguo.github.io/asciidoctor.org/news/2014/02/04/github-asciidoctor-0.1.4-upgrade-5-things-to-know/</id>
 <title>5 things to know about the GitHub Asciidoctor upgrade</title>
 <updated>2014-02-04T02:21:00-07:00</updated>
 <published>2014-02-04T02:21:00-07:00</published>
-<link href="http://asciidoctor.org/news/2014/02/04/github-asciidoctor-0.1.4-upgrade-5-things-to-know/" rel="alternate" type="text/html" />
+<link href="https://mrduguo.github.io/asciidoctor.org/news/2014/02/04/github-asciidoctor-0.1.4-upgrade-5-things-to-know/" rel="alternate" type="text/html" />
 <author>
 <name>Dan Allen</name>
 <uri>https://github.com/mojavelinux</uri>
 </author>
-<category scheme="http://asciidoctor.org/news/tags" term="github" />
+<category scheme="https://mrduguo.github.io/asciidoctor.org/news/tags" term="github" />
 <summary>
 After much anticipation, GitHub  recently upgraded Asciidoctor to the 0.1.4 release, thanks to @bkeepers!
 
@@ -3271,7 +3271,7 @@ If you need to see it to believe it, I present you proof.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;imageblock&quot;&gt;
 &lt;div class=&quot;content&quot;&gt;
-&lt;img src=&quot;http://asciidoctor.org/images/syntax-highlight-sample-github.png&quot; alt=&quot;syntax highlight sample github&quot; /&gt;
+&lt;img src=&quot;https://mrduguo.github.io/asciidoctor.org/images/syntax-highlight-sample-github.png&quot; alt=&quot;syntax highlight sample github&quot; /&gt;
 &lt;/div&gt;
 &lt;div class=&quot;title&quot;&gt;Figure 1. Syntax highlighting in an AsciiDoc source block on GitHub&lt;/div&gt;
 &lt;/div&gt;
@@ -3624,7 +3624,7 @@ If you unset the attribute instead, you will need to place the table of contents
 &lt;/div&gt;
 &lt;div class=&quot;imageblock&quot;&gt;
 &lt;div class=&quot;content&quot;&gt;
-&lt;img src=&quot;http://asciidoctor.org/images/toc-sample-github.png&quot; alt=&quot;toc sample github&quot; /&gt;
+&lt;img src=&quot;https://mrduguo.github.io/asciidoctor.org/images/toc-sample-github.png&quot; alt=&quot;toc sample github&quot; /&gt;
 &lt;/div&gt;
 &lt;div class=&quot;title&quot;&gt;Figure 2. Table of contents rendered on GitHub&lt;/div&gt;
 &lt;/div&gt;
@@ -3730,17 +3730,17 @@ It’s the real deal, syntax highlighting and all.&lt;/p&gt;
 </content>
 </entry>
 <entry>
-<id>http://asciidoctor.org/news/2013/09/18/introducing-asciidoctor-js-live-preview/</id>
+<id>https://mrduguo.github.io/asciidoctor.org/news/2013/09/18/introducing-asciidoctor-js-live-preview/</id>
 <title>Introducing Asciidoctor.js live preview in your browser</title>
 <updated>2013-09-18T02:19:35-06:00</updated>
 <published>2013-09-18T02:19:35-06:00</published>
-<link href="http://asciidoctor.org/news/2013/09/18/introducing-asciidoctor-js-live-preview/" rel="alternate" type="text/html" />
+<link href="https://mrduguo.github.io/asciidoctor.org/news/2013/09/18/introducing-asciidoctor-js-live-preview/" rel="alternate" type="text/html" />
 <author>
 <name>Guillaume Grossetie</name>
 </author>
-<category scheme="http://asciidoctor.org/news/tags" term="announcement" />
-<category scheme="http://asciidoctor.org/news/tags" term="javascript" />
-<category scheme="http://asciidoctor.org/news/tags" term="extension" />
+<category scheme="https://mrduguo.github.io/asciidoctor.org/news/tags" term="announcement" />
+<category scheme="https://mrduguo.github.io/asciidoctor.org/news/tags" term="javascript" />
+<category scheme="https://mrduguo.github.io/asciidoctor.org/news/tags" term="extension" />
 <summary>
 I&#8217;d like to introduce you to the easiest way to render any AsciiDoc file, local or remote, as HTML directly in your browser!
 
@@ -3799,7 +3799,7 @@ Both provide a toggle button to switch between HTML output and AsciiDoc source.&
 &lt;/div&gt;
 &lt;div class=&quot;imageblock&quot;&gt;
 &lt;div class=&quot;content&quot;&gt;
-&lt;img src=&quot;http://asciidoctor.org/images/chrome-extension-enabled.png&quot; alt=&quot;chrome extension enabled&quot; /&gt;
+&lt;img src=&quot;https://mrduguo.github.io/asciidoctor.org/images/chrome-extension-enabled.png&quot; alt=&quot;chrome extension enabled&quot; /&gt;
 &lt;/div&gt;
 &lt;div class=&quot;title&quot;&gt;Chrome extension in action&lt;/div&gt;
 &lt;/div&gt;
@@ -3855,16 +3855,16 @@ We planned to cross-compile the newly-released &lt;a href=&quot;https://github.c
 </content>
 </entry>
 <entry>
-<id>http://asciidoctor.org/news/2013/09/05/asciidoctor-0-1-4-released/</id>
+<id>https://mrduguo.github.io/asciidoctor.org/news/2013/09/05/asciidoctor-0-1-4-released/</id>
 <title>Asciidoctor 0.1.4 released!</title>
 <updated>2013-09-05T16:59:27-06:00</updated>
 <published>2013-09-05T16:59:27-06:00</published>
-<link href="http://asciidoctor.org/news/2013/09/05/asciidoctor-0-1-4-released/" rel="alternate" type="text/html" />
+<link href="https://mrduguo.github.io/asciidoctor.org/news/2013/09/05/asciidoctor-0-1-4-released/" rel="alternate" type="text/html" />
 <author>
 <name>Dan Allen</name>
 <uri>https://github.com/mojavelinux</uri>
 </author>
-<category scheme="http://asciidoctor.org/news/tags" term="release" />
+<category scheme="https://mrduguo.github.io/asciidoctor.org/news/tags" term="release" />
 <summary>
 We&#8217;re thrilled (and a bit relieved) to announce the release of Asciidoctor 0.1.4!
 
@@ -3902,10 +3902,10 @@ Instead, it turned out to be a......
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;Asciidoctor is a fast, open source text processor and publishing toolchain for transforming AsciiDoc markup into HTML 5, DocBook 5.0, DocBook 4.5 and custom output formats.
 Asciidoctor is written in Ruby, packaged as a RubyGem and published to &lt;a href=&quot;http://rubygems.org/gems/asciidoctor&quot;&gt;RubyGems.org&lt;/a&gt;.
-The Asciidoctor processor is also accessible to any JVM language or build system via the &lt;a href=&quot;http://asciidoctor.org/docs/install-and-use-asciidoctor-java-integration&quot;&gt;Java integration library&lt;/a&gt;.&lt;/p&gt;
+The Asciidoctor processor is also accessible to any JVM language or build system via the &lt;a href=&quot;https://mrduguo.github.io/asciidoctor.org/docs/install-and-use-asciidoctor-java-integration&quot;&gt;Java integration library&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Follow the instructions on the &lt;a href=&quot;http://asciidoctor.org/docs/install-toolchain/#installing-the-asciidoctor-rubygem&quot;&gt;Installing or Updating Asciidoctor&lt;/a&gt; page to get started.&lt;/p&gt;
+&lt;p&gt;Follow the instructions on the &lt;a href=&quot;https://mrduguo.github.io/asciidoctor.org/docs/install-toolchain/#installing-the-asciidoctor-rubygem&quot;&gt;Installing or Updating Asciidoctor&lt;/a&gt; page to get started.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -4996,7 +4996,7 @@ Then, assign the name of that class as a role (e.g., &lt;code&gt;[.custom]&lt;/c
 &lt;div class=&quot;sect2&quot;&gt;
 &lt;h3 id=&quot;implicit-header-row-for-tables&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#implicit-header-row-for-tables&quot;&gt;&lt;/a&gt;Implicit header row for tables&lt;/h3&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;After adding &lt;a href=&quot;http://asciidoctor.org/news/2013/05/31/asciidoctor-0-1-3-released/#shorthand-notation-for-setting-code-csv-code-and-code-dsv-code-table-formats&quot;&gt;shorthand notation&lt;/a&gt; in Asciidoctor 0.1.3 for specifying the table format (e.g., &lt;code&gt;,===&lt;/code&gt;, &lt;code&gt;;===&lt;/code&gt;), it seemed tedious to still have to use a block attribute line to enable the header row (e.g, &lt;code&gt;[options=&quot;header&quot;]&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;After adding &lt;a href=&quot;https://mrduguo.github.io/asciidoctor.org/news/2013/05/31/asciidoctor-0-1-3-released/#shorthand-notation-for-setting-code-csv-code-and-code-dsv-code-table-formats&quot;&gt;shorthand notation&lt;/a&gt; in Asciidoctor 0.1.3 for specifying the table format (e.g., &lt;code&gt;,===&lt;/code&gt;, &lt;code&gt;;===&lt;/code&gt;), it seemed tedious to still have to use a block attribute line to enable the header row (e.g, &lt;code&gt;[options=&quot;header&quot;]&lt;/code&gt;).&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;It’s now possible to enable the header row implicitly just by following a few conventions.
@@ -6941,18 +6941,18 @@ With your participation and feedback, we can make it happen!&lt;/p&gt;
 </content>
 </entry>
 <entry>
-<id>http://asciidoctor.org/news/2013/07/16/oscon-2013-docs-workshop-preview/</id>
+<id>https://mrduguo.github.io/asciidoctor.org/news/2013/07/16/oscon-2013-docs-workshop-preview/</id>
 <title>Easier Documentation, Simpler Websites And Faster Collaboration @ OSCON 2013</title>
 <updated>2013-07-16T12:36:32-06:00</updated>
 <published>2013-07-16T12:36:32-06:00</published>
-<link href="http://asciidoctor.org/news/2013/07/16/oscon-2013-docs-workshop-preview/" rel="alternate" type="text/html" />
+<link href="https://mrduguo.github.io/asciidoctor.org/news/2013/07/16/oscon-2013-docs-workshop-preview/" rel="alternate" type="text/html" />
 <author>
 <name>Dan Allen</name>
 </author>
-<category scheme="http://asciidoctor.org/news/tags" term="announcement" />
-<category scheme="http://asciidoctor.org/news/tags" term="github" />
-<category scheme="http://asciidoctor.org/news/tags" term="awestruct" />
-<category scheme="http://asciidoctor.org/news/tags" term="content-strategy" />
+<category scheme="https://mrduguo.github.io/asciidoctor.org/news/tags" term="announcement" />
+<category scheme="https://mrduguo.github.io/asciidoctor.org/news/tags" term="github" />
+<category scheme="https://mrduguo.github.io/asciidoctor.org/news/tags" term="awestruct" />
+<category scheme="https://mrduguo.github.io/asciidoctor.org/news/tags" term="content-strategy" />
 <summary>
 Do you find producing and collaborating on documentation or web content difficult?
 At OSCON 2013, we&#8217;ll work with you to reduce the friction of creating content by simplifying your content workflow, teaching you how to collaborate more efficiently and helping to make writing and publishing enjoyable!
@@ -7019,7 +7019,7 @@ It can also be translated into HTML for presentation, hello web publishing!&lt;/
 &lt;/div&gt;
 &lt;div class=&quot;imageblock thumb right&quot;&gt;
 &lt;div class=&quot;content&quot;&gt;
-&lt;a class=&quot;image&quot; href=&quot;http://foundation.zurb.com&quot;&gt;&lt;img src=&quot;http://asciidoctor.org/images/zurb-foundation-yeti.png&quot; alt=&quot;Zurb Foundation Yeti&quot; width=&quot;260&quot; height=&quot;160&quot; /&gt;&lt;/a&gt;
+&lt;a class=&quot;image&quot; href=&quot;http://foundation.zurb.com&quot;&gt;&lt;img src=&quot;https://mrduguo.github.io/asciidoctor.org/images/zurb-foundation-yeti.png&quot; alt=&quot;Zurb Foundation Yeti&quot; width=&quot;260&quot; height=&quot;160&quot; /&gt;&lt;/a&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -7041,7 +7041,7 @@ From GitHub, we can &lt;a href=&quot;https://github.com/blog/1557-github-flow-in
 &lt;/div&gt;
 &lt;div class=&quot;imageblock center&quot;&gt;
 &lt;div class=&quot;content&quot;&gt;
-&lt;a class=&quot;image&quot; href=&quot;https://github.com/asciidoctor/asciidoctor.org/commits/master/docs/asciidoc-syntax-quick-reference.adoc&quot;&gt;&lt;img src=&quot;http://asciidoctor.org/images/github-history.png&quot; alt=&quot;Revision history in GitHub&quot; width=&quot;360&quot; height=&quot;270&quot; /&gt;&lt;/a&gt;
+&lt;a class=&quot;image&quot; href=&quot;https://github.com/asciidoctor/asciidoctor.org/commits/master/docs/asciidoc-syntax-quick-reference.adoc&quot;&gt;&lt;img src=&quot;https://mrduguo.github.io/asciidoctor.org/images/github-history.png&quot; alt=&quot;Revision history in GitHub&quot; width=&quot;360&quot; height=&quot;270&quot; /&gt;&lt;/a&gt;
 &lt;/div&gt;
 &lt;div class=&quot;title&quot;&gt;The revision history is safely tucked away in the git repository.&lt;/div&gt;
 &lt;/div&gt;
@@ -7059,7 +7059,7 @@ We need to get our content on &lt;em&gt;all&lt;/em&gt; of them.&lt;/p&gt;
 It enables and encourages us to write reusable, structured content.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;&lt;span class=&quot;image right&quot;&gt;&lt;img src=&quot;http://asciidoctor.org/images/chunking.jpg&quot; alt=&quot;Chunking&quot; width=&quot;400&quot; height=&quot;192&quot; /&gt;&lt;/span&gt; Reusable content can be mixed and matched with other content to create a composition that suits a device, context or situation.
+&lt;p&gt;&lt;span class=&quot;image right&quot;&gt;&lt;img src=&quot;https://mrduguo.github.io/asciidoctor.org/images/chunking.jpg&quot; alt=&quot;Chunking&quot; width=&quot;400&quot; height=&quot;192&quot; /&gt;&lt;/span&gt; Reusable content can be mixed and matched with other content to create a composition that suits a device, context or situation.
 It’s also a way to keep our content DRY (Don’t Repeat Yourself) so we don’t have to update the same content in a dozen places, or even two.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
@@ -7377,16 +7377,16 @@ These resources should also help you continue to learn about the subject after t
 </content>
 </entry>
 <entry>
-<id>http://asciidoctor.org/news/2013/06/23/asciidoctor-maven-plugin-0-1-3-1-released/</id>
+<id>https://mrduguo.github.io/asciidoctor.org/news/2013/06/23/asciidoctor-maven-plugin-0-1-3-1-released/</id>
 <title>Asciidoctor Maven plugin 0.1.3.1 released!</title>
 <updated>2013-06-23T20:05:00-06:00</updated>
 <published>2013-06-23T20:05:00-06:00</published>
-<link href="http://asciidoctor.org/news/2013/06/23/asciidoctor-maven-plugin-0-1-3-1-released/" rel="alternate" type="text/html" />
+<link href="https://mrduguo.github.io/asciidoctor.org/news/2013/06/23/asciidoctor-maven-plugin-0-1-3-1-released/" rel="alternate" type="text/html" />
 <author>
 <name>Jason Porter</name>
 </author>
-<category scheme="http://asciidoctor.org/news/tags" term="release" />
-<category scheme="http://asciidoctor.org/news/tags" term="plugin" />
+<category scheme="https://mrduguo.github.io/asciidoctor.org/news/tags" term="release" />
+<category scheme="https://mrduguo.github.io/asciidoctor.org/news/tags" term="plugin" />
 <summary>
 I&#8217;m proud to announce the Asciidoctor Maven plugin 0.1.3.1 release!
 This is simply a bug fix release to correct some of the things I messed up with 0.1.3 (sorry about that).
@@ -7479,16 +7479,16 @@ All necessary dependencies should be pulled in via Maven.&lt;/p&gt;
 </content>
 </entry>
 <entry>
-<id>http://asciidoctor.org/news/2013/06/12/asciidoctor-maven-plugin-0-1-3-released/</id>
+<id>https://mrduguo.github.io/asciidoctor.org/news/2013/06/12/asciidoctor-maven-plugin-0-1-3-released/</id>
 <title>Asciidoctor Maven plugin 0.1.3 released!</title>
 <updated>2013-06-12T00:58:44-06:00</updated>
 <published>2013-06-12T00:58:44-06:00</published>
-<link href="http://asciidoctor.org/news/2013/06/12/asciidoctor-maven-plugin-0-1-3-released/" rel="alternate" type="text/html" />
+<link href="https://mrduguo.github.io/asciidoctor.org/news/2013/06/12/asciidoctor-maven-plugin-0-1-3-released/" rel="alternate" type="text/html" />
 <author>
 <name>Jason Porter</name>
 </author>
-<category scheme="http://asciidoctor.org/news/tags" term="release" />
-<category scheme="http://asciidoctor.org/news/tags" term="plugin" />
+<category scheme="https://mrduguo.github.io/asciidoctor.org/news/tags" term="release" />
+<category scheme="https://mrduguo.github.io/asciidoctor.org/news/tags" term="plugin" />
 <summary>
 It has taken me a little while longer to get this release out the door than I would have hoped, but it&#8217;s here at last!
 I&#8217;m proud to release Asciidoctor Maven plugin version 0.1.3!
@@ -7551,17 +7551,17 @@ All necessary dependencies should be pulled in via Maven.&lt;/p&gt;
 </content>
 </entry>
 <entry>
-<id>http://asciidoctor.org/news/2013/06/03/asciidoclet-announcement/</id>
+<id>https://mrduguo.github.io/asciidoctor.org/news/2013/06/03/asciidoclet-announcement/</id>
 <title>Write Javadocs in AsciiDoc with Asciidoclet</title>
 <updated>2013-06-03T23:47:37-06:00</updated>
 <published>2013-06-03T23:47:37-06:00</published>
-<link href="http://asciidoctor.org/news/2013/06/03/asciidoclet-announcement/" rel="alternate" type="text/html" />
+<link href="https://mrduguo.github.io/asciidoctor.org/news/2013/06/03/asciidoclet-announcement/" rel="alternate" type="text/html" />
 <author>
 <name>John Ericksen</name>
 </author>
-<category scheme="http://asciidoctor.org/news/tags" term="announcement" />
-<category scheme="http://asciidoctor.org/news/tags" term="plugin" />
-<category scheme="http://asciidoctor.org/news/tags" term="asciidoclet" />
+<category scheme="https://mrduguo.github.io/asciidoctor.org/news/tags" term="announcement" />
+<category scheme="https://mrduguo.github.io/asciidoctor.org/news/tags" term="plugin" />
+<category scheme="https://mrduguo.github.io/asciidoctor.org/news/tags" term="asciidoclet" />
 <summary>
 We&#8217;re excited to announce the newest member of the Asciidoctor family, Asciidoclet. Asciidoclet is a Javadoc Doclet based on Asciidoctor that enables developers to write Javadoc comments using the AsciiDoc syntax.
 
@@ -7580,7 +7580,7 @@ The main drawback of Javadoc has been the requirement to use embedded HTML fragm
 &lt;div id=&quot;preamble&quot;&gt;
 &lt;div class=&quot;sectionbody&quot;&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;We’re excited to announce the newest member of the &lt;a href=&quot;http://asciidoctor.org/&quot;&gt;Asciidoctor&lt;/a&gt; family, &lt;a href=&quot;https://github.com/asciidoctor/asciidoclet&quot;&gt;Asciidoclet&lt;/a&gt;. &lt;a href=&quot;https://github.com/asciidoctor/asciidoclet&quot;&gt;Asciidoclet&lt;/a&gt; is a Javadoc Doclet based on &lt;a href=&quot;http://asciidoctor.org/&quot;&gt;Asciidoctor&lt;/a&gt; that enables developers to write Javadoc comments using the &lt;a href=&quot;http://asciidoc.org&quot;&gt;AsciiDoc&lt;/a&gt; syntax.&lt;/p&gt;
+&lt;p&gt;We’re excited to announce the newest member of the &lt;a href=&quot;https://mrduguo.github.io/asciidoctor.org/&quot;&gt;Asciidoctor&lt;/a&gt; family, &lt;a href=&quot;https://github.com/asciidoctor/asciidoclet&quot;&gt;Asciidoclet&lt;/a&gt;. &lt;a href=&quot;https://github.com/asciidoctor/asciidoclet&quot;&gt;Asciidoclet&lt;/a&gt; is a Javadoc Doclet based on &lt;a href=&quot;https://mrduguo.github.io/asciidoctor.org/&quot;&gt;Asciidoctor&lt;/a&gt; that enables developers to write Javadoc comments using the &lt;a href=&quot;http://asciidoc.org&quot;&gt;AsciiDoc&lt;/a&gt; syntax.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -7728,24 +7728,24 @@ The main drawback of Javadoc has been the requirement to use embedded HTML fragm
 &lt;p&gt;We hope that this extension helps you push your Javadocs to new heights. As always, collaboration is welcome and you may find (and fork) the source on &lt;a href=&quot;https://github.com/asciidoctor/asciidoclet&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;A big thanks to &lt;a href=&quot;https://github.com/lordofthejars&quot;&gt;Alex Soto&lt;/a&gt; of the &lt;a href=&quot;https://github.com/asciidoctor/asciidoctor-java-integration&quot;&gt;Asciidoctor Java integration project&lt;/a&gt;, &lt;a href=&quot;https://github.com/lightguard&quot;&gt;Jason Porter&lt;/a&gt; and &lt;a href=&quot;https://github.com/mojavelinux&quot;&gt;Dan Allen&lt;/a&gt; for their feedback and support and everyone else who contributes to the &lt;a href=&quot;http://asciidoctor.org/&quot;&gt;Asciidoctor&lt;/a&gt; project. Writing this extension could not have been easier because of the great work and collaboration of the &lt;a href=&quot;http://asciidoctor.org/&quot;&gt;Asciidoctor&lt;/a&gt; community.&lt;/p&gt;
+&lt;p&gt;A big thanks to &lt;a href=&quot;https://github.com/lordofthejars&quot;&gt;Alex Soto&lt;/a&gt; of the &lt;a href=&quot;https://github.com/asciidoctor/asciidoctor-java-integration&quot;&gt;Asciidoctor Java integration project&lt;/a&gt;, &lt;a href=&quot;https://github.com/lightguard&quot;&gt;Jason Porter&lt;/a&gt; and &lt;a href=&quot;https://github.com/mojavelinux&quot;&gt;Dan Allen&lt;/a&gt; for their feedback and support and everyone else who contributes to the &lt;a href=&quot;https://mrduguo.github.io/asciidoctor.org/&quot;&gt;Asciidoctor&lt;/a&gt; project. Writing this extension could not have been easier because of the great work and collaboration of the &lt;a href=&quot;https://mrduguo.github.io/asciidoctor.org/&quot;&gt;Asciidoctor&lt;/a&gt; community.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 </content>
 </entry>
 <entry>
-<id>http://asciidoctor.org/news/2013/06/03/asciidoctor-java-integration-0-1-3-released/</id>
+<id>https://mrduguo.github.io/asciidoctor.org/news/2013/06/03/asciidoctor-java-integration-0-1-3-released/</id>
 <title>Asciidoctor Java integration 0.1.3 released!</title>
 <updated>2013-06-03T16:52:31-06:00</updated>
 <published>2013-06-03T16:52:31-06:00</published>
-<link href="http://asciidoctor.org/news/2013/06/03/asciidoctor-java-integration-0-1-3-released/" rel="alternate" type="text/html" />
+<link href="https://mrduguo.github.io/asciidoctor.org/news/2013/06/03/asciidoctor-java-integration-0-1-3-released/" rel="alternate" type="text/html" />
 <author>
 <name>Alex Soto</name>
 <uri>https://github.com/lordofthejars</uri>
 </author>
-<category scheme="http://asciidoctor.org/news/tags" term="release" />
-<category scheme="http://asciidoctor.org/news/tags" term="plugin" />
+<category scheme="https://mrduguo.github.io/asciidoctor.org/news/tags" term="release" />
+<category scheme="https://mrduguo.github.io/asciidoctor.org/news/tags" term="plugin" />
 <summary>
 The Asciidoctor Java integration is the official means of using Asciidoctor to render your AsciiDoc documentation using Java instead of Ruby.
 
@@ -7867,15 +7867,15 @@ The equivalent method to &lt;code&gt;.icons(true)&lt;/code&gt; is &lt;code&gt;.i
 </content>
 </entry>
 <entry>
-<id>http://asciidoctor.org/news/2013/05/31/asciidoctor-0-1-3-released/</id>
+<id>https://mrduguo.github.io/asciidoctor.org/news/2013/05/31/asciidoctor-0-1-3-released/</id>
 <title>Asciidoctor 0.1.3 released!</title>
 <updated>2013-05-31T22:24:04-06:00</updated>
 <published>2013-05-31T22:24:04-06:00</published>
-<link href="http://asciidoctor.org/news/2013/05/31/asciidoctor-0-1-3-released/" rel="alternate" type="text/html" />
+<link href="https://mrduguo.github.io/asciidoctor.org/news/2013/05/31/asciidoctor-0-1-3-released/" rel="alternate" type="text/html" />
 <author>
 <name>Sarah White</name>
 </author>
-<category scheme="http://asciidoctor.org/news/tags" term="release" />
+<category scheme="https://mrduguo.github.io/asciidoctor.org/news/tags" term="release" />
 <summary>
 We&#8217;re thrilled to announce the release of Asciidoctor 0.1.3.
 Read Installing or Updating Asciidoctor to learn how to get it setup.
@@ -7895,7 +7895,7 @@ With this release, we&#8217;ve moved past just implementing AsciiDoc to advancin
 &lt;div class=&quot;sectionbody&quot;&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;We’re thrilled to announce the release of &lt;a href=&quot;http://rubygems.org/gems/asciidoctor&quot;&gt;Asciidoctor 0.1.3&lt;/a&gt;.&lt;br /&gt;
-Read &lt;a href=&quot;http://asciidoctor.org/docs/install-toolchain/#installing-the-asciidoctor-rubygem&quot;&gt;Installing or Updating Asciidoctor&lt;/a&gt; to learn how to get it setup.&lt;/p&gt;
+Read &lt;a href=&quot;https://mrduguo.github.io/asciidoctor.org/docs/install-toolchain/#installing-the-asciidoctor-rubygem&quot;&gt;Installing or Updating Asciidoctor&lt;/a&gt; to learn how to get it setup.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;&lt;em&gt;Asciidoctor is an open source text processor and publishing toolchain written in Ruby for converting AsciiDoc markup into HTML 5, DocBook 4.5 and custom formats.
@@ -8110,7 +8110,7 @@ ____&lt;/code&gt;&lt;/pre&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Learn more in the Asciidoctor Docs: &lt;a href=&quot;http://asciidoctor.org/docs/asciidoc-writers-guide/#block-metadata&quot;&gt;block attributes&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Learn more in the Asciidoctor Docs: &lt;a href=&quot;https://mrduguo.github.io/asciidoctor.org/docs/asciidoc-writers-guide/#block-metadata&quot;&gt;block attributes&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&quot;sect2&quot;&gt;
@@ -8153,7 +8153,7 @@ a:b:c
 &lt;p&gt;Now, you only need the block attribute list for setting any additional options.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Learn more in the Asciidoctor Docs: &lt;a href=&quot;http://asciidoctor.org/docs/asciidoc-writers-guide/#a-new-perspective-on-tables&quot;&gt;tables&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Learn more in the Asciidoctor Docs: &lt;a href=&quot;https://mrduguo.github.io/asciidoctor.org/docs/asciidoc-writers-guide/#a-new-perspective-on-tables&quot;&gt;tables&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&quot;sect2&quot;&gt;
@@ -8328,7 +8328,7 @@ This gesture is reminiscinet of the &lt;a href=&quot;http://www.flickr.com/photo
 &lt;/blockquote&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Learn more in the Asciidoctor Docs: &lt;a href=&quot;http://asciidoctor.org/docs/asciidoc-writers-guide/#building-blocks-in-asciidoc&quot;&gt;blocks&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Learn more in the Asciidoctor Docs: &lt;a href=&quot;https://mrduguo.github.io/asciidoctor.org/docs/asciidoc-writers-guide/#building-blocks-in-asciidoc&quot;&gt;blocks&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -8474,13 +8474,13 @@ The stylesheet then imports the font from the same server.&lt;/p&gt;
 &lt;i class=&quot;fa icon-important&quot; title=&quot;Important&quot;&gt;&lt;/i&gt;
 &lt;/td&gt;
 &lt;td class=&quot;content&quot;&gt;
-The default stylesheet (or any stylesheet produced by the &lt;a href=&quot;http://asciidoctor.org/docs/produce-custom-themes-using-asciidoctor-stylesheet-factory/&quot;&gt;Asciidoctor stylesheet factory&lt;/a&gt;) is required for this feature to work.
+The default stylesheet (or any stylesheet produced by the &lt;a href=&quot;https://mrduguo.github.io/asciidoctor.org/docs/produce-custom-themes-using-asciidoctor-stylesheet-factory/&quot;&gt;Asciidoctor stylesheet factory&lt;/a&gt;) is required for this feature to work.
 &lt;/td&gt;
 &lt;/tr&gt;
 &lt;/table&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Learn more in the Asciidoctor Docs: &lt;a href=&quot;http://asciidoctor.org/docs/asciidoc-writers-guide/#admonitions&quot;&gt;admonition blocks&lt;/a&gt; | &lt;a href=&quot;http://asciidoctor.org/docs/render-documents/#styling-the-html-with-css&quot;&gt;Asciidoctor stylesheets&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Learn more in the Asciidoctor Docs: &lt;a href=&quot;https://mrduguo.github.io/asciidoctor.org/docs/asciidoc-writers-guide/#admonitions&quot;&gt;admonition blocks&lt;/a&gt; | &lt;a href=&quot;https://mrduguo.github.io/asciidoctor.org/docs/render-documents/#styling-the-html-with-css&quot;&gt;Asciidoctor stylesheets&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&quot;sect2&quot;&gt;
@@ -8544,7 +8544,7 @@ Section title anchors depend on the default Asciidoctor stylesheet to render pro
 &lt;/table&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Learn more in the Asciidoctor Docs: &lt;a href=&quot;http://asciidoctor.org/docs/asciidoc-writers-guide/#section-titles&quot;&gt;section titles&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Learn more in the Asciidoctor Docs: &lt;a href=&quot;https://mrduguo.github.io/asciidoctor.org/docs/asciidoc-writers-guide/#section-titles&quot;&gt;section titles&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&quot;sect2&quot;&gt;
@@ -8881,7 +8881,7 @@ include::{sourcedir}/org/asciidoctor/Asciidoctor.java[]
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Learn more in the Asciidoctor Docs: &lt;a href=&quot;http://asciidoctor.org/docs/asciidoc-writers-guide/#listing-and-source-code-blocks&quot;&gt;include macro and blocks&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Learn more in the Asciidoctor Docs: &lt;a href=&quot;https://mrduguo.github.io/asciidoctor.org/docs/asciidoc-writers-guide/#listing-and-source-code-blocks&quot;&gt;include macro and blocks&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&quot;sect2&quot;&gt;
@@ -8939,7 +8939,7 @@ public class Person {
 &lt;p&gt;The key addition is the &lt;code&gt;prettyprint&lt;/code&gt; class on the &lt;code&gt;&amp;lt;pre&amp;gt;&lt;/code&gt; tag.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Learn more in the Asciidoctor Docs: &lt;a href=&quot;http://asciidoctor.org/docs/asciidoc-syntax-quick-reference/#source-code&quot;&gt;enabling source code highlighters&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Learn more in the Asciidoctor Docs: &lt;a href=&quot;https://mrduguo.github.io/asciidoctor.org/docs/asciidoc-syntax-quick-reference/#source-code&quot;&gt;enabling source code highlighters&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -9456,7 +9456,7 @@ Previously, that required:&lt;/p&gt;
 &lt;p&gt;This enhancement is particularly useful in the integrations, such as the &lt;a href=&quot;https://github.com/asciidoctor/asciidoctor-gradle-plugin&quot;&gt;Gradle plugin&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Learn more in the Asciidoctor Docs: &lt;a href=&quot;http://asciidoctor.org/rdoc/Asciidoctor.html&quot;&gt;Asciidoctor Ruby API&lt;/a&gt; | &lt;a href=&quot;https://oss.sonatype.org/service/local/repositories/releases/archive/org/asciidoctor/asciidoctor-java-integration/0.1.2.1/asciidoctor-java-integration-0.1.2.1-javadoc.jar/!/org/asciidoctor/package-summary.html&quot;&gt;Asciidoctor Java API&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Learn more in the Asciidoctor Docs: &lt;a href=&quot;https://mrduguo.github.io/asciidoctor.org/rdoc/Asciidoctor.html&quot;&gt;Asciidoctor Ruby API&lt;/a&gt; | &lt;a href=&quot;https://oss.sonatype.org/service/local/repositories/releases/archive/org/asciidoctor/asciidoctor-java-integration/0.1.2.1/asciidoctor-java-integration-0.1.2.1-javadoc.jar/!/org/asciidoctor/package-summary.html&quot;&gt;Asciidoctor Java API&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;And that’s a wrap!&lt;/p&gt;
@@ -9547,17 +9547,17 @@ Look for releases of the Java integration, Maven plugin, Gradle plugin and more 
 </content>
 </entry>
 <entry>
-<id>http://asciidoctor.org/news/2013/05/21/asciidoctor-js-render-asciidoc-in-the-browser/</id>
+<id>https://mrduguo.github.io/asciidoctor.org/news/2013/05/21/asciidoctor-js-render-asciidoc-in-the-browser/</id>
 <title>asciidoctor.js - Render AsciiDoc in your browser!</title>
 <updated>2013-05-21T01:29:55-06:00</updated>
 <published>2013-05-21T01:29:55-06:00</published>
-<link href="http://asciidoctor.org/news/2013/05/21/asciidoctor-js-render-asciidoc-in-the-browser/" rel="alternate" type="text/html" />
+<link href="https://mrduguo.github.io/asciidoctor.org/news/2013/05/21/asciidoctor-js-render-asciidoc-in-the-browser/" rel="alternate" type="text/html" />
 <author>
 <name>Dan Allen</name>
 </author>
-<category scheme="http://asciidoctor.org/news/tags" term="announcement" />
-<category scheme="http://asciidoctor.org/news/tags" term="javascript" />
-<category scheme="http://asciidoctor.org/news/tags" term="port" />
+<category scheme="https://mrduguo.github.io/asciidoctor.org/news/tags" term="announcement" />
+<category scheme="https://mrduguo.github.io/asciidoctor.org/news/tags" term="javascript" />
+<category scheme="https://mrduguo.github.io/asciidoctor.org/news/tags" term="port" />
 <summary>
 We&#8217;ve combined Asciidoctor and Opal to bring AsciiDoc rendering to the browser!
 
@@ -9602,7 +9602,7 @@ When I first......
 &lt;div class=&quot;sectionbody&quot;&gt;
 &lt;div class=&quot;imageblock feature right&quot;&gt;
 &lt;div class=&quot;content&quot;&gt;
-&lt;img src=&quot;http://asciidoctor.org/images/opal-logo.png&quot; alt=&quot;Opal&quot; width=&quot;200&quot; height=&quot;200&quot; /&gt;
+&lt;img src=&quot;https://mrduguo.github.io/asciidoctor.org/images/opal-logo.png&quot; alt=&quot;Opal&quot; width=&quot;200&quot; height=&quot;200&quot; /&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
@@ -9745,17 +9745,17 @@ Then, get involved in either Asciidoctor or Opal to help make AsciiDoc in the br
 </content>
 </entry>
 <entry>
-<id>http://asciidoctor.org/news/2013/05/17/asciidoctor-java-integration-0-1-2-1-released/</id>
+<id>https://mrduguo.github.io/asciidoctor.org/news/2013/05/17/asciidoctor-java-integration-0-1-2-1-released/</id>
 <title>Asciidoctor Java integration 0.1.2.1 released!</title>
 <updated>2013-05-17T20:19:10-02:00</updated>
 <published>2013-05-17T20:19:10-02:00</published>
-<link href="http://asciidoctor.org/news/2013/05/17/asciidoctor-java-integration-0-1-2-1-released/" rel="alternate" type="text/html" />
+<link href="https://mrduguo.github.io/asciidoctor.org/news/2013/05/17/asciidoctor-java-integration-0-1-2-1-released/" rel="alternate" type="text/html" />
 <author>
 <name>Alex Soto</name>
 <uri>https://github.com/lordofthejars</uri>
 </author>
-<category scheme="http://asciidoctor.org/news/tags" term="release" />
-<category scheme="http://asciidoctor.org/news/tags" term="plugin" />
+<category scheme="https://mrduguo.github.io/asciidoctor.org/news/tags" term="release" />
+<category scheme="https://mrduguo.github.io/asciidoctor.org/news/tags" term="plugin" />
 <summary>
 The Asciidoctor Java integration is the official means of using Asciidoctor to render your AsciiDoc documentation using Java instead of Ruby.
 
@@ -9856,16 +9856,16 @@ Resolves &lt;a href=&quot;https://github.com/asciidoctor/asciidoctor-java-integr
 </content>
 </entry>
 <entry>
-<id>http://asciidoctor.org/news/2013/05/15/asciidoctor-maven-plugin-0-1-2-1-released/</id>
+<id>https://mrduguo.github.io/asciidoctor.org/news/2013/05/15/asciidoctor-maven-plugin-0-1-2-1-released/</id>
 <title>Asciidoctor Maven plugin 0.1.2.1 released!</title>
 <updated>2013-05-15T19:06:41-06:00</updated>
 <published>2013-05-15T19:06:41-06:00</published>
-<link href="http://asciidoctor.org/news/2013/05/15/asciidoctor-maven-plugin-0-1-2-1-released/" rel="alternate" type="text/html" />
+<link href="https://mrduguo.github.io/asciidoctor.org/news/2013/05/15/asciidoctor-maven-plugin-0-1-2-1-released/" rel="alternate" type="text/html" />
 <author>
 <name>Jason Porter</name>
 </author>
-<category scheme="http://asciidoctor.org/news/tags" term="release" />
-<category scheme="http://asciidoctor.org/news/tags" term="plugin" />
+<category scheme="https://mrduguo.github.io/asciidoctor.org/news/tags" term="release" />
+<category scheme="https://mrduguo.github.io/asciidoctor.org/news/tags" term="plugin" />
 <summary>
 Some great things have happened for the Asciidoctor Maven plugin since the last release, I&#8217;m happy to announce the release of version 0.1.2.1!
 
@@ -9950,16 +9950,16 @@ All necessary dependencies should be pulled in via Maven.&lt;/p&gt;
 </content>
 </entry>
 <entry>
-<id>http://asciidoctor.org/news/2013/04/28/asciidoctor-java-integration-0-1-2-released/</id>
+<id>https://mrduguo.github.io/asciidoctor.org/news/2013/04/28/asciidoctor-java-integration-0-1-2-released/</id>
 <title>Asciidoctor Java integration 0.1.2 released!</title>
 <updated>2013-04-28T23:26:10-06:00</updated>
 <published>2013-04-28T23:26:10-06:00</published>
-<link href="http://asciidoctor.org/news/2013/04/28/asciidoctor-java-integration-0-1-2-released/" rel="alternate" type="text/html" />
+<link href="https://mrduguo.github.io/asciidoctor.org/news/2013/04/28/asciidoctor-java-integration-0-1-2-released/" rel="alternate" type="text/html" />
 <author>
 <name>Alex Soto</name>
 </author>
-<category scheme="http://asciidoctor.org/news/tags" term="release" />
-<category scheme="http://asciidoctor.org/news/tags" term="plugin" />
+<category scheme="https://mrduguo.github.io/asciidoctor.org/news/tags" term="release" />
+<category scheme="https://mrduguo.github.io/asciidoctor.org/news/tags" term="plugin" />
 <summary>
 The Asciidoctor Java integration is the official means of using Asciidoctor to render all your AsciiDoc documentation using Java instead of Ruby.
 
@@ -10067,16 +10067,16 @@ If you’re currently using the &lt;code&gt;Asciidoctor#renderFile&lt;/code&gt; 
 </content>
 </entry>
 <entry>
-<id>http://asciidoctor.org/news/2013/04/28/asciidoctor-maven-plugin-0-1-2-released/</id>
+<id>https://mrduguo.github.io/asciidoctor.org/news/2013/04/28/asciidoctor-maven-plugin-0-1-2-released/</id>
 <title>Asciidoctor Maven plugin 0.1.2 released!</title>
 <updated>2013-04-28T02:15:15-06:00</updated>
 <published>2013-04-28T02:15:15-06:00</published>
-<link href="http://asciidoctor.org/news/2013/04/28/asciidoctor-maven-plugin-0-1-2-released/" rel="alternate" type="text/html" />
+<link href="https://mrduguo.github.io/asciidoctor.org/news/2013/04/28/asciidoctor-maven-plugin-0-1-2-released/" rel="alternate" type="text/html" />
 <author>
 <name>Jason Porter</name>
 </author>
-<category scheme="http://asciidoctor.org/news/tags" term="release" />
-<category scheme="http://asciidoctor.org/news/tags" term="plugin" />
+<category scheme="https://mrduguo.github.io/asciidoctor.org/news/tags" term="release" />
+<category scheme="https://mrduguo.github.io/asciidoctor.org/news/tags" term="plugin" />
 <summary>
 Following the tradition of quick updates shortly after the release of Asciidoctor, I&#8217;d like to announce the release of versions 0.1.2 and 0.1.1.1 of the
 Asciidoctor Maven plugin!
@@ -10126,7 +10126,7 @@ For more information about issues fixed in this release, please see the......
 </summary>
 <content type="html">
 &lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Following the tradition of quick updates shortly after the release of &lt;a href=&quot;http://asciidoctor.org/&quot;&gt;Asciidoctor&lt;/a&gt;, I’d like to announce the release of versions 0.1.2 and 0.1.1.1 of the
+&lt;p&gt;Following the tradition of quick updates shortly after the release of &lt;a href=&quot;https://mrduguo.github.io/asciidoctor.org/&quot;&gt;Asciidoctor&lt;/a&gt;, I’d like to announce the release of versions 0.1.2 and 0.1.1.1 of the
 &lt;a href=&quot;https://github.com/asciidoctor/asciidoctor-maven-plugin&quot;&gt;Asciidoctor Maven plugin&lt;/a&gt;!&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
@@ -10175,15 +10175,15 @@ All necessary dependencies should be pulled in via Maven.&lt;/p&gt;
 </content>
 </entry>
 <entry>
-<id>http://asciidoctor.org/news/2013/04/25/asciidoctor-0-1-2-released/</id>
+<id>https://mrduguo.github.io/asciidoctor.org/news/2013/04/25/asciidoctor-0-1-2-released/</id>
 <title>Asciidoctor 0.1.2 released!</title>
 <updated>2013-04-25T20:47:32-06:00</updated>
 <published>2013-04-25T20:47:32-06:00</published>
-<link href="http://asciidoctor.org/news/2013/04/25/asciidoctor-0-1-2-released/" rel="alternate" type="text/html" />
+<link href="https://mrduguo.github.io/asciidoctor.org/news/2013/04/25/asciidoctor-0-1-2-released/" rel="alternate" type="text/html" />
 <author>
 <name>Dan Allen</name>
 </author>
-<category scheme="http://asciidoctor.org/news/tags" term="release" />
+<category scheme="https://mrduguo.github.io/asciidoctor.org/news/tags" term="release" />
 <summary>
 We&#8217;re proud to announce the release of Asciidoctor 0.1.2!
 
@@ -10249,7 +10249,7 @@ This stylesheet gives documents a......
 &lt;p&gt;shipping &lt;a href=&quot;http://themes.asciidoctor.org/preview&quot;&gt;a default stylesheet&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;a new &lt;a href=&quot;http://asciidoctor.org/&quot;&gt;website&lt;/a&gt; and &lt;a href=&quot;http://asciidoctor.org/docs&quot;&gt;user documentation&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;a new &lt;a href=&quot;https://mrduguo.github.io/asciidoctor.org/&quot;&gt;website&lt;/a&gt; and &lt;a href=&quot;https://mrduguo.github.io/asciidoctor.org/docs&quot;&gt;user documentation&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
@@ -10268,7 +10268,7 @@ The improvements have also given Asciidoctor a &lt;strong&gt;28% boost in speed&
 &lt;dd&gt;
 &lt;p&gt;Asciidoctor now ships a default stylesheet!
 This stylesheet gives documents a unique, modern and elegant look and feel out of the box.
-To learn how to use it, read the stylesheet section of &lt;a href=&quot;http://asciidoctor.org/docs/render-documents/#styling-the-html-with-css&quot;&gt;How do I render a document?&lt;/a&gt;.
+To learn how to use it, read the stylesheet section of &lt;a href=&quot;https://mrduguo.github.io/asciidoctor.org/docs/render-documents/#styling-the-html-with-css&quot;&gt;How do I render a document?&lt;/a&gt;.
 Visit &lt;a href=&quot;http://themes.asciidoctor.org&quot; class=&quot;bare&quot;&gt;http://themes.asciidoctor.org&lt;/a&gt; to &lt;a href=&quot;http://themes.asciidoctor.org/preview&quot;&gt;a preview&lt;/a&gt; the default stylesheet and other themes created using the &lt;a href=&quot;https://github.com/asciidoctor/asciidoctor-stylesheet-factory&quot;&gt;Asciidoctor stylesheet factory&lt;/a&gt;.
 Resolves issues &lt;a href=&quot;https://github.com/asciidoctor/asciidoctor/issues/76&quot;&gt;#76&lt;/a&gt; and &lt;a href=&quot;https://github.com/asciidoctor/asciidoctor/issues/165&quot;&gt;#165&lt;/a&gt;.&lt;/p&gt;
 &lt;/dd&gt;
@@ -10375,14 +10375,14 @@ Resolves issue &lt;a href=&quot;https://github.com/asciidoctor/asciidoctor/issue
 &lt;p&gt;&lt;strong&gt;You’re looking at it!&lt;/strong&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;During the 0.1.2 release cycle, we created &lt;a href=&quot;http://asciidoctor.org/&quot;&gt;a proper website for Asciidoctor&lt;/a&gt; and focused on getting the &lt;a href=&quot;http://asciidoctor.org/docs&quot;&gt;user documentation started&lt;/a&gt;.
+&lt;p&gt;During the 0.1.2 release cycle, we created &lt;a href=&quot;https://mrduguo.github.io/asciidoctor.org/&quot;&gt;a proper website for Asciidoctor&lt;/a&gt; and focused on getting the &lt;a href=&quot;https://mrduguo.github.io/asciidoctor.org/docs&quot;&gt;user documentation started&lt;/a&gt;.
 Both the website and documentation are, of course, written in AsciiDoc.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;Sarah White has taken on the initiative of untangling information in the AsciiDoc user guide and man pages and converting it to something consumable so users can get started quickly with the AsciiDoc and Asciidoctor toolchains.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;I wrote up &lt;a href=&quot;http://asciidoctor.org/docs/what-is-asciidoc-why-use-it&quot;&gt;an introduction to AsciiDoc&lt;/a&gt;, &lt;a href=&quot;http://asciidoctor.org/docs/asciidoc-writers-guide&quot;&gt;an AsciiDoc writer’s guide&lt;/a&gt; and &lt;a href=&quot;http://asciidoctor.org/docs/asciidoc-quick-reference&quot;&gt;an AsciiDoc syntax quick reference&lt;/a&gt; to reveal the elegance of the AsciiDoc syntax and get writers the information they need to be productive and proficient with AsciiDoc.
+&lt;p&gt;I wrote up &lt;a href=&quot;https://mrduguo.github.io/asciidoctor.org/docs/what-is-asciidoc-why-use-it&quot;&gt;an introduction to AsciiDoc&lt;/a&gt;, &lt;a href=&quot;https://mrduguo.github.io/asciidoctor.org/docs/asciidoc-writers-guide&quot;&gt;an AsciiDoc writer’s guide&lt;/a&gt; and &lt;a href=&quot;https://mrduguo.github.io/asciidoctor.org/docs/asciidoc-quick-reference&quot;&gt;an AsciiDoc syntax quick reference&lt;/a&gt; to reveal the elegance of the AsciiDoc syntax and get writers the information they need to be productive and proficient with AsciiDoc.
 I summarized this information in an article titled &lt;a href=&quot;https://nofluffjuststuff.com/home/magazine_renew?id=42&quot;&gt;&lt;em&gt;The Zen of Writing (Ascii)Docs&lt;/em&gt;&lt;/a&gt;, published in the April issue of NFJS, The Magazine (also produced from articles written in AsciiDoc).&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
@@ -10453,16 +10453,16 @@ We’d especially like to thank the following people for their contributions and
 </content>
 </entry>
 <entry>
-<id>http://asciidoctor.org/news/2013/04/18/enjoy-the-magic-of-asciidoctor-in-java/</id>
+<id>https://mrduguo.github.io/asciidoctor.org/news/2013/04/18/enjoy-the-magic-of-asciidoctor-in-java/</id>
 <title>Enjoy the magic of Asciidoctor in Java</title>
 <updated>2013-04-18T21:43:51-06:00</updated>
 <published>2013-04-18T21:43:51-06:00</published>
-<link href="http://asciidoctor.org/news/2013/04/18/enjoy-the-magic-of-asciidoctor-in-java/" rel="alternate" type="text/html" />
+<link href="https://mrduguo.github.io/asciidoctor.org/news/2013/04/18/enjoy-the-magic-of-asciidoctor-in-java/" rel="alternate" type="text/html" />
 <author>
 <name>Alex Soto</name>
 </author>
-<category scheme="http://asciidoctor.org/news/tags" term="announcement" />
-<category scheme="http://asciidoctor.org/news/tags" term="plugin" />
+<category scheme="https://mrduguo.github.io/asciidoctor.org/news/tags" term="announcement" />
+<category scheme="https://mrduguo.github.io/asciidoctor.org/news/tags" term="plugin" />
 <summary>
 The Asciidoctor Java integration is the official means of using Asciidoctor to render all your AsciiDoc documentation using Java instead of Ruby.
 
@@ -10506,7 +10506,7 @@ The core interface of asciidoctor-java-integration is Asciidoctor......
 &lt;div id=&quot;preamble&quot;&gt;
 &lt;div class=&quot;sectionbody&quot;&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;The &lt;a href=&quot;https://github.com/asciidoctor/asciidoctor-java-integration&quot;&gt;Asciidoctor Java integration&lt;/a&gt; is the official means of using &lt;a href=&quot;http://asciidoctor.org/&quot;&gt;Asciidoctor&lt;/a&gt; to render all your &lt;a href=&quot;http://asciidoc.org&quot;&gt;AsciiDoc&lt;/a&gt; documentation using Java instead of Ruby.&lt;/p&gt;
+&lt;p&gt;The &lt;a href=&quot;https://github.com/asciidoctor/asciidoctor-java-integration&quot;&gt;Asciidoctor Java integration&lt;/a&gt; is the official means of using &lt;a href=&quot;https://mrduguo.github.io/asciidoctor.org/&quot;&gt;Asciidoctor&lt;/a&gt; to render all your &lt;a href=&quot;http://asciidoc.org&quot;&gt;AsciiDoc&lt;/a&gt; documentation using Java instead of Ruby.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -10602,7 +10602,7 @@ Asciidoctor asciidoctor = create();&lt;/code&gt;&lt;/pre&gt;
 &lt;div class=&quot;sect2&quot;&gt;
 &lt;h3 id=&quot;options&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#options&quot;&gt;&lt;/a&gt;Options&lt;/h3&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;&lt;a href=&quot;http://asciidoctor.org/&quot;&gt;Asciidoctor&lt;/a&gt; supports different kind of options, like &lt;code&gt;in_place&lt;/code&gt; which renders the output inside a file, &lt;code&gt;template_dir&lt;/code&gt; used to provide a directory of Tilt-compatible templates to be used instead of the default built-in templates, or for example &lt;code&gt;attributes&lt;/code&gt; option where we can set key-value pairs of attributes that will be used within asciidoc document.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://mrduguo.github.io/asciidoctor.org/&quot;&gt;Asciidoctor&lt;/a&gt; supports different kind of options, like &lt;code&gt;in_place&lt;/code&gt; which renders the output inside a file, &lt;code&gt;template_dir&lt;/code&gt; used to provide a directory of Tilt-compatible templates to be used instead of the default built-in templates, or for example &lt;code&gt;attributes&lt;/code&gt; option where we can set key-value pairs of attributes that will be used within asciidoc document.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;The second parameter of &lt;code&gt;render&lt;/code&gt; methods are a &lt;code&gt;java.util.Map&lt;/code&gt; where we can set all these options.&lt;/p&gt;
@@ -10670,16 +10670,16 @@ Map&amp;lt;&lt;span class=&quot;predefined-type&quot;&gt;String&lt;/span&gt;, &l
 </content>
 </entry>
 <entry>
-<id>http://asciidoctor.org/news/2013/04/16/introducing-the-asciidoctor-maven-plugin/</id>
+<id>https://mrduguo.github.io/asciidoctor.org/news/2013/04/16/introducing-the-asciidoctor-maven-plugin/</id>
 <title>Introducing the Asciidoctor Maven plugin</title>
 <updated>2013-04-16T16:42:55-06:00</updated>
 <published>2013-04-16T16:42:55-06:00</published>
-<link href="http://asciidoctor.org/news/2013/04/16/introducing-the-asciidoctor-maven-plugin/" rel="alternate" type="text/html" />
+<link href="https://mrduguo.github.io/asciidoctor.org/news/2013/04/16/introducing-the-asciidoctor-maven-plugin/" rel="alternate" type="text/html" />
 <author>
 <name>Jason Porter</name>
 </author>
-<category scheme="http://asciidoctor.org/news/tags" term="announcement" />
-<category scheme="http://asciidoctor.org/news/tags" term="plugin" />
+<category scheme="https://mrduguo.github.io/asciidoctor.org/news/tags" term="announcement" />
+<category scheme="https://mrduguo.github.io/asciidoctor.org/news/tags" term="plugin" />
 <summary>
 I&#8217;d like to introduce you to the easiest way to use AsciiDoc from Maven, the Asciidoctor Maven plugin!
 
@@ -10850,16 +10850,16 @@ AsciiDoc attributes control options such as adding a table of contents, turning 
 </content>
 </entry>
 <entry>
-<id>http://asciidoctor.org/news/2013/04/08/a-new-resource-for-asciidoc/</id>
+<id>https://mrduguo.github.io/asciidoctor.org/news/2013/04/08/a-new-resource-for-asciidoc/</id>
 <title>A new resource for AsciiDoc</title>
 <updated>2013-04-08T14:39:25-06:00</updated>
 <published>2013-04-08T14:39:25-06:00</published>
-<link href="http://asciidoctor.org/news/2013/04/08/a-new-resource-for-asciidoc/" rel="alternate" type="text/html" />
+<link href="https://mrduguo.github.io/asciidoctor.org/news/2013/04/08/a-new-resource-for-asciidoc/" rel="alternate" type="text/html" />
 <author>
 <name>Dan Allen</name>
 </author>
-<category scheme="http://asciidoctor.org/news/tags" term="announcement" />
-<category scheme="http://asciidoctor.org/news/tags" term="website" />
+<category scheme="https://mrduguo.github.io/asciidoctor.org/news/tags" term="announcement" />
+<category scheme="https://mrduguo.github.io/asciidoctor.org/news/tags" term="website" />
 <summary>
 AsciiDoc is an excellent tool for writing documentation, but there&#8217;s simply not enough information about it.
 
@@ -10903,7 +10903,7 @@ In addition to serving as the project page for the &lt;a href=&quot;http://githu
 &lt;/div&gt;
 &lt;div class=&quot;imageblock feature right&quot;&gt;
 &lt;div class=&quot;content&quot;&gt;
-&lt;img src=&quot;http://asciidoctor.org/images/dawn.jpg&quot; alt=&quot;dawn&quot; /&gt;
+&lt;img src=&quot;https://mrduguo.github.io/asciidoctor.org/images/dawn.jpg&quot; alt=&quot;dawn&quot; /&gt;
 &lt;/div&gt;
 &lt;div class=&quot;title&quot;&gt;The dawn of a new era &lt;span class=&quot;credit&quot;&gt;Photo credit: &lt;a href=&quot;http://www.flickr.com/photos/bartvandorp/8593385822&quot;&gt;bartvandorp&lt;/a&gt;&lt;/span&gt;&lt;/div&gt;
 &lt;/div&gt;
@@ -10913,13 +10913,13 @@ In addition to serving as the project page for the &lt;a href=&quot;http://githu
 &lt;div class=&quot;ulist&quot;&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;http://asciidoctor.org/docs/what-is-asciidoc-why-use-it/&quot;&gt;What is AsciiDoc? Why do we need it?&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://mrduguo.github.io/asciidoctor.org/docs/what-is-asciidoc-why-use-it/&quot;&gt;What is AsciiDoc? Why do we need it?&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;http://asciidoctor.org/docs/asciidoc-quick-reference/&quot;&gt;AsciiDoc Syntax Quick Reference&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://mrduguo.github.io/asciidoctor.org/docs/asciidoc-quick-reference/&quot;&gt;AsciiDoc Syntax Quick Reference&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;http://asciidoctor.org/docs/asciidoc-writers-guide/&quot;&gt;AsciiDoc Writer’s Guide&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://mrduguo.github.io/asciidoctor.org/docs/asciidoc-writers-guide/&quot;&gt;AsciiDoc Writer’s Guide&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
@@ -10948,16 +10948,16 @@ Together, we can take the agony out of writing documentation!&lt;/p&gt;
 </content>
 </entry>
 <entry>
-<id>http://asciidoctor.org/news/2013/01/30/asciidoc-returns-to-github/</id>
+<id>https://mrduguo.github.io/asciidoctor.org/news/2013/01/30/asciidoc-returns-to-github/</id>
 <title>AsciiDoc, powered by Asciidoctor, returns to GitHub and its 5+ million repositories</title>
 <updated>2013-01-30T09:30:00-07:00</updated>
 <published>2013-01-30T09:30:00-07:00</published>
-<link href="http://asciidoctor.org/news/2013/01/30/asciidoc-returns-to-github/" rel="alternate" type="text/html" />
+<link href="https://mrduguo.github.io/asciidoctor.org/news/2013/01/30/asciidoc-returns-to-github/" rel="alternate" type="text/html" />
 <author>
 <name>Dan Allen</name>
 </author>
-<category scheme="http://asciidoctor.org/news/tags" term="announcement" />
-<category scheme="http://asciidoctor.org/news/tags" term="github" />
+<category scheme="https://mrduguo.github.io/asciidoctor.org/news/tags" term="announcement" />
+<category scheme="https://mrduguo.github.io/asciidoctor.org/news/tags" term="github" />
 <summary>
 Since early December and throughout the holidays, GitHub&#8217;s Ryan Waldron, Red Hat&#8217;s Dan Allen and other contributors have collaborated on Asciidoctor (project site, code repository), a new open source implementation of AsciiDoc written purely in Ruby[1].
 
@@ -11012,7 +11012,7 @@ Asciidoctor is now deployed to render AsciiDoc markup in any of the......
 &lt;table&gt;
 &lt;tr&gt;
 &lt;td class=&quot;icon&quot;&gt;
-&lt;img src=&quot;http://asciidoctor.org/images/octocat.jpg&quot; alt=&quot;Note&quot; /&gt;
+&lt;img src=&quot;https://mrduguo.github.io/asciidoctor.org/images/octocat.jpg&quot; alt=&quot;Note&quot; /&gt;
 &lt;/td&gt;
 &lt;td class=&quot;content&quot;&gt;
 &lt;strong&gt;Asciidoctor is now deployed&lt;/strong&gt; to render AsciiDoc markup in any of the &lt;strong&gt;5 million+ repositories&lt;/strong&gt; on GitHub.
