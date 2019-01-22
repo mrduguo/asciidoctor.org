@@ -41,7 +41,7 @@ profiles:
   production:
     base_url: https://mrduguo.github.io/asciidoctor.org
     context_path: '/asciidoctor.org'
-    asciidoctor.attributes.imagesoutdir: '/workspace/_site/images'
+    asciidoctor.attributes.imagesoutdir: '/home/travis/build/mrduguo/asciidoctor.org/_site/images'
     disqus_developer: false
     # long-hand form for Asciidoctor
     google_analytics_account: UA-38215684-1
