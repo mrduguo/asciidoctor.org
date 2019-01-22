@@ -1,7 +1,7 @@
 sudo: true
 language: ruby
 rvm:
-- 2.3.3
+- 2.3.4
 #cache:
 #  bundler: true
 env:
@@ -17,7 +17,7 @@ branches:
   only:
     - master
 install:
-  - sudo apt-get install -qq graphviz openjdk-8-jdk
+  - sudo apt-get install -qq graphviz
 before_script:
   - bundle install
 script: bundle exec rake travis

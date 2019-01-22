@@ -23,6 +23,7 @@ asciidoctor:
     icons: 'font'
     sectanchors: ''
     imagesoutdir: '/workspace/_site/images'
+    outdir: '/workspace/_tmp'
     linkattrs: ''
     #source-highlighter: 'highlight.js'
     source-highlighter: 'coderay'
@@ -44,6 +45,7 @@ profiles:
     asciidoctor:
       :attributes:
         imagesoutdir: '/home/travis/build/mrduguo/asciidoctor.org/_site/images'
+        outdir: '/home/travis/build/mrduguo/asciidoctor.org/_tmp'
     disqus_developer: false
     # long-hand form for Asciidoctor
     google_analytics_account: UA-38215684-1
