@@ -1,6 +1,7 @@
 title: Asciidoctor
 description: An open source implementation of AsciiDoc in Ruby
 author: Asciidoctor Project
+context_path: ''
 blog_path: /news
 # FIXME timezone will need to be specified per post for a global team
 local_tz: America/Denver
@@ -38,7 +39,9 @@ profiles:
   staging:
     deploy: null
   production:
-    base_url: http://asciidoctor.org
+    base_url: https://mrduguo.github.io/asciidoctor.org
+    context_path: '/asciidoctor.org'
+    asciidoctor.attributes.imagesoutdir: '/workspace/_site/images'
     disqus_developer: false
     # long-hand form for Asciidoctor
     google_analytics_account: UA-38215684-1

@@ -30,11 +30,7 @@ RUN echo -e "To launch site, use the following command:\n\n $ bundle exec rake p
   echo "[ -v PS1 -a -r /etc/motd ] && cat /etc/motd" > /etc/profile.d/motd.sh
 
 
-
-
 ENV LANG en_US.UTF-8
-
-WORKDIR
 
 RUN git clone --single-branch --depth 1 https://github.com/mrduguo/asciidoctor.org /workspace
 WORKDIR /workspace
