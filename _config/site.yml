@@ -39,7 +39,7 @@ profiles:
     #show_drafts: false
   staging:
     deploy: null
-  production:
+  travis:
     base_url: https://mrduguo.github.io/asciidoctor.org
     context_path: '/asciidoctor.org'
     asciidoctor:
@@ -61,3 +61,5 @@ profiles:
     deploy:
       host: github_pages
       branch: gh-pages
+  production:
+    deploy: null
