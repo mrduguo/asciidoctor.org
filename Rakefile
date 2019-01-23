@@ -131,7 +131,7 @@ task :travis do
   # if this is a pull request, do a simple build of the site and stop
   if ENV['TRAVIS_PULL_REQUEST'].to_s.to_i > 0
     msg 'Pull request detected. Executing build only.'
-    run_awestruct '-P production -g --force', :spawn => false
+    run_awestruct '-P travis -g --force', :spawn => false
     next
   end
 
@@ -152,10 +152,10 @@ task :travis do
   File.open('.git/credentials', 'w') {|f| f.write("https://#{ENV['GH_U']}:#{ENV['GH_T']}@github.com") }
   set_pub_dates 'master'
   system 'git branch gh-pages origin/gh-pages'
-  run_awestruct '-P production -g --force -q', :spawn => false
+  run_awestruct '-P travis -g --force -q', :spawn => false
   IO.write '_site/.nojekyll', ''
   #gen_rdoc
-  run_awestruct '-P production --deploy', :spawn => false
+  run_awestruct '-P travis --deploy', :spawn => false
   File.delete '.git/credentials'
   system 'git status'
 end
