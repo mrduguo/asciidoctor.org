@@ -1,4 +1,5 @@
 .travis.yml
+cloudbuild.yaml
 README.adoc
 Dockerfile
 Gemfile

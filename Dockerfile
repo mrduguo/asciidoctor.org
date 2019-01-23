@@ -1,7 +1,8 @@
 # To build image:
-# docker build -t asciidoctor-builder:latest -f Dockerfile .
+# docker build -t mrduguo/asciidoctor-builder:latest -f Dockerfile .
 # To run image:
-# docker run -it --name asciidoctor-builder --rm -v $(pwd):/workspace -p 4242:4242 asciidoctor-builder:latest
+# docker run -it --name asciidoctor-builder --rm -v $(pwd):/workspace -p 4242:4242 mrduguo/asciidoctor-builder bundle exec rake preview
+# docker run --rm -v $(pwd):/workspace mrduguo/asciidoctor-builder bundle exec rake gen
 # curl -v localhost:4242/docs/asciidoctor-diagram/
 
 FROM fedora:24

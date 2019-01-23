@@ -27,6 +27,8 @@ header
         li: a href='/docs/asciidoc-syntax-quick-reference.pdf' style='text-decoration: none' title='Download PDF': i.fa.fa-file-text-alt.fa-fw
       - if page.url =~ /^\/docs\/asciidoc-writers-guide/
         li: a href='/docs/asciidoc-writers-guide.pdf' style='text-decoration: none' title='Download PDF': i.fa.fa-file-text-alt.fa-fw
+  .large-8.columns
+     =breadcrumb(page.output_path)
 .row
   .large-4.columns.secondary.navigation
     div id='toc' class='toc'

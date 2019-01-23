@@ -4,11 +4,13 @@ require 'awestruct_ext'
 require 'tagger_patch'
 require 'sass_functions'
 require 'slim'
+require 'breadcrumb'
 
 Awestruct::Extensions::Pipeline.new do
   engine = Awestruct::Engine.instance
 
   helper Awestruct::Extensions::Partial
+  helper Awestruct::Extensions::Breadcrumb
   helper Awestruct::Extensions::GoogleAnalytics
 
   extension Awestruct::Extensions::Posts.new '/news'
