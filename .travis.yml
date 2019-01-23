@@ -23,7 +23,7 @@ script: bundle exec rake travis
 services:
   - docker
 after_script:
-    - docker build -t asciidoctor-builder:1.5.4 -t asciidoctor-builder:latest -f Dockerfile .
+    - docker build -t mrduguo/asciidoctor-builder:1.5.4 -t mrduguo/asciidoctor-builder:latest -f Dockerfile .
     - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-    - docker push asciidoctor-builder:1.5.4
-    - docker push asciidoctor-builder:latest
+    - docker push mrduguo/asciidoctor-builder:1.5.4
+    - docker push mrduguo/asciidoctor-builder:latest
