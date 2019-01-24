@@ -27,5 +27,5 @@ gem 'html-proofer', '3.0.2', :group => :test
 gem 'uglifier', '2.7.2'
 gem 'htmlcompressor', '0.0.3'
 # set EXECJS_RUNTIME=SpiderMonkey as alternative to theruby(racer|rhino)
-#gem 'therubyracer', '0.12.2', :platforms => [:ruby]
+gem 'therubyracer', '0.12.2', :platforms => [:ruby]
 #gem 'therubyrhino', '2.0.4', :platforms => [:jruby]
