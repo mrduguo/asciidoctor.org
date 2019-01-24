@@ -1,6 +1,9 @@
 <!DOCTYPE html><!--[if IE 8]><html class="no-js lt-ie9" lang="en"><![endif]--><!--[if gt IE 8]><!--><html class="no-js" lang="en"><!--<![endif]--><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/asciidoctor.org/stylesheets/styles.css"><script src="/asciidoctor.org/javascripts/vendor/custom.modernizr.js"></script><title>Asciidoctor Diagram | Asciidoctor</title><link rel="author" href="/humans.txt"></head><body class="antialiased"><nav class="top-bar"><ul class="title-area"><li class="name"><h1><a href="/">Asciidoctor</a></h1></li><li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li></ul><section class="top-bar-section"><ul class="right"><li><a href="/asciidoctor.org/">About</a></li><li class="divider"></li><li><a href="/asciidoctor.org/news/">News</a></li><li class="divider"></li><li><a href="http://gist.asciidoctor.org">Gist</a></li><li class="divider"></li><li><a href="https://github.com/asciidoctor">Code</a></li><li class="divider"></li><li><a href="http://discuss.asciidoctor.org">Discuss</a></li><li class="divider"></li><li><a href="/asciidoctor.org/docs/">Docs</a></li><li class="divider"></li><li class="has-form"><a class="button" href="/asciidoctor.org/docs/asciidoc-writers-guide/">Get Writing!</a></li></ul></section></nav><div class="container"><header><div class="row"><div class="large-12 columns"><h1>Asciidoctor Diagram</h1></div></div></header><div class="row"><div class="large-4 columns"><ul class="button-group toolbar" style="margin-bottom: -0.3333em"><li><a class="tiny secondary button toggle-navigation" href="#"><i class="fa fa-toggle-on"></i><i class="fa fa-toggle-off"></i> Nav</a></li><li><span class="separator"></span></li><li><a class="tiny secondary button" href="https://github.com/mrduguo/asciidoctor.org/edit/master/docs/asciidoctor-diagram.adoc">Edit</a></li><li><a class="tiny secondary button" href="https://github.com/mrduguo/asciidoctor.org/raw/master/docs/asciidoctor-diagram.adoc">Raw</a></li><li><a class="tiny secondary button" href="https://github.com/mrduguo/asciidoctor.org/commits/master/docs/asciidoctor-diagram.adoc">History</a></li><li><a href="https://github.com/asciidoctor/asciidoctor-diagram" title="Project Repository"><i class="fa fa-github fa-fw"></i></a></li></ul></div><div class="large-8 columns"><div class='breadcrumb'>> <a class='breadcrumb_anchor ' href='https://mrduguo.github.io/asciidoctor.org/index.html'
         >Asciidoctor</a> > <a class='breadcrumb_anchor ' href='https://mrduguo.github.io/asciidoctor.org/docs/index.html'
         >Asciidoctor Documentation</a> > </div></div></div><div class="row"><div class="large-4 columns secondary navigation"><div id="toc" class="toc"><div class="title" id="toctitle">Table of Contents</div><ul class="sectlevel1">
+<li><a href="#demo-plantuml">Demo PlantUML</a></li>
+<li><a href="#asciidoctor-diagram">Asciidoctor Diagram</a>
+<ul class="sectlevel1">
 <li><a href="#installation">Installation</a></li>
 <li><a href="#creating-a-diagram">Creating a Diagram</a></li>
 <li><a href="#generating-a-diagram-from-a-terminal">Generating a Diagram from a Terminal</a></li>
@@ -13,8 +16,51 @@
 <li><a href="#meme">The Meme Extension</a></li>
 </ul>
 </li>
-</ul></div></div><div class="large-8 columns content"><div id="content"><div id="preamble">
+</ul>
+</li>
+</ul></div></div><div class="large-8 columns content"><div id="content"><div class="sect1">
+<h2 id="demo-plantuml"><a class="anchor" href="#demo-plantuml"></a>Demo PlantUML</h2>
 <div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="/asciidoctor.org/images/plantuml-diagram.png" alt="plantuml diagram" width="472" height="189">
+</div>
+</div>
+</div>
+</div>
+<h1 id="asciidoctor-diagram" class="sect0"><a class="anchor" href="#asciidoctor-diagram"></a>Asciidoctor Diagram</h1>
+<div class="paragraph">
+<p>Pepijn Van_Eeckhoudt &lt;<a href="https://github.com/pepijnve">@pepijnve</a>&gt;; Sarah White &lt;<a href="https://github.com/graphitefriction">@graphitefriction</a>&gt;
+:description: README for the Asciidoctor Diagram extension for Asciidoctor.
+:icons: font
+:source-highlighter: coderay
+:source-language: asciidoc
+:table-caption!:
+:example-caption!:
+:figure-caption!:
+:check: <span class="icon"><i class="fa fa-check"></i></span>
+:uri-actdiag: <a href="http://blockdiag.com/en/actdiag/index.html" class="bare">http://blockdiag.com/en/actdiag/index.html</a>
+:uri-asciidoctor-api: <a href="http://asciidoctor.org/docs/user-manual/#api" class="bare">http://asciidoctor.org/docs/user-manual/#api</a>
+:uri-asciidoctor-extensions: <a href="http://asciidoctor.org/docs/user-manual/#extension-points" class="bare">http://asciidoctor.org/docs/user-manual/#extension-points</a>
+:uri-blockdiag: <a href="http://blockdiag.com" class="bare">http://blockdiag.com</a>
+:uri-ditaa: <a href="http://ditaa.sourceforge.net/" class="bare">http://ditaa.sourceforge.net/</a>
+:uri-dot: <a href="http://www.graphviz.org/content/dot-language" class="bare">http://www.graphviz.org/content/dot-language</a>
+:uri-graphviz: <a href="http://www.graphviz.org" class="bare">http://www.graphviz.org</a>
+:uri-imagemagick: <a href="http://www.imagemagick.org" class="bare">http://www.imagemagick.org</a>
+:uri-java: <a href="http://java.sun.com" class="bare">http://java.sun.com</a>
+:uri-mermaid: <a href="http://knsv.github.io/mermaid/" class="bare">http://knsv.github.io/mermaid/</a>
+:uri-nwdiag: <a href="http://blockdiag.com/en/nwdiag/index.html" class="bare">http://blockdiag.com/en/nwdiag/index.html</a>
+:uri-packetdiag: <a href="http://blockdiag.com/en/nwdiag/index.html" class="bare">http://blockdiag.com/en/nwdiag/index.html</a>
+:uri-phantomjs: <a href="http://phantomjs.org" class="bare">http://phantomjs.org</a>
+:uri-plantuml: <a href="http://plantuml.sourceforge.net" class="bare">http://plantuml.sourceforge.net</a>
+:uri-py-plantuml: <a href="https://code.google.com/p/asciidoc-plantuml/" class="bare">https://code.google.com/p/asciidoc-plantuml/</a>
+:uri-rackdiag: <a href="http://blockdiag.com/en/nwdiag/index.html" class="bare">http://blockdiag.com/en/nwdiag/index.html</a>
+:uri-seqdiag: <a href="http://blockdiag.com/en/seqdiag/index.html" class="bare">http://blockdiag.com/en/seqdiag/index.html</a>
+:uri-shaape: <a href="https://github.com/christiangoltz/shaape" class="bare">https://github.com/christiangoltz/shaape</a>
+:uri-wavedrom: <a href="http://wavedrom.com" class="bare">http://wavedrom.com</a>
+:uri-wavedromeditor: <a href="https://github.com/wavedrom/wavedrom.github.io/releases" class="bare">https://github.com/wavedrom/wavedrom.github.io/releases</a>
+:uri-wavedromcli: <a href="https://github.com/wavedrom/cli" class="bare">https://github.com/wavedrom/cli</a></p>
+</div>
 <div class="paragraph">
 <p>Asciidoctor Diagram is a set of Asciidoctor extensions that enable you to add diagrams, which you describe using plain text, to your AsciiDoc document.</p>
 </div>
@@ -26,7 +72,7 @@
 The generated file is then inserted into your converted document.</p>
 </div>
 <div class="paragraph">
-<p>Asciidoctor Diagram was inspired by the <a href="https://code.google.com/p/asciidoc-plantuml/">AsciiDoc PlantUML filter</a>.</p>
+<p>Asciidoctor Diagram was inspired by the {uri-py-plantuml}[AsciiDoc PlantUML filter].</p>
 </div>
 <div class="paragraph">
 <p>Translations of the document are available in the following languages:</p>
@@ -37,8 +83,6 @@ The generated file is then inserted into your converted document.</p>
 <p><a href="README_zh-CN.adoc">汉语</a></p>
 </li>
 </ul>
-</div>
-</div>
 </div>
 <div class="sect1">
 <h2 id="installation"><a class="anchor" href="#installation"></a>Installation</h2>
@@ -130,94 +174,94 @@ Diagram in appropriate syntax
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-right valign-top"><p class="tableblock"><a href="http://blockdiag.com/en/actdiag/index.html">actdiag</a></p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">{uri-actdiag}[actdiag]</p></td>
 <td class="tableblock halign-center valign-top"></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="icon"><i class="fa fa-check"></i></span></p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="icon"><i class="fa fa-check"></i></span></p></td>
-<td class="tableblock halign-center valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-right valign-top"><p class="tableblock"><a href="http://blockdiag.com">blockdiag</a></p></td>
-<td class="tableblock halign-center valign-top"></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="icon"><i class="fa fa-check"></i></span></p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="icon"><i class="fa fa-check"></i></span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{check}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{check}</p></td>
 <td class="tableblock halign-center valign-top"></td>
 </tr>
 <tr>
-<td class="tableblock halign-right valign-top"><p class="tableblock"><a href="http://ditaa.sourceforge.net/">ditaa</a></p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">{uri-blockdiag}[blockdiag]</p></td>
 <td class="tableblock halign-center valign-top"></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="icon"><i class="fa fa-check"></i></span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{check}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{check}</p></td>
+<td class="tableblock halign-center valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">{uri-ditaa}[ditaa]</p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{check}</p></td>
 <td class="tableblock halign-center valign-top"></td>
 <td class="tableblock halign-center valign-top"></td>
 </tr>
 <tr>
-<td class="tableblock halign-right valign-top"><p class="tableblock"><a href="http://www.graphviz.org/content/dot-language">graphviz</a></p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">{uri-dot}[graphviz]</p></td>
 <td class="tableblock halign-center valign-top"></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="icon"><i class="fa fa-check"></i></span></p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="icon"><i class="fa fa-check"></i></span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{check}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{check}</p></td>
 <td class="tableblock halign-center valign-top"></td>
 </tr>
 <tr>
 <td class="tableblock halign-right valign-top"><p class="tableblock"><a href="#meme">meme</a></p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="icon"><i class="fa fa-check"></i></span></p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="icon"><i class="fa fa-check"></i></span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{check}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{check}</p></td>
 <td class="tableblock halign-center valign-top"></td>
 <td class="tableblock halign-center valign-top"></td>
 </tr>
 <tr>
-<td class="tableblock halign-right valign-top"><p class="tableblock"><a href="http://knsv.github.io/mermaid/">mermaid</a></p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">{uri-mermaid}[mermaid]</p></td>
 <td class="tableblock halign-center valign-top"></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="icon"><i class="fa fa-check"></i></span></p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="icon"><i class="fa fa-check"></i></span></p></td>
-<td class="tableblock halign-center valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-right valign-top"><p class="tableblock"><a href="http://blockdiag.com/en/nwdiag/index.html">nwdiag</a></p></td>
-<td class="tableblock halign-center valign-top"></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="icon"><i class="fa fa-check"></i></span></p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="icon"><i class="fa fa-check"></i></span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{check}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{check}</p></td>
 <td class="tableblock halign-center valign-top"></td>
 </tr>
 <tr>
-<td class="tableblock halign-right valign-top"><p class="tableblock"><a href="http://blockdiag.com/en/nwdiag/index.html">packetdiag</a></p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">{uri-nwdiag}[nwdiag]</p></td>
 <td class="tableblock halign-center valign-top"></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="icon"><i class="fa fa-check"></i></span></p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="icon"><i class="fa fa-check"></i></span></p></td>
-<td class="tableblock halign-center valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-right valign-top"><p class="tableblock"><a href="http://plantuml.sourceforge.net">plantuml</a></p></td>
-<td class="tableblock halign-center valign-top"></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="icon"><i class="fa fa-check"></i></span></p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="icon"><i class="fa fa-check"></i></span></p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="icon"><i class="fa fa-check"></i></span></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-right valign-top"><p class="tableblock"><a href="http://blockdiag.com/en/nwdiag/index.html">rackdiag</a></p></td>
-<td class="tableblock halign-center valign-top"></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="icon"><i class="fa fa-check"></i></span></p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="icon"><i class="fa fa-check"></i></span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{check}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{check}</p></td>
 <td class="tableblock halign-center valign-top"></td>
 </tr>
 <tr>
-<td class="tableblock halign-right valign-top"><p class="tableblock"><a href="http://blockdiag.com/en/seqdiag/index.html">seqdiag</a></p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">{uri-packetdiag}[packetdiag]</p></td>
 <td class="tableblock halign-center valign-top"></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="icon"><i class="fa fa-check"></i></span></p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="icon"><i class="fa fa-check"></i></span></p></td>
-<td class="tableblock halign-center valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-right valign-top"><p class="tableblock"><a href="https://github.com/christiangoltz/shaape">shaape</a></p></td>
-<td class="tableblock halign-center valign-top"></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="icon"><i class="fa fa-check"></i></span></p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="icon"><i class="fa fa-check"></i></span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{check}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{check}</p></td>
 <td class="tableblock halign-center valign-top"></td>
 </tr>
 <tr>
-<td class="tableblock halign-right valign-top"><p class="tableblock"><a href="http://wavedrom.com">wavedrom</a></p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">{uri-plantuml}[plantuml]</p></td>
 <td class="tableblock halign-center valign-top"></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="icon"><i class="fa fa-check"></i></span></p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="icon"><i class="fa fa-check"></i></span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{check}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{check}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{check}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">{uri-rackdiag}[rackdiag]</p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{check}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{check}</p></td>
+<td class="tableblock halign-center valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">{uri-seqdiag}[seqdiag]</p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{check}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{check}</p></td>
+<td class="tableblock halign-center valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">{uri-shaape}[shaape]</p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{check}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{check}</p></td>
+<td class="tableblock halign-center valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">{uri-wavedrom}[wavedrom]</p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{check}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{check}</p></td>
 <td class="tableblock halign-center valign-top"></td>
 </tr>
 </tbody>
@@ -228,7 +272,7 @@ Diagram in appropriate syntax
 <div class="listingblock">
 <div class="title">Basic ditaa block</div>
 <div class="content">
-<pre class="CodeRay highlight nowrap"><code data-lang="asciidoc">[ditaa]
+<pre class="CodeRay highlight nowrap"><code>[ditaa]
 ....
                    +-------------+
                    | Asciidoctor |-------+
@@ -256,7 +300,7 @@ Diagram in appropriate syntax
 <div class="content">
 <img src="/asciidoctor.org/images/asciidoctor-diagram-process.png" alt="Asciidoctor Diagram process diagram" width="650" height="319">
 </div>
-<div class="title">Rendered ditaa diagram</div>
+<div class="title">Figure 1. Rendered ditaa diagram</div>
 </div>
 <div class="paragraph">
 <p>The rendered ditaa diagram above gets the file name <code>58372f7d2ceffae9e91fd0a7cbb080b6.png</code>.
@@ -286,7 +330,7 @@ Both examples below would result in a file called <code>ditaa-diagram.png</code>
 <div class="listingblock">
 <div class="title">PlantUML Diagram Syntax</div>
 <div class="content">
-<pre class="CodeRay highlight nowrap"><code data-lang="asciidoc">[plantuml, diagram-classes, png]   <i class="conum" data-value="1"></i><b>(1)</b> <i class="conum" data-value="2"></i><b>(2)</b> <i class="conum" data-value="3"></i><b>(3)</b>
+<pre class="CodeRay highlight nowrap"><code>[plantuml, diagram-classes, png] <i class="conum" data-value="1"></i><b>(1)</b> <i class="conum" data-value="2"></i><b>(2)</b> <i class="conum" data-value="3"></i><b>(3)</b>
 ....
 class BlockProcessor
 class DiagramBlock
@@ -319,7 +363,7 @@ DiagramBlock &lt;|-- PlantUmlBlock
 <div class="content">
 <img src="/asciidoctor.org/images/asciidoctor-diagram-classes.png" alt="Asciidoctor Diagram classes diagram">
 </div>
-<div class="title">Rendered PlantUML diagram</div>
+<div class="title">Figure 2. Rendered PlantUML diagram</div>
 </div>
 </div>
 </div>
@@ -467,71 +511,71 @@ The following table lists the tools that are required for each diagram type, the
 <tbody>
 <tr>
 <td class="tableblock halign-right valign-top"><p class="tableblock">actdiag</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://blockdiag.com/en/actdiag/index.html">ActDiag</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{uri-actdiag}[ActDiag]</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>actdiag</code></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-right valign-top"><p class="tableblock">blockdiag</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://blockdiag.com">BlockDiag</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{uri-blockdiag}[BlockDiag]</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>blockdiag</code></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-right valign-top"><p class="tableblock">ditaa</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://java.sun.com">Java</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{uri-java}[Java]</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>java</code></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-right valign-top"><p class="tableblock">graphviz</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.graphviz.org">GraphViz</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{uri-graphviz}[GraphViz]</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>dot</code> or <code>graphvizdot</code></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-right valign-top"><p class="tableblock">meme</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.imagemagick.org">ImageMagick</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{uri-imagemagick}[ImageMagick]</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>convert</code> and <code>identify</code></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-right valign-top"><p class="tableblock">mermaid</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://knsv.github.io/mermaid/">Mermaid</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{uri-mermaid}[Mermaid]</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>mermaid</code></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-right valign-top"><p class="tableblock">nwdiag</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://blockdiag.com/en/nwdiag/index.html">NwDiag</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{uri-nwdiag}[NwDiag]</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>nwdiag</code></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-right valign-top"><p class="tableblock">packetdiag</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://blockdiag.com/en/nwdiag/index.html">NwDiag</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{uri-nwdiag}[NwDiag]</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>packetdiag</code></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-right valign-top"><p class="tableblock">plantuml</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://java.sun.com">Java</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{uri-java}[Java]</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>java</code></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-right valign-top"><p class="tableblock">rackdiag</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://blockdiag.com/en/nwdiag/index.html">NwDiag</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{uri-nwdiag}[NwDiag]</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>rackdiag</code></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-right valign-top"><p class="tableblock">seqdiag</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://blockdiag.com/en/seqdiag/index.html">SeqDiag</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{uri-seqdiag}[SeqDiag]</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>seqdiag</code></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-right valign-top"><p class="tableblock">shaape</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://github.com/christiangoltz/shaape">Shaape</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{uri-shaape}[Shaape]</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>shaape</code></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-right valign-top" rowspan="2"><p class="tableblock">wavedrom</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://github.com/wavedrom/wavedrom.github.io/releases">WaveDrom Editor</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{uri-wavedromeditor}[WaveDrom Editor]</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>wavedrom</code></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-right valign-top"><p class="tableblock"><a href="https://github.com/wavedrom/cli">WaveDrom CLI</a> and <a href="http://phantomjs.org">PhantomJS</a></p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">{uri-wavedromcli}[WaveDrom CLI] and {uri-phantomjs}[PhantomJS]</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>wavedrom</code> and <code>phantomjs</code></p></td>
 </tr>
 </tbody>
@@ -588,11 +632,6 @@ Occurrences of <code>\\</code> surrounded by whitespace are interpreted as line 
 <p><code>format</code> (4th positional attribute): the output image format. The meme extension supports <code>png</code> and <code>gif</code>.</p>
 </li>
 </ol>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="/asciidoctor.org/images/plantuml-diagram.png" alt="plantuml diagram" width="472" height="189">
-</div>
 </div>
 </div>
 </div>
